@@ -44,10 +44,10 @@ export default function AboutSection() {
             </div>
 
             {/* Wrapper for SVG + Testimonial */}
-            <div className="col-span-1 relative flex items-center justify-center overflow-visible">
-              <div className="relative animate-bounce-custom">
-                {/* SVG */}
-                <div className="absolute right-0 bottom-[70px] -z-[100]">
+            <div className="col-span-1 relative flex items-center justify-center overflow-visible ">
+              <div className="relative">
+                {/* SVG Background */}
+                <div className="absolute right-0 bottom-[70px] -z-10">
                   <svg
                     className="w-[350px] h-[400px]"
                     xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Floating Testimonial */}
-                <div className="relative z-10 bg-white rounded-xl shadow-lg flex items-center gap-4 px-5 py-4">
+                <div className="relative z-10 bg-white rounded-xl shadow-lg flex items-center gap-4 px-5 py-4 -ml-[100px] animate-bounce">
                   <Image
                     src="/images/about_person.png"
                     alt="Alex Jones"

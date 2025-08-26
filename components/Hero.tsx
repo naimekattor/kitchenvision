@@ -38,7 +38,7 @@ const Hero = () => {
             torquent nu nascetur cubilia tempor lacus
           </p>
 
-          <div className="relative">
+          <div className="relative md:block hidden">
             <Image
               src={"/images/hero_img1.jpg"}
               alt="hero image"
@@ -55,20 +55,20 @@ const Hero = () => {
           {/* Main image with rounded corners and subtle shadow */}
           <div className="relative">
             {/* Border element - positioned behind */}
-            <div className="absolute top-0 left-0 w-[620px] h-[778px] border-[#A6A182] border-2 z-20"></div>
+            <div className="absolute top-0 left-0 w-[calc(100%-20px)] h-[calc(100%+20px)] border-[#A6A182] border-2 z-20"></div>
 
             {/* Image container - positioned in front */}
             <div className="relative z-10 ml-4 mt-4 rounded overflow-hidden shadow-2xl">
               <img
                 src="/images/hero.jpg"
                 alt="Living Room"
-                className="w-[640px] h-[750px] object-cover"
+                className="w-[640px] md:h-[750px] h-[450px] object-cover"
               />
             </div>
           </div>
 
           {/* Floating client testimonial box */}
-          <div className="absolute right-0 bottom-0 mr-4 mb-4 md:mr-8 md:mb-8 lg:mr-16 lg:mb-16 bg-white rounded-3xl shadow-lg p-4 flex items-center justify-between space-x-4 min-w-[200px]">
+          <div className="absolute right-0 bottom-0 mr-16 mb-4 md:mr-8 md:mb-8 lg:mr-16 lg:mb-16 bg-white rounded animate-bounce shadow-lg p-4 flex items-center justify-between space-x-4 min-w-[200px] z-10">
             <div className="flex -space-x-2 overflow-hidden">
               <img
                 className="inline-block h-8 w-8 rounded-full ring-2 ring-white"

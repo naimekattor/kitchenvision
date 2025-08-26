@@ -1,84 +1,234 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+} from "lucide-react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer
-      className="w-full 
-         bg-black text-[#f5f5f7]"
-    >
-      <div className="bg-gradient-to-t from-black/30 to-transparent">
-        <div className="container mx-auto   gap-10 px-4 py-12 flex justify-between md:flex-row flex-col">
-          <div className="space-y-3">
-            <div
-              className="text-lg font-semibold 
-                text-[#f5f5f7]"
-            >
-              {`<Mohin/>`}
+    <footer className="bg-black text-white py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Logo and Description Column */}
+          <div className="lg:col-span-1">
+            <div className="mb-6">
+              <div className="inline-block mb-4">
+                <Link href="/" className="flex items-center gap-2">
+                  <Image
+                    src="/images/logo.png"
+                    width={200}
+                    height={86}
+                    alt="conten Kuche & raum logo"
+                  />
+                  <span className="sr-only">Go to homepage</span>
+                </Link>
+              </div>
             </div>
-            <address className="not-italic text-sm leading-6 ">
-              Villa No. 45, Street 12, Khalifa City,
-              <br />
-              Abu Dhabi, United Arab Emirates
-            </address>
+            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+              It is a long established fact that a reader will be distracted
+            </p>
+
+            {/* Email Subscription */}
+            <div className="flex mb-6">
+              <Input
+                type="email"
+                placeholder="Email"
+                className="bg-[#191919] focus:outline-none text-white placeholder:text-gray-400 rounded-r-none"
+              />
+              <Button className="bg-[#333333] hover:bg-gray-600 rounded-l-none px-4">
+                <Send className="w-4 h-4" />
+              </Button>
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex space-x-3">
+              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <Facebook className="w-5 h-5" />
+              </div>
+              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <Twitter className="w-5 h-5" />
+              </div>
+              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <div className="w-5 h-5 bg-white rounded-sm flex items-center justify-center">
+                  <span className="text-black text-xs font-bold">V</span>
+                </div>
+              </div>
+              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <div className="w-5 h-5 bg-white rounded-sm flex items-center justify-center">
+                  <span className="text-black text-xs font-bold">P</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="space-y-3">
-            <div className="text-sm font-semibold ">Get started</div>
-            <ul className="space-y-2 text-sm">
+          {/* Quick Links Column */}
+          <div>
+            <h4 className="text-xl font-bold mb-6">Quick Links</h4>
+            <ul className="space-y-4">
               <li>
-                <Link href="/about" className="hover:underline">
-                  About
-                </Link>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  About Us
+                </a>
               </li>
-              <li></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Service
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Blog Post
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Team Members
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* <div className="space-y-3">
-            <Link href={"/privacy"} className="text-sm font-semibold ">
-              Privacy Policy
-            </Link>
-          </div> */}
+          {/* More Service Column */}
+          <div>
+            <h4 className="text-xl font-bold mb-6">More Service</h4>
+            <ul className="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  SpaceCraft Studio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Interiorscape Design
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Architecture Plus
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Dream Home Designs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Interior Perfection
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <div className="space-y-3">
-            <div className="text-sm font-semibold ">Follow us on</div>
-            <div className="flex gap-3">
-              <Link
-                aria-label="Facebook"
-                href="#"
-                className="rounded-md bg-[#55555c] text-white shadow-md p-2 "
-              >
-                <Facebook className="h-4 w-4" />
-              </Link>
-              <Link
-                aria-label="Twitter"
-                href="#"
-                className="rounded-md bg-[#55555c] text-white shadow-md p-2 "
-              >
-                <Twitter className="h-4 w-4" />
-              </Link>
-              <Link
-                aria-label="Instagram"
-                href="#"
-                className="rounded-md bg-[#55555c] text-white shadow-md p-2 "
-              >
-                <Instagram className="h-4 w-4" />
-              </Link>
-              <Link
-                aria-label="LinkedIn"
-                href="#"
-                className="rounded-md bg-[#55555c] text-white shadow-md p-2 "
-              >
-                <Linkedin className="h-4 w-4" />
-              </Link>
+          {/* Contact Column */}
+          <div>
+            <h4 className="text-xl font-bold mb-6">Contact</h4>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="text-gray-400 text-sm">Address</p>
+                  <p className="text-white font-medium">
+                    66 Broklyant,New India
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <Phone className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="text-gray-400 text-sm">Phone Number</p>
+                  <p className="text-white font-medium">012 345 678 9101</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <Mail className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="text-gray-400 text-sm">Email Address</p>
+                  <p className="text-white font-medium">012 345 678 9101</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="border-t border-white/10">
-          <div className="container mx-auto px-4 py-4 text-center text-xs  flex justify-between">
-            <p className="text-sm">Demo@mohin.com</p>
-            <p>© 2025 All rights reserved.</p>
+
+        {/* Bottom Footer */}
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              © Windstripe Themes 2024 | All Rights Reserved
+            </p>
+            <div className="flex space-x-6">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                Trams & Condition
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </div>

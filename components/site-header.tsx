@@ -17,7 +17,7 @@ export default function Header() {
           
        backdrop-blur-xl py-2"
     >
-      <div className="container mx-auto flex  items-center justify-between px-4 ">
+      <div className="container mx-auto flex  items-center justify-between ">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/logo.png"
@@ -56,15 +56,15 @@ export default function Header() {
           </Button>
         </div>
 
-        <div className=" ">
+        <div className="md:hidden block">
           <button
             aria-label="Toggle menu"
             className="inline-flex items-center justify-center rounded-md p-2 
-              text-white
+              text-black
              hover:bg-white/10 md:hidden"
             onClick={() => setOpen((v) => !v)}
           >
-            <Menu className="h-5 w-5" />
+            <Menu className="h-8 w-8" />
           </button>
         </div>
       </div>
