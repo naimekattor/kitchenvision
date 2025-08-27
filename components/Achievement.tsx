@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
 import { Button } from "./ui/button";
 import { ArrowRight, BarChart3, Building2, Home, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 import Image from "next/image";
+import CountUp from "react-countup";
+import Link from "next/link";
+import ScrollAnimation from "./ScrollAnimation";
 
 const reviews = [
   {
@@ -48,9 +52,6 @@ const firstRow = reviews.slice(0, reviews.length / 2);
 
 const ReviewCard = ({
   img,
-  name,
-  username,
-  body,
 }: {
   img: string;
   name: string;
@@ -109,23 +110,31 @@ const Achievement = () => {
 
           {/* Content */}
           <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center container mx-auto">
-            <div>
-              <p className="text-sm text-muted-foreground mb-4 font-medium">
-                Our Achievement
-              </p>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Building Dreams One Room At A Time
-              </h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit torquent
-                nu nascetu cubilia tempor lacus natoque quis auctor mattis
-                luctus varius pretium aptent urna iaculis suspendisse eros
-                egestas mollis dis nisl commodo.
-              </p>
-              <Button className="h-12 w-[150px]">
-                Read More <ArrowRight />
-              </Button>
-            </div>
+            <ScrollAnimation
+              initial={{ opacity: 0, y: 70 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <div>
+                <p className="text-sm text-muted-foreground mb-4 font-medium">
+                  Our Achievement
+                </p>
+                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+                  Building Dreams One Room At A Time
+                </h2>
+                <p className="text-muted-foreground mb-8 leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                  torquent nu nascetu cubilia tempor lacus natoque quis auctor
+                  mattis luctus varius pretium aptent urna iaculis suspendisse
+                  eros egestas mollis dis nisl commodo.
+                </p>
+                <Link href={"/about"}>
+                  <Button className="h-12 w-[150px]">
+                    Read More <ArrowRight />
+                  </Button>
+                </Link>
+              </div>
+            </ScrollAnimation>
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8">
@@ -133,7 +142,14 @@ const Achievement = () => {
                 <div className="w-16 h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Home className="w-8 h-8 text-gray-600" />
                 </div>
-                <div className="text-4xl font-bold mb-2">90+</div>
+                <div className="text-4xl font-bold mb-2">
+                  <CountUp
+                    end={80}
+                    enableScrollSpy
+                    scrollSpyDelay={2000}
+                    suffix="+"
+                  />
+                </div>
                 <p className="text-muted-foreground">Projects Done</p>
               </div>
 
@@ -141,25 +157,57 @@ const Achievement = () => {
                 <div className="w-16 h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <BarChart3 className="w-8 h-8 text-gray-600" />
                 </div>
-                <div className="text-4xl font-bold mb-2">900+</div>
+                <div className="text-4xl font-bold mb-2">
+                  <CountUp
+                    end={10}
+                    enableScrollSpy
+                    scrollSpyDelay={2000}
+                    suffix="+"
+                  />
+                </div>
                 <p className="text-muted-foreground">Team member</p>
               </div>
 
-              <div className="text-center bg-white px-4 py-5 rounded shadow-lg">
-                <div className="w-16 h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Building2 className="w-8 h-8 text-gray-600" />
+              <ScrollAnimation
+                initial={{ opacity: 0, y: 70 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                <div className="text-center bg-white px-4 py-5 rounded shadow-lg">
+                  <div className="w-16 h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Building2 className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="text-4xl font-bold mb-2">
+                    <CountUp
+                      end={80}
+                      enableScrollSpy
+                      scrollSpyDelay={2000}
+                      suffix="+"
+                    />
+                  </div>
+                  <p className="text-muted-foreground">Client review</p>
                 </div>
-                <div className="text-4xl font-bold mb-2">700+</div>
-                <p className="text-muted-foreground">Client review</p>
-              </div>
-
-              <div className="text-center bg-white p-4 rounded shadow-lg">
-                <div className="w-16 h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Layers className="w-8 h-8 text-gray-600" />
+              </ScrollAnimation>
+              <ScrollAnimation
+                initial={{ opacity: 0, y: 70 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                <div className="text-center bg-white p-4 rounded shadow-lg">
+                  <div className="w-16 h-16 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Layers className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="text-4xl font-bold mb-2">
+                    <CountUp
+                      end={30}
+                      enableScrollSpy
+                      scrollSpyDelay={1000}
+                      suffix="+"
+                    />
+                  </div>
+                  <p className="text-muted-foreground">Wining Award</p>
                 </div>
-                <div className="text-4xl font-bold mb-2">80+</div>
-                <p className="text-muted-foreground">Wining Award</p>
-              </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Testoimonial = () => {
             height={534}
           /> */}
         </div>
-        <div className="relative flex items-center">
+        <div className="relative flex items-center px-4 ">
           <div className="relative z-20 md:-ml-28 -ml-6 w-full md:w-[65%] lg:w-[55%] max-w-[820px]">
             <Swiper
               modules={[Pagination, Autoplay]}

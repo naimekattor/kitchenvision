@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {
   Facebook,
@@ -10,13 +11,17 @@ import {
   Send,
 } from "lucide-react";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   return (
-    <footer className="bg-black text-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <footer
+      className={`bg-black text-white pb-16 ${isHome ? "pt-16" : "pt-64"} px-4`}
+    >
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description Column */}
           <div className="lg:col-span-1">
@@ -39,10 +44,10 @@ export default function Footer() {
 
             {/* Email Subscription */}
             <div className="flex mb-6">
-              <Input
+              <input
                 type="email"
                 placeholder="Email"
-                className="bg-[#191919] focus:outline-none text-white placeholder:text-gray-400 rounded-r-none"
+                className="bg-[#191919] px-2 focus:outline-none text-white placeholder:text-gray-400 rounded-r-none"
               />
               <Button className="bg-[#333333] hover:bg-gray-600 rounded-l-none px-4">
                 <Send className="w-4 h-4" />
@@ -207,7 +212,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © Windstripe Themes 2024 | All Rights Reserved
+              © Conte Kuche & Raum 2025 | All Rights Reserved
             </p>
             <div className="flex space-x-6">
               <a

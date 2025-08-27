@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 const Team = () => {
   return (
     <section className="py-16 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm text-muted-foreground mb-4 font-medium">
             Our Expert Team
@@ -22,7 +22,7 @@ const Team = () => {
           </h2>
         </div>
 
-        <div className="relative">
+        <div className="relative px-6">
           <Swiper
             modules={[Pagination, Autoplay]}
             spaceBetween={30}

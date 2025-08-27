@@ -10,8 +10,8 @@ import { Folder, Share2 } from "lucide-react";
 const Blog = () => {
   const paginationRef = useRef(null);
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20">
+      <div className="container mx-auto ">
         <div className="text-start mb-12">
           <p className="text-sm text-muted-foreground mb-4 font-medium">
             Latest Blog And News

@@ -3,8 +3,18 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import CountUp from "react-countup";
+import { useEffect, useState } from "react";
+import { PopupModal } from "react-calendly";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function AboutSection() {
+  const [showModal, setShowModal] = useState(false);
+  const [rootElement, setRootElement] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    const root = document.getElementById("__next") ?? document.body;
+    setRootElement(root);
+  }, []);
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
@@ -13,10 +23,19 @@ export default function AboutSection() {
           {/* Top Row */}
           <div className="grid sm:grid-cols-2 gap-6">
             {/* Experience Box */}
-            <div className="bg-gray-900 text-white rounded shadow-lg flex flex-col items-center justify-center text-center p-8">
-              <h2 className="text-4xl sm:text-5xl font-bold">22+</h2>
-              <p className="mt-2 text-lg">Years Of Experience</p>
-            </div>
+            <ScrollAnimation>
+              <div className="bg-gray-900 text-white rounded shadow-lg flex flex-col items-center justify-center text-center p-8">
+                <h2 className="text-4xl sm:text-5xl font-bold">
+                  <CountUp
+                    end={22}
+                    enableScrollSpy
+                    scrollSpyDelay={1000}
+                    suffix="+"
+                  />
+                </h2>
+                <p className="mt-2 text-lg">Years Of Experience</p>
+              </div>
+            </ScrollAnimation>
 
             {/* Main Image */}
             <div className="rounded overflow-hidden shadow-lg">
@@ -31,61 +50,63 @@ export default function AboutSection() {
           </div>
 
           {/* Bottom Row */}
-          <div className="relative grid grid-cols-4 gap-6 items-center">
-            {/* Image taking 3/4 */}
-            <div className="col-span-3">
-              <Image
-                src="/images/about_img2.jpg"
-                alt="About extra"
-                width={900}
-                height={500}
-                className="w-full h-[350px] rounded-xl object-cover shadow-lg"
-              />
-            </div>
+          <ScrollAnimation>
+            <div className="relative grid grid-cols-4 gap-6 items-center">
+              {/* Image taking 3/4 */}
+              <div className="col-span-3">
+                <Image
+                  src="/images/about_img2.jpg"
+                  alt="About extra"
+                  width={900}
+                  height={500}
+                  className="w-full h-[350px] rounded-xl object-cover shadow-lg"
+                />
+              </div>
 
-            {/* Wrapper for SVG + Testimonial */}
-            <div className="col-span-1 relative flex items-center justify-center overflow-visible ">
-              <div className="relative">
-                {/* SVG Background */}
-                <div className="absolute right-0 bottom-[70px] -z-10">
-                  <svg
-                    className="w-[350px] h-[400px]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 600 600"
-                  >
-                    <defs>
-                      <pattern
-                        id="dotPattern"
-                        x="0"
-                        y="0"
-                        width="20"
-                        height="20"
-                        patternUnits="userSpaceOnUse"
-                      >
-                        <circle cx="2" cy="2" r="2" fill="#e6e6e6" />
-                      </pattern>
-                    </defs>
-                    <rect width="600" height="600" fill="url(#dotPattern)" />
-                  </svg>
-                </div>
+              {/* Wrapper for SVG + Testimonial */}
+              <div className="col-span-1 relative flex items-center justify-center overflow-visible ">
+                <div className="relative">
+                  {/* SVG Background */}
+                  <div className="absolute right-0 bottom-[70px] -z-10">
+                    <svg
+                      className="w-[350px] h-[400px]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 600 600"
+                    >
+                      <defs>
+                        <pattern
+                          id="dotPattern"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <circle cx="2" cy="2" r="2" fill="#e6e6e6" />
+                        </pattern>
+                      </defs>
+                      <rect width="600" height="600" fill="url(#dotPattern)" />
+                    </svg>
+                  </div>
 
-                {/* Floating Testimonial */}
-                <div className="relative z-10 bg-white rounded-xl shadow-lg flex items-center gap-4 px-5 py-4 -ml-[100px] animate-bounce">
-                  <Image
-                    src="/images/about_person.png"
-                    alt="Alex Jones"
-                    width={55}
-                    height={55}
-                    className="rounded-full"
-                  />
-                  <div>
-                    <h4 className="text-sm font-semibold">Alex Jones</h4>
-                    <p className="text-xs text-gray-500">Security Boy</p>
+                  {/* Floating Testimonial */}
+                  <div className="relative z-10 bg-white rounded-xl shadow-lg flex items-center gap-4 px-5 py-4 -ml-[100px] animate-bounce">
+                    <Image
+                      src="/images/about_person.png"
+                      alt="Alex Jones"
+                      width={55}
+                      height={55}
+                      className="rounded-full"
+                    />
+                    <div>
+                      <h4 className="text-sm font-semibold">Alex Jones</h4>
+                      <p className="text-xs text-gray-500">Security Boy</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
 
         {/* Right Side (Text) */}
@@ -108,9 +129,21 @@ export default function AboutSection() {
             varius.
           </p>
 
-          <Button className="h-12 w-[150px] mt-6">
+          <Button
+            className="h-12 w-[150px] mt-2"
+            onClick={() => setShowModal(true)}
+          >
             Book Now <ArrowRight />
           </Button>
+
+          {showModal && (
+            <PopupModal
+              url="https://calendly.com/naimekattor/30min"
+              onModalClose={() => setShowModal(false)}
+              open={showModal}
+              rootElement={rootElement}
+            />
+          )}
         </div>
       </div>
     </section>

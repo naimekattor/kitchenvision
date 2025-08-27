@@ -36,22 +36,7 @@ const FaqItem: React.FC<FaqItemProps> = ({
           <span>{id}.</span>
           {question}
         </span>
-        {/* <svg
-          className={`w-6 h-6 transition-transform duration-300 transform ${
-            isOpen ? "rotate-180 text-gray-400" : "text-gray-800"
-          }`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
-        </svg> */}
+
         <ChevronsRight
           className={`w-6 h-6 transition-transform duration-300 transform ${
             isOpen ? "rotate-90 text-white" : "text-gray-800"
@@ -101,60 +86,63 @@ const Faq = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row items-start justify-center p-8 lg:p-16 bg-gray-100 font-sans">
-      {/* Left side: Hero text and project stats */}
-      <div className="w-full lg:w-1/2 flex flex-col items-start text-left mb-12 lg:mb-0 lg:pr-16">
-        <div className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
-          FAQ
-        </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight tracking-tight mb-4">
-          Elevate Your Interior <br /> The Elevate Lifestyle
-        </h1>
-        <p className="text-lg text-gray-500 max-w-xl mb-8">
-          Aliquam eros justo, posuere lobortis laoreet ullamcorper the posuer
-          viverra Aliquam eros, posuere lobortis Aliquam eros justo, posuere
-          laoreet ullamcorper the a posuer viverra Aliquam
-        </p>
+    <section className="bg-gray-100 py-20">
+      <div className="flex flex-col lg:flex-row items-start justify-center container mx-auto  font-sans">
+        {/* Left side: Hero text and project stats */}
 
-        {/* Project completed box */}
-        <div className="flex items-center space-x-4 border-1 border-[#A6A182]  p-6 rounded shadow-lg">
-          <div className="flex flex-col">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center justify-center p-4 ">
-                <Image
-                  src={"/images/faq_icon.png"}
-                  width={60}
-                  height={60}
-                  alt="icon"
-                />
+        <div className="w-full lg:w-1/2 flex flex-col items-start text-left mb-12 lg:mb-0 lg:pr-16">
+          <div className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
+            FAQ
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight tracking-tight mb-4">
+            Elevate Your Interior <br /> The Elevate Lifestyle
+          </h1>
+          <p className="text-lg text-gray-500 max-w-xl mb-8">
+            Aliquam eros justo, posuere lobortis laoreet ullamcorper the posuer
+            viverra Aliquam eros, posuere lobortis Aliquam eros justo, posuere
+            laoreet ullamcorper the a posuer viverra Aliquam
+          </p>
+
+          {/* Project completed box */}
+          <div className="flex items-center space-x-4 border-1 border-[#A6A182]  p-6 rounded shadow-lg">
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center p-4 ">
+                  <Image
+                    src={"/images/faq_icon.png"}
+                    width={60}
+                    height={60}
+                    alt="icon"
+                  />
+                </div>
+                <span className="text-2xl font-bold text-gray-800">
+                  2k+ Project Completed
+                </span>
               </div>
-              <span className="text-2xl font-bold text-gray-800">
-                2k+ Project Completed
+
+              <span className="text-sm text-gray-500">
+                Lorem Ipsum is simply dummy text of the a printing and
+                typesetting industry.
               </span>
             </div>
-
-            <span className="text-sm text-gray-500">
-              Lorem Ipsum is simply dummy text of the a printing and typesetting
-              industry.
-            </span>
           </div>
         </div>
-      </div>
 
-      {/* Right side: Accordion of FAQ items */}
-      <div className="w-full lg:w-1/2 rounded space-y-4 overflow-hidden shadow-2xl">
-        {faqData.map((item) => (
-          <FaqItem
-            key={item.id}
-            id={item.id}
-            question={item.question}
-            answer={item.answer}
-            isOpen={openItem === item.id}
-            onToggle={() => handleToggle(item.id)}
-          />
-        ))}
+        {/* Right side: Accordion of FAQ items */}
+        <div className="w-full lg:w-1/2 rounded space-y-4 overflow-hidden shadow-2xl">
+          {faqData.map((item) => (
+            <FaqItem
+              key={item.id}
+              id={item.id}
+              question={item.question}
+              answer={item.answer}
+              isOpen={openItem === item.id}
+              onToggle={() => handleToggle(item.id)}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

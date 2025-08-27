@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from "./ScrollAnimation";
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
@@ -81,7 +82,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 );
 const Service = () => {
   return (
-    <div className="bg-[#f8f9fa] font-sans">
+    <div className="bg-[#f8f9fa] font-sans overflow-hidden">
       <div
         className="container mx-auto "
         style={{
@@ -102,21 +103,39 @@ const Service = () => {
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-1 gap-8">
               <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
-                <ServiceCard
-                  icon={<BedIcon />}
-                  title="Architecture Plus"
-                  description="This category focuses on the design and man"
-                />
-                <ServiceCard
-                  icon={<BlueprintIcon />}
-                  title="Urban Oasis"
-                  description="This category focuses on the design and man"
-                />
-                <ServiceCard
-                  icon={<WindowIcon />}
-                  title="Blueprint Builders"
-                  description="This category focuses on the design and man"
-                />
+                <ScrollAnimation
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  <ServiceCard
+                    icon={<BedIcon />}
+                    title="Architecture Plus"
+                    description="This category focuses on the design and man"
+                  />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  initial={{ opacity: 0, y: 70 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  <ServiceCard
+                    icon={<BlueprintIcon />}
+                    title="Urban Oasis"
+                    description="This category focuses on the design and man"
+                  />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  initial={{ opacity: 0, y: 90 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  <ServiceCard
+                    icon={<WindowIcon />}
+                    title="Blueprint Builders"
+                    description="This category focuses on the design and man"
+                  />
+                </ScrollAnimation>
               </div>
             </div>
           </div>
