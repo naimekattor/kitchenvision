@@ -86,7 +86,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex ">
-          <Link href="#Home" className="text-[18px]  ">
+          <Link href="/" className="text-[18px]  ">
             Home
           </Link>
 

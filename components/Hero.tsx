@@ -14,7 +14,7 @@ const Hero = () => {
           <div className=" flex flex-col items-center text-left mb-12 lg:mb-0 z-10 relative ">
             {/* Decorative star-like icons */}
             <div className="flex space-x-2 mb-4 absolute md:left-0 -left-10 md:bottom-[250px] bottom-[220px] rotate-45">
-              <svg
+              {/* <svg
                 className="w-16 h-16 text-gray-300"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -29,7 +29,11 @@ const Hero = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M10 12.585l-4.12 2.167.78-4.56-3.32-3.235 4.58-.665L10 2.298l2.08 4.195 4.58.665-3.32 3.235.78 4.56L10 12.585z" />
-              </svg>
+              </svg> */}
+              <img
+                className="w-full h-full relative rotate-[-38deg]"
+                src="images/star.png"
+              />
             </div>
 
             {/* Main heading */}

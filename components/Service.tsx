@@ -1,5 +1,9 @@
 import React from "react";
 import ScrollAnimation from "./ScrollAnimation";
+import { FaKitchenSet } from "react-icons/fa6";
+import { FcFilingCabinet } from "react-icons/fc";
+import { BiCabinet } from "react-icons/bi";
+import { MdOutlineCountertops } from "react-icons/md";
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
@@ -70,7 +74,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => (
   <div className="bg-white p-8">
     <div className="bg-gray-800 rounded-md w-16 h-16 flex items-center justify-center relative bottom-15">
-      {icon}
+      <span className="text-[30px] text-white">{icon}</span>
     </div>
     <h3 className="text-2xl font-semibold text-gray-900 mb-3">{title}</h3>
     <p className="text-gray-500 mb-6">{description}</p>
@@ -98,7 +102,7 @@ const Service = () => {
               Latest Service
             </p>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              Creating Spaces The That <br /> A Inspire
+              Designing Kitchens <br /> That Inspire
             </h1>
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-1 gap-8">
@@ -109,9 +113,9 @@ const Service = () => {
                   transition={{ duration: 1 }}
                 >
                   <ServiceCard
-                    icon={<BedIcon />}
-                    title="Architecture Plus"
-                    description="This category focuses on the design and man"
+                    icon={<FaKitchenSet />}
+                    title="Custom Kitchen Design"
+                    description="Tailored layouts and designs to perfectly match your space and lifestyle."
                   />
                 </ScrollAnimation>
                 <ScrollAnimation
@@ -120,9 +124,9 @@ const Service = () => {
                   transition={{ duration: 1 }}
                 >
                   <ServiceCard
-                    icon={<BlueprintIcon />}
-                    title="Urban Oasis"
-                    description="This category focuses on the design and man"
+                    icon={<BiCabinet />}
+                    title="Cabinet & Storage Solutions"
+                    description="Smart, stylish, and functional storage options to keep your kitchen organized."
                   />
                 </ScrollAnimation>
                 <ScrollAnimation
@@ -131,9 +135,9 @@ const Service = () => {
                   transition={{ duration: 1 }}
                 >
                   <ServiceCard
-                    icon={<WindowIcon />}
-                    title="Blueprint Builders"
-                    description="This category focuses on the design and man"
+                    icon={<MdOutlineCountertops />}
+                    title="Countertops & Finishes"
+                    description="Premium countertops and finishes that bring elegance and durability."
                   />
                 </ScrollAnimation>
               </div>
