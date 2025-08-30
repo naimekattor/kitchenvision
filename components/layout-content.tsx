@@ -1,11 +1,13 @@
 "use client";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Header from "@/components/site-header";
 import Footer from "./site-footer";
 import dynamic from "next/dynamic";
 import HeroContent from "./HeroContent";
 import { usePathname } from "next/navigation";
 import CtaBanner from "./CtaBanner";
+import TopHeader from "./TopHeader";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -21,6 +23,8 @@ export default function LayoutContent({
 
   return (
     <>
+      <ToastContainer />
+
       <AnimatedCursor
         color="228,0,75"
         innerSize={8}
@@ -30,6 +34,7 @@ export default function LayoutContent({
         outerAlpha={0.2}
         outerStyle={{ mixBlendMode: "exclusion" }}
       />
+      {isHome && <TopHeader />}
 
       {/* Sticky Header */}
       <header className="sticky top-0 z-50">

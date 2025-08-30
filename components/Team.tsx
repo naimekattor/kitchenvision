@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { Card } from "./ui/card";
-import { ArrowRight, Share2 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 const Team = () => {
   return (
     <section className="py-16 px-4 bg-gray-50">
@@ -48,21 +48,19 @@ const Team = () => {
             <SwiperSlide>
               <Card className="p-0 bg-white border-0 shadow-lg overflow-hidden">
                 <div className="relative">
-                  <img
+                  <Image
+                    width={800}
+                    height={376}
                     src="/images/team_img1.jpg"
                     alt="Robert Fox"
                     className="w-full h-94 object-cover"
                   />
-                  <div className="p-6 absolute bottom-0 left-8 z-10 bg-white w-full">
+                  <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
                         Founder
                       </p>
                       <h4 className="font-bold text-lg">Robert Fox</h4>
-                    </div>
-
-                    <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
-                      <Share2 className="w-8 h-8 bg-black text-white" />
                     </div>
                   </div>
                 </div>
@@ -72,12 +70,14 @@ const Team = () => {
             <SwiperSlide>
               <Card className="p-0 bg-white border-0 shadow-lg overflow-hidden">
                 <div className="relative">
-                  <img
+                  <Image
+                    width={800}
+                    height={376}
                     src="/images/team_img2.jpg"
                     alt="Robert Fox"
                     className="w-full h-94 object-cover"
                   />
-                  <div className="p-6 absolute bottom-0 left-8 z-10 bg-white w-full">
+                  <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
                         Founder
@@ -85,9 +85,9 @@ const Team = () => {
                       <h4 className="font-bold text-lg">Robert Fox</h4>
                     </div>
 
-                    <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
+                    {/* <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
                       <Share2 className="w-8 h-8 bg-black text-white" />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </Card>
@@ -96,12 +96,14 @@ const Team = () => {
             <SwiperSlide>
               <Card className="p-0 bg-white border-0 shadow-lg overflow-hidden">
                 <div className="relative">
-                  <img
+                  <Image
+                    width={800}
+                    height={376}
                     src="/images/team_img3.jpg"
                     alt="Robert Fox"
                     className="w-full h-94 object-cover"
                   />
-                  <div className="p-6 absolute bottom-0 left-8 z-10 bg-white w-full">
+                  <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
                         Founder
@@ -109,9 +111,9 @@ const Team = () => {
                       <h4 className="font-bold text-lg">Robert Fox</h4>
                     </div>
 
-                    <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
+                    {/* <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
                       <Share2 className="w-8 h-8 bg-black text-white" />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </Card>
@@ -120,21 +122,19 @@ const Team = () => {
             <SwiperSlide>
               <Card className="p-0 bg-white border-0 shadow-lg overflow-hidden">
                 <div className="relative">
-                  <img
+                  <Image
+                    width={800}
+                    height={376}
                     src="/images/team_img2.jpg"
                     alt="Robert Fox"
                     className="w-full h-94 object-cover"
                   />
-                  <div className="p-6 absolute bottom-0 left-8 z-10 bg-white w-full">
+                  <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
                         Founder
                       </p>
                       <h4 className="font-bold text-lg">Robert Fox</h4>
-                    </div>
-
-                    <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
-                      <Share2 className="w-8 h-8 bg-black text-white" />
                     </div>
                   </div>
                 </div>

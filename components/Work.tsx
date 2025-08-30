@@ -1,4 +1,3 @@
-import { Layers, Paintbrush, Plus } from "lucide-react";
 import React from "react";
 import ScrollAnimation from "./ScrollAnimation";
 import {
@@ -13,7 +12,7 @@ const Work = () => {
       <h3 className="font-[600] text-[18px] text-center text-[#333333]">
         Work Process
       </h3>
-      <h1 className="font-[700] text-[48px] text-center">
+      <h1 className="font-[700] text-4xl md:text-5xl text-center">
         From Concept to Your Dream Kitchen
       </h1>
 

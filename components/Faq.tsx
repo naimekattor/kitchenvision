@@ -86,7 +86,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="bg-gray-100 py-20 px-4">
       <div className="flex flex-col lg:flex-row items-start justify-center container mx-auto  font-sans">
         {/* Left side: Hero text and project stats */}
 

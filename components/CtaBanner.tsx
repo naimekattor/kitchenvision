@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const CtaBanner = () => {
@@ -8,7 +9,9 @@ const CtaBanner = () => {
         <div className="relative w-full container rounded overflow-hidden bg-[#333333] shadow-xl flex flex-col lg:flex-row items-center justify-between p-8 md:p-12">
           {/* Man's image - adjusted to fit within the container */}
           <div className="absolute bottom-0 left-0 h-full w-auto overflow-hidden">
-            <img
+            <Image
+              width={400}
+              height={500}
               src="/images/cta_image.png"
               alt="A man with blueprints"
               className="h-full object-contain object-bottom w-auto"

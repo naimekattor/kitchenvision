@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import CountUp from "react-countup";
-import { motion } from "framer-motion";
 import ScrollAnimation from "./ScrollAnimation";
 
 const Hero = () => {
@@ -30,9 +29,12 @@ const Hero = () => {
               >
                 <path d="M10 12.585l-4.12 2.167.78-4.56-3.32-3.235 4.58-.665L10 2.298l2.08 4.195 4.58.665-3.32 3.235.78 4.56L10 12.585z" />
               </svg> */}
-              <img
+              <Image
+                alt="star icon"
+                width={64}
+                height={64}
                 className="w-full h-full relative rotate-[-38deg]"
-                src="images/star.png"
+                src="/images/star.png"
               />
             </div>
 
@@ -71,7 +73,9 @@ const Hero = () => {
 
               {/* Image container - positioned in front */}
               <div className="relative z-10 ml-4 mt-4 rounded overflow-hidden shadow-2xl">
-                <img
+                <Image
+                  width={750}
+                  height={450}
                   src="/images/hero.jpg"
                   alt="Living Room"
                   className="w-[640px] md:h-[750px] h-[450px] object-cover"
@@ -82,17 +86,23 @@ const Hero = () => {
             {/* Floating client testimonial box */}
             <div className="absolute right-0 bottom-0 mr-16 mb-4 md:mr-8 md:mb-8 lg:mr-16 lg:mb-16 bg-white rounded animate-bounce shadow-lg p-4 flex items-center justify-between space-x-4 min-w-[200px] z-10">
               <div className="flex -space-x-2 overflow-hidden">
-                <img
+                <Image
+                  width={32}
+                  height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
                   src="https://i.ibb.co.com/WvbmX5Dh/picture-elegant-young-fashion-man-158595-531.jpg"
                   alt="Profile 1"
                 />
-                <img
+                <Image
+                  width={32}
+                  height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
                   src="https://i.ibb.co.com/WvbmX5Dh/picture-elegant-young-fashion-man-158595-531.jpg"
                   alt="Profile 2"
                 />
-                <img
+                <Image
+                  width={32}
+                  height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
                   src="https://i.ibb.co.com/WvbmX5Dh/picture-elegant-young-fashion-man-158595-531.jpg"
                   alt="Profile 3"

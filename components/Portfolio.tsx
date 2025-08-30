@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 const Portfolio = () => {
   return (
     <section className="py-16 px-4 bg-white">
@@ -58,7 +59,9 @@ const Portfolio = () => {
         >
           <SwiperSlide>
             <div className="relative group cursor-pointer">
-              <img
+              <Image
+                width={800}
+                height={256}
                 src="/images/portfolio_img1.jpg"
                 alt="Kitchen Portfolio 1"
                 className="w-full h-64 object-cover rounded-lg"
@@ -69,7 +72,9 @@ const Portfolio = () => {
 
           <SwiperSlide>
             <div className="relative group cursor-pointer">
-              <img
+              <Image
+                width={800}
+                height={256}
                 src="/images/portfolio_img2.jpg"
                 alt="Kitchen Portfolio 2"
                 className="w-full h-64 object-cover rounded-lg"
@@ -80,7 +85,9 @@ const Portfolio = () => {
 
           <SwiperSlide>
             <div className="relative group cursor-pointer">
-              <img
+              <Image
+                width={800}
+                height={256}
                 src="/images/portfolio_img3.jpg"
                 alt="Kitchen Portfolio 3"
                 className="w-full h-64 object-cover rounded-lg"
@@ -91,7 +98,9 @@ const Portfolio = () => {
 
           <SwiperSlide>
             <div className="relative group cursor-pointer">
-              <img
+              <Image
+                width={800}
+                height={256}
                 src="/images/portfolio_img4.jpg"
                 alt="Kitchen Portfolio 4"
                 className="w-full h-64 object-cover rounded-lg"
@@ -102,7 +111,9 @@ const Portfolio = () => {
 
           <SwiperSlide>
             <div className="relative group cursor-pointer">
-              <img
+              <Image
+                width={800}
+                height={256}
                 src="/images/portfolio_img2.jpg"
                 alt="Kitchen Portfolio 5"
                 className="w-full h-64 object-cover rounded-lg"

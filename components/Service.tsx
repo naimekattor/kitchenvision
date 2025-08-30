@@ -1,71 +1,14 @@
 import React from "react";
 import ScrollAnimation from "./ScrollAnimation";
 import { FaKitchenSet } from "react-icons/fa6";
-import { FcFilingCabinet } from "react-icons/fc";
 import { BiCabinet } from "react-icons/bi";
 import { MdOutlineCountertops } from "react-icons/md";
+import Image from "next/image";
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
 }
-
-// Icon Components - Typed as React Functional Components (React.FC)
-const BedIcon: React.FC = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-8 w-8 text-white"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth={1}
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M3.75 21h16.5M3.75 16.5h16.5M3.75 12h16.5M3.75 7.5h16.5M20.25 12a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25v4.5A2.25 2.25 0 006 18.75h12A2.25 2.25 0 0020.25 16.5v-4.5z"
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M7.5 7.5V6A2.25 2.25 0 019.75 3.75h4.5A2.25 2.25 0 0116.5 6v1.5"
-    />
-  </svg>
-);
-
-const BlueprintIcon: React.FC = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-8 w-8 text-white"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth={1}
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m-16.5 0v11.25A2.25 2.25 0 006 16.5h2.25m0 0h1.5m-1.5 0l-3.75 3.75M6 16.5l3.75-3.75m0 0l3.75 3.75m-3.75-3.75V3.75m9 12.75h1.5m-1.5 0a2.25 2.25 0 01-2.25-2.25V3.75m0 11.25a2.25 2.25 0 002.25 2.25h1.5m-1.5 0l3.75 3.75m-3.75-3.75l-3.75-3.75m3.75 3.75V3.75"
-    />
-  </svg>
-);
-
-const WindowIcon: React.FC = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-8 w-8 text-white"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth={1}
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M3.75 6A2.25 2.25 0 016 3.75h12A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6zM3 12h18M12 3v18"
-    />
-  </svg>
-);
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
@@ -146,7 +89,9 @@ const Service = () => {
 
           {/* Right Image Section */}
           <div className="hidden relative lg:block w-full h-full">
-            <img
+            <Image
+              width={1000}
+              height={800}
               src="/images/service_img1.jpg"
               alt="Modern kitchen interior"
               className="w-full h-full object-cover rounded-lg absolute -right-90"

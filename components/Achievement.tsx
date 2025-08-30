@@ -11,57 +11,35 @@ import ScrollAnimation from "./ScrollAnimation";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "/achiev-img1.png",
+    img: "/images/brand1.png",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "/achieve-img2.png",
+    img: "/images/brand2.png",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "/achiev-img3.png",
+    img: "/images/brand3.png",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "/achiev-img4.png",
+    img: "/images/brand4.png",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "/achiev-img5.png",
+    img: "/images/brand5.png",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "/achiev-img3.png",
+    img: "/images/brand6.png",
+  },
+  {
+    img: "/images/brand7.png",
   },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length);
 
-const ReviewCard = ({
-  img,
-}: {
-  img: string;
-  name: string;
-  username: string;
-  body: string;
-}) => {
+const ReviewCard = ({ img }: { img: string }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-full w-full cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -69,7 +47,13 @@ const ReviewCard = ({
       )}
     >
       <div>
-        <Image src={img} width={137} height={136} alt="brand logo" />
+        <Image
+          src={img}
+          width={137}
+          height={136}
+          alt="brand logo"
+          className=""
+        />
       </div>
     </figure>
   );
@@ -83,8 +67,8 @@ const Achievement = () => {
         <div className="flex flex-wrap justify-center items-center gap-8 mb-16 opacity-60">
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
             <Marquee pauseOnHover className="[--duration:20s]">
-              {firstRow.map((review) => (
-                <ReviewCard key={review.username} {...review} />
+              {firstRow.map((review, index) => (
+                <ReviewCard key={index} {...review} />
               ))}
             </Marquee>
 

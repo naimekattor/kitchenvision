@@ -43,10 +43,10 @@ const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle, path }) => {
 };
 
 const HeroContent: React.FC = () => {
-  const pathName = usePathname();
+  const pathName = usePathname() || "/";
 
   // Split pathname and create breadcrumb
-  const segments = pathName.split("/").filter(Boolean); // removes empty strings
+  const segments = pathName.split("/").filter(Boolean);
 
   const breadcrumb = [
     { label: "Home", link: "/" },

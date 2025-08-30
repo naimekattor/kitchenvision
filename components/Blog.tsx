@@ -1,16 +1,17 @@
 "use client";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Folder, Share2 } from "lucide-react";
+import { Folder } from "lucide-react";
+import Image from "next/image";
 
 const Blog = () => {
   const paginationRef = useRef(null);
   return (
-    <section className="py-20">
+    <section className="py-20 px-4">
       <div className="container mx-auto ">
         <div className="text-start mb-12">
           <p className="text-sm text-muted-foreground mb-4 font-medium">
@@ -46,9 +47,11 @@ const Blog = () => {
           >
             <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
-                <img
-                  src={`/images/blog_img1.jpg`}
+                <Image
+                  src="/images/blog_img1.jpg"
                   alt="Blog Image"
+                  width={800}
+                  height={320}
                   className="w-full h-80 object-cover rounded"
                 />
                 <div className="absolute bottom-6 left-4 right-4 bg-[#F8F8F8] px-4 py-3 rounded ">
@@ -69,8 +72,10 @@ const Blog = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
-                <img
+                <Image
                   src={`/images/blog_img2.jpg`}
+                  width={800}
+                  height={320}
                   alt="Blog Image"
                   className="w-full h-80 object-cover rounded"
                 />
@@ -92,7 +97,9 @@ const Blog = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
-                <img
+                <Image
+                  width={800}
+                  height={320}
                   src={`/images/blog_img1.jpg`}
                   alt="Blog Image"
                   className="w-full h-80 object-cover rounded"
@@ -115,7 +122,9 @@ const Blog = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
-                <img
+                <Image
+                  width={800}
+                  height={320}
                   src={`/images/blog_img3.jpg`}
                   alt="Blog Image"
                   className="w-full h-80 object-cover rounded"

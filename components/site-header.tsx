@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Menu } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -86,17 +86,29 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex ">
-          <Link href="/" className="text-[18px]  ">
+          <Link
+            href="/"
+            className={`text-[18px]  ${
+              pathname === "/home" ? "text-[#02618e]" : ""
+            }`}
+          >
             Home
           </Link>
 
-          <Link href="/about" className="text-[18px] ">
+          <Link
+            href="/about"
+            className={`text-[18px] ${
+              pathname === "/about" ? "text-[#02618e]" : ""
+            }`}
+          >
             About
           </Link>
 
           <Link
             href="/contact"
-            className="flex items-center gap-1 text-[18px] "
+            className={`text-[18px] ${
+              pathname === "/contact" ? "text-[#02618e]" : ""
+            }`}
           >
             Contact
           </Link>
@@ -107,9 +119,9 @@ export default function Header() {
             Book Now <ArrowRight />
           </Button>
 
-          {showModal && (
+          {showModal && rootElement && (
             <PopupModal
-              url="https://calendly.com/naimekattor/30min"
+              url="https://calendly.com/contekuechen"
               onModalClose={() => setShowModal(false)}
               open={showModal}
               rootElement={rootElement}
@@ -121,39 +133,66 @@ export default function Header() {
           <button
             aria-label="Toggle menu"
             className={`inline-flex items-center justify-center rounded-md p-2 
-            ${isHome ? "text-black" : "text-white"}
+            ${
+              isHome
+                ? isScrolled
+                  ? "text-black"
+                  : "text-black"
+                : isScrolled
+                ? "text-black"
+                : "text-white "
+            }
              hover:bg-white/10 md:hidden`}
             onClick={() => setOpen((v) => !v)}
           >
-            <Menu className="h-8 w-8" />
+            {open ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
           </button>
         </div>
       </div>
 
-      {open && (
-        <div className="border-t border-white/10 bg-black/70 md:hidden">
-          <div
-            className="container mx-auto grid gap-2 px-4 py-3"
-            onClick={(e: React.MouseEvent<HTMLDivElement>) => {
-              const target = e.target as HTMLElement;
-              const link = target.closest("a");
-              if (link) {
-                const href = link.getAttribute("href");
-                console.log("click link href", href);
-                setOpen(false);
-              }
-            }}
-          >
-            <Link href="/about" className="py-1 text-sm text-slate-200">
+      <div
+        className={`fixed inset-0 z-40 md:hidden transition-opacity duration-300 ${
+          open ? "visible opacity-100" : "invisible opacity-0"
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className="absolute inset-0 bg-black/50"
+          onClick={() => setOpen(false)}
+        ></div>
+
+        {/* Sidebar */}
+        <div
+          className={`absolute left-0 top-0 h-screen w-64 bg-black/90 transform transition-transform duration-300
+${open ? "translate-x-0" : "-translate-x-full"}`}
+        >
+          <div className="flex flex-col space-y-6 p-6 text-white">
+            <Link href="/" onClick={() => setOpen(false)} className="text-lg">
+              Home
+            </Link>
+            <Link
+              href="/about"
+              onClick={() => setOpen(false)}
+              className="text-lg"
+            >
               About
             </Link>
-
-            <Link href="/contact" className="py-1 text-sm text-slate-200">
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="text-lg"
+            >
               Contact
             </Link>
+            <Button
+              className="h-12 w-[150px]"
+              onClick={() => setShowModal(true)}
+            >
+              Book Now <ArrowRight />
+            </Button>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

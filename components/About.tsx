@@ -136,7 +136,7 @@ export default function AboutSection() {
             Book Now <ArrowRight />
           </Button>
 
-          {showModal && (
+          {showModal && rootElement && (
             <PopupModal
               url="https://calendly.com/naimekattor/30min"
               onModalClose={() => setShowModal(false)}

@@ -1,13 +1,18 @@
 "use client";
 import { useScrollAnimation } from "@/lib/useScrollAnimation";
-import { motion } from "framer-motion";
+import {
+  motion,
+  TargetAndTransition,
+  Transition,
+  VariantLabels,
+} from "framer-motion";
 import React from "react";
 
 interface ScrollAnimationProps {
   children: React.ReactNode;
-  initial?: object;
-  animate?: object;
-  transition?: object;
+  initial?: TargetAndTransition | VariantLabels;
+  animate?: TargetAndTransition | VariantLabels;
+  transition?: Transition;
   className?: string;
 }
 
@@ -24,7 +29,7 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
     <motion.div
       ref={ref}
       initial={initial}
-      animate={inView ? animate : {}}
+      animate={inView ? animate : ({} as TargetAndTransition)}
       transition={transition}
       className={className}
     >

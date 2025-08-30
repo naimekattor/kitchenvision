@@ -1,15 +1,6 @@
 "use client";
 import Link from "next/link";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-} from "lucide-react";
+import { Facebook, Twitter, Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
