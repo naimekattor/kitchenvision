@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const CtaBanner = () => {
@@ -21,12 +22,12 @@ const CtaBanner = () => {
           {/* Content - heading and button */}
           <div className="flex-1 flex flex-col md:flex-row items-center justify-center lg:justify-end text-center lg:text-right space-y-8 md:space-y-0 md:space-x-8 z-10 w-full">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight max-w-lg md:max-w-xl lg:max-w-2xl text-center md:text-left">
-              Crafting Spaces That The Reflect Style
+              Ihre Traumküche
             </h2>
-            <button className="flex items-center space-x-2 px-8 py-4 bg-white text-[#333333] font-semibold rounded shadow-md transition-transform transform hover:scale-105">
-              <span>Get In Touch </span>
+            <Link href='/contact' className="flex items-center space-x-2 px-8 py-4 bg-white text-[#333333] font-semibold rounded shadow-md transition-transform transform hover:scale-105">
+              <span>Jetzt zum Beratungstermin ! </span>
               <ArrowRight />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

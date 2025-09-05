@@ -8,6 +8,7 @@ import HeroContent from "./HeroContent";
 import { usePathname } from "next/navigation";
 import CtaBanner from "./CtaBanner";
 import TopHeader from "./TopHeader";
+import CookieBanner from "./CookieBanner";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -52,8 +53,10 @@ export default function LayoutContent({
 
       {/* Main content */}
       <main className={!isHome ? "pt-[var(--header-height)]" : ""}>
+          <CookieBanner />
         {children}
       </main>
+      
 
       {/* Footer with CTA banner on non-home pages */}
       <footer className="relative">

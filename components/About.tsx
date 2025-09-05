@@ -27,7 +27,7 @@ export default function AboutSection() {
               <div className="bg-gray-900 text-white rounded shadow-lg flex flex-col items-center justify-center text-center p-8">
                 <h2 className="text-4xl sm:text-5xl font-bold">
                   <CountUp
-                    end={22}
+                    end={5}
                     enableScrollSpy
                     scrollSpyDelay={1000}
                     suffix="+"
@@ -90,7 +90,7 @@ export default function AboutSection() {
                   </div>
 
                   {/* Floating Testimonial */}
-                  <div className="relative z-10 bg-white rounded-xl shadow-lg flex items-center gap-4 px-5 py-4 -ml-[100px] animate-bounce">
+                  {/* <div className="relative z-10 bg-white rounded-xl shadow-lg flex items-center gap-4 px-5 py-4 -ml-[100px] animate-bounce">
                     <Image
                       src="/images/about_person.png"
                       alt="Alex Jones"
@@ -102,7 +102,7 @@ export default function AboutSection() {
                       <h4 className="text-sm font-semibold">Alex Jones</h4>
                       <p className="text-xs text-gray-500">Security Boy</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -112,21 +112,16 @@ export default function AboutSection() {
         {/* Right Side (Text) */}
         <div>
           <span className="text-gray-500 font-medium uppercase tracking-wide">
-            About Us
+            Über uns
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-2 leading-tight">
-            Design Your Space To Elevate Your Life
+            Mit Herz geplant, mit Präzision umgesetzt.
           </h2>
           <p className="mt-6 text-gray-600 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu
-            nascetu cubilia tempor lacus natoque quis auctor mattis luctus
-            varius pretium aptent urna iaculis suspendisse eros egestas mollis
-            dis nisl commodo.
+            Persönlich, individuell und mit Herz! Wir möchten Ihr vertrauensvoller Ansprechpartner für Einbauküchen und Wohnmöbel sein Durch die Zusammenarbeit mit einer handverlesenen Auswahl an Marken maximieren wir unser Know-how und optimieren unsere Einkaufskonditionen. Dies ermöglicht uns, Ihnen und unseren Kunden einen spürbaren Preisvorteil zu bieten. Die Montage unserer Küchen wird von erfahrenen Küchenmonteuren und unserem qualifizierten Schreinerteam durchgeführt, um höchste Montagequalität zu gewährleisten.
           </p>
           <p className="mt-4 text-gray-600 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu
-            nascetu cubilia tempor lacus natoque quis auctor mattis luctus
-            varius.
+            „Unsere Zielsetzung ist eine kompromisslose Planung und Umsetzung, die wir Dank unserer hauseigenen Werkstatt und unseres erfahrenen Schreinerteams mit höchster Präzision realisieren.“
           </p>
 
           <Button

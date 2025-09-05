@@ -41,13 +41,12 @@ const Hero = () => {
             {/* Main heading */}
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight tracking-tight mb-4 text-center md:w-3/4 w-full ">
-              Discover Inspired Interior Design
+              Mehr als Standard: Küchen für Menschen mit besonderen Ansprüchen.
             </h1>
 
             {/* Description */}
             <p className="text-lg text-gray-500 max-w-md mb-8 text-center lg:text-left">
-              Lorem ipsum dolor sit amet natoque consequat adipiscing elit
-              torquent nu nascetur cubilia tempor lacus
+              Bei uns bekommen Sie keine Küche von der Stange. Wir hören genau zu, gehen auf Ihre Wünsche ein und entwickeln Lösungen, die perfekt zu Ihrem Leben passen – funktional, ästhetisch und einzigartig. Ob raffinierte Details, innovative Technik oder besondere Materialien: Wir machen Ihre Traumküche möglich.
             </p>
 
             <div className="relative md:block hidden">
@@ -90,21 +89,21 @@ const Hero = () => {
                   width={32}
                   height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
-                  src="https://i.ibb.co.com/WvbmX5Dh/picture-elegant-young-fashion-man-158595-531.jpg"
+                  src="/images/tesPerson1.jpg"
                   alt="Profile 1"
                 />
                 <Image
                   width={32}
                   height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
-                  src="https://i.ibb.co.com/WvbmX5Dh/picture-elegant-young-fashion-man-158595-531.jpg"
+                  src="/images/tesPerson1.jpg"
                   alt="Profile 2"
                 />
                 <Image
                   width={32}
                   height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
-                  src="https://i.ibb.co.com/WvbmX5Dh/picture-elegant-young-fashion-man-158595-531.jpg"
+                  src="/images/tesPerson1.jpg"
                   alt="Profile 3"
                 />
               </div>

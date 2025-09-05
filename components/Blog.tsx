@@ -15,10 +15,10 @@ const Blog = () => {
       <div className="container mx-auto ">
         <div className="text-start mb-12">
           <p className="text-sm text-muted-foreground mb-4 font-medium">
-            Latest Blog And News
+            Blog & News
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-            Crafting spaces that the reflect your style
+            Räume schaffen, die Ihre Persönlichkeit widerspiegeln.
           </h2>
         </div>
 

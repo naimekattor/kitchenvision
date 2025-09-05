@@ -4,6 +4,7 @@ import { Facebook, Twitter, Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -47,35 +48,26 @@ export default function Footer() {
 
             {/* Social Media Icons */}
             <div className="flex space-x-3">
-              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+              <Link href={'https://www.facebook.com/contekuechen'} className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
                 <Facebook className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                <Twitter className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                <div className="w-5 h-5 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-black text-xs font-bold">V</span>
-                </div>
-              </div>
-              <div className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                <div className="w-5 h-5 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-black text-xs font-bold">P</span>
-                </div>
-              </div>
+              </Link>
+              <Link href={'https://www.instagram.com/contekuechen'} className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <FaInstagram className="w-5 h-5" />
+              </Link>
+              
             </div>
           </div>
 
           {/* Quick Links Column */}
           <div>
-            <h4 className="text-xl font-bold mb-6">Quick Links</h4>
+            <h4 className="text-xl font-bold mb-6"> Links</h4>
             <ul className="space-y-4">
               <li>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  About Us
+                  Über uns
                 </a>
               </li>
               <li>
@@ -91,7 +83,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Contact Us
+                  Kontakt
                 </a>
               </li>
               <li>
@@ -99,7 +91,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Blog Post
+                  Blog
                 </a>
               </li>
               <li>
@@ -107,7 +99,15 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Team Members
+                  Team 
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.contekuechen.de/kontakt/impressum.html"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Impressum und Datenschutz 
                 </a>
               </li>
             </ul>
@@ -162,16 +162,16 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h4 className="text-xl font-bold mb-6">Contact</h4>
+            <h4 className="text-xl font-bold mb-6">Kontakt</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Address</p>
+                  <p className="text-gray-400 text-sm">Adresse</p>
                   <p className="text-white font-medium">
-                    66 Broklyant,New India
+                    Hauptstraße 36, 83527 Haag in Oberbayern
                   </p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Phone Number</p>
-                  <p className="text-white font-medium">012 345 678 9101</p>
+                  <p className="text-white font-medium">08072/6869555</p>
                 </div>
               </div>
 
@@ -192,7 +192,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Email Address</p>
-                  <p className="text-white font-medium">012 345 678 9101</p>
+                  <p className="text-white font-medium">info@contekuechen.de</p>
                 </div>
               </div>
             </div>

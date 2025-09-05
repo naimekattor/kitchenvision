@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { PopupModal } from "react-calendly";
+import LanguageToggle from "./LanguageToggle";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -101,7 +103,23 @@ export default function Header() {
               pathname === "/about" ? "text-[#02618e]" : ""
             }`}
           >
-            About
+            Über uns
+          </Link>
+          <Link
+            href="/service"
+            className={`text-[18px] ${
+              pathname === "/service" ? "text-[#02618e]" : ""
+            }`}
+          >
+            Service
+          </Link>
+          <Link
+            href="/blog"
+            className={`text-[18px] ${
+              pathname === "/blog" ? "text-[#02618e]" : ""
+            }`}
+          >
+            Blog
           </Link>
 
           <Link
@@ -114,10 +132,14 @@ export default function Header() {
           </Link>
         </nav>
 
-        <div className="md:block hidden">
+        <div className="md:flex hidden  gap-2 items-center">
           <Button className="h-12 w-[150px]" onClick={() => setShowModal(true)}>
             Book Now <ArrowRight />
           </Button>
+          {/* <LanguageToggle /> */}
+          <Link href={'https://wa.me/88012345678901'} target="_blank">
+            <FaWhatsappSquare size={50} className="text-green-500" />
+          </Link>
 
           {showModal && rootElement && (
             <PopupModal
@@ -130,6 +152,9 @@ export default function Header() {
         </div>
 
         <div className="md:hidden block">
+          <button>
+            <FaWhatsappSquare size={20} className="text-green-500" />
+          </button>
           <button
             aria-label="Toggle menu"
             className={`inline-flex items-center justify-center rounded-md p-2 

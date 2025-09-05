@@ -22,7 +22,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <h3 className="text-2xl font-semibold text-gray-900 mb-3">{title}</h3>
     <p className="text-gray-500 mb-6">{description}</p>
     <a href="#" className="font-semibold text-gray-900 flex items-center">
-      Read More
+      Mehr erfahren
       <span className="ml-2">→</span>
     </a>
   </div>
@@ -42,10 +42,10 @@ const Service = () => {
           {/* Left Content Section */}
           <div className="text-center lg:text-left py-20">
             <p className="text-sm font-semibold tracking-widest text-gray-700 uppercase mb-4">
-              Latest Service
+              Unser Service
             </p>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              Designing Kitchens <br /> That Inspire
+              Lebensräume gestalten,  <br /> die inspirieren.
             </h1>
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-1 gap-8">
@@ -56,9 +56,9 @@ const Service = () => {
                   transition={{ duration: 1 }}
                 >
                   <ServiceCard
-                    icon={<FaKitchenSet />}
-                    title="Custom Kitchen Design"
-                    description="Tailored layouts and designs to perfectly match your space and lifestyle."
+                    icon={<FaKitchenSet/>}
+                    title="Individuelle Küchenplanung"
+                    description="Hier entstehen Küchen, die genau auf Ihre Wünsche zugeschnitten sind – von der ersten Idee bis zur perfekten Umsetzung."
                   />
                 </ScrollAnimation>
                 <ScrollAnimation
@@ -68,8 +68,8 @@ const Service = () => {
                 >
                   <ServiceCard
                     icon={<BiCabinet />}
-                    title="Cabinet & Storage Solutions"
-                    description="Smart, stylish, and functional storage options to keep your kitchen organized."
+                    title="Wohnideen & Möbel"
+                    description="Wir planen nicht nur Küchen, sondern auch maßgeschneiderte Wohnmöbel, die Ihr Zuhause harmonisch ergänzen."
                   />
                 </ScrollAnimation>
                 <ScrollAnimation
@@ -79,8 +79,8 @@ const Service = () => {
                 >
                   <ServiceCard
                     icon={<MdOutlineCountertops />}
-                    title="Countertops & Finishes"
-                    description="Premium countertops and finishes that bring elegance and durability."
+                    title="Präzision & Montage"
+                    description="Unsere erfahrenen Monteure und Schreiner sorgen für eine millimetergenaue Umsetzung – für Qualität, die man spürt."
                   />
                 </ScrollAnimation>
               </div>

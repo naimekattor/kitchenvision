@@ -104,13 +104,11 @@ const Achievement = () => {
                   Our Achievement
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                  Building Dreams One Room At A Time
+                  Küchen & Wohnräume, die begeistern – mit Erfahrung und Leidenschaft.
                 </h2>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit
-                  torquent nu nascetu cubilia tempor lacus natoque quis auctor
-                  mattis luctus varius pretium aptent urna iaculis suspendisse
-                  eros egestas mollis dis nisl commodo.
+                  Als erfahrenes Küchenstudio in Haag in Oberbayern planen und realisieren wir seit vielen Jahren maßgeschneiderte Einbauküchen und Wohnmöbel. Von der persönlichen Beratung über die individuelle Küchenplanung bis hin zur präzisen Montage begleiten wir unsere Kunden im Umkreis von bis zu 100 km und auf Anfrage auch darüber hinaus. Unser Anspruch: Räume zu schaffen, die nicht nur funktional sind, sondern Ihr Zuhause einzigartig machen.
+Eine CONTE-Küche steht für Qualität im gehobenen Segment – langlebig, präzise gefertigt und durchdacht bis ins Detail. Und das zu einem Preis, der oft deutlich günstiger ist, als man erwartet.
                 </p>
                 <Link href={"/about"}>
                   <Button className="h-12 w-[150px]">
@@ -128,13 +126,13 @@ const Achievement = () => {
                 </div>
                 <div className="text-4xl font-bold mb-2">
                   <CountUp
-                    end={80}
+                    end={600}
                     enableScrollSpy
                     scrollSpyDelay={2000}
                     suffix="+"
                   />
                 </div>
-                <p className="text-muted-foreground">Projects Done</p>
+                <p className="text-muted-foreground">Traumküchen geplant und umgesetzt</p>
               </div>
 
               <div className="text-center bg-white px-4 py-5 rounded shadow-lg">
@@ -143,13 +141,13 @@ const Achievement = () => {
                 </div>
                 <div className="text-4xl font-bold mb-2">
                   <CountUp
-                    end={10}
+                    end={7}
                     enableScrollSpy
                     scrollSpyDelay={2000}
-                    suffix="+"
+                    suffix=""
                   />
                 </div>
-                <p className="text-muted-foreground">Team member</p>
+                <p className="text-muted-foreground">Team mit sieben Mitgliedern</p>
               </div>
 
               <ScrollAnimation
@@ -163,16 +161,16 @@ const Achievement = () => {
                   </div>
                   <div className="text-4xl font-bold mb-2">
                     <CountUp
-                      end={80}
+                      end={110}
                       enableScrollSpy
                       scrollSpyDelay={2000}
                       suffix="+"
                     />
                   </div>
-                  <p className="text-muted-foreground">Client review</p>
+                  <p className="text-muted-foreground">positive Rückmeldungen & Empfehlungen</p>
                 </div>
               </ScrollAnimation>
-              <ScrollAnimation
+              {/* <ScrollAnimation
                 initial={{ opacity: 0, y: 70 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -191,7 +189,7 @@ const Achievement = () => {
                   </div>
                   <p className="text-muted-foreground">Wining Award</p>
                 </div>
-              </ScrollAnimation>
+              </ScrollAnimation> */}
             </div>
           </div>
         </div>

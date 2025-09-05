@@ -13,12 +13,12 @@ const Team = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm text-muted-foreground mb-4 font-medium">
-            Our Expert Team
+            Unser Team
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-            Unleash The Potential
+            Spezialisten in jedem Bereich. 
             <br />
-            Of Your Space
+            Gemeinsam für Ihre Traumküche.
           </h2>
         </div>
 
@@ -58,9 +58,9 @@ const Team = () => {
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
-                        Founder
+                        Inhaber und Geschäftsführung
                       </p>
-                      <h4 className="font-bold text-lg">Robert Fox</h4>
+                      <h4 className="font-bold text-lg">Daniele Conte</h4>
                     </div>
                   </div>
                 </div>
@@ -80,9 +80,10 @@ const Team = () => {
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
-                        Founder
+                        Buchhaltung und Verwaltung
                       </p>
-                      <h4 className="font-bold text-lg">Robert Fox</h4>
+                      <h4 className="font-bold text-lg">Buchhaltung und Verwaltung
+Valentina Conte</h4>
                     </div>
 
                     {/* <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
@@ -106,9 +107,9 @@ const Team = () => {
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
-                        Founder
+                        Planung und Sachbearbeitung
                       </p>
-                      <h4 className="font-bold text-lg">Robert Fox</h4>
+                      <h4 className="font-bold text-lg">Filip</h4>
                     </div>
 
                     {/* <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
@@ -132,9 +133,9 @@ const Team = () => {
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
-                        Founder
+                        Buchhaltung und Verwaltung
                       </p>
-                      <h4 className="font-bold text-lg">Robert Fox</h4>
+                      <h4 className="font-bold text-lg">Valentina Conte</h4>
                     </div>
                   </div>
                 </div>

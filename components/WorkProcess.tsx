@@ -31,37 +31,37 @@ const WorkProcess: React.FC = () => {
       number: "01",
       title: "Blueprint Builders",
       description:
-        "This category focuses on the design construction of buildings and the arrangement",
+        "Wir gestalten und entwickeln präzise Raumpläne, die eine harmonische Verbindung von Architektur und Interior Design schaffen.",
     },
     {
       number: "02",
       title: "Artistic Architecture",
       description:
-        "This category focuses on the design construction of buildings and the arrangement",
+        "Ästhetik trifft auf Funktion: Unsere Architekturlösungen verbinden zeitloses Design mit modernen Materialien, um Räume mit Charakter und Wiedererkennungswert zu gestalten.",
     },
     {
       number: "03",
       title: "Interior Scape Design",
       description:
-        "This category focuses on the design construction of buildings and the arrangement",
+        "Wir kreieren individuelle Wohnlandschaften, die Persönlichkeit ausstrahlen – vom harmonischen Farbkonzept bis zur perfekten Materialkombination.",
     },
     {
       number: "04",
       title: "Conceptual Spaces",
       description:
-        "This category focuses on the design construction of buildings and the arrangement",
+        "Ob Küche, Wohnzimmer oder Büro – wir entwickeln Raumkonzepte, die Ihre Bedürfnisse in den Mittelpunkt stellen und den Alltag erleichtern.",
     },
     {
       number: "05",
       title: "Inspire Design Group",
       description:
-        "This category focuses on the design construction of buildings and the arrangement",
+        "Unser Team aus erfahrenen Designern inspiriert und begleitet Sie bei jedem Schritt – mit kreativen Ideen und praxisnahen Lösungen.",
     },
     {
       number: "06",
       title: "Modern Living Spaces",
       description:
-        "This category focuses on the design construction of buildings and the arrangement",
+        "Moderne Wohnräume, die Komfort, Technologie und Stil vereinen – wir bringen zeitgemäße Trends in Einklang mit Ihrer individuellen Vision.",
     },
   ];
 
@@ -70,10 +70,10 @@ const WorkProcess: React.FC = () => {
       {/* Section Header */}
       <div className="text-center mb-12 max-w-4xl">
         <p className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
-          Work Process
+          Unser Prozess
         </p>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
-          Redefining The Interior Of Living
+          Design neu definiert
         </h1>
       </div>
 

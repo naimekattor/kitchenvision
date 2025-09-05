@@ -8,9 +8,9 @@ import { Quote, Star } from "lucide-react";
 const Testoimonial = () => {
   return (
     <section>
-      <h1 className="text-center">Clients Testimonial</h1>
+      <h1 className="text-center">Kundenstimmen</h1>
       <h2 className="mb-[30px] text-[48px] font-bold text-center">
-        Architectural excellence interior bliss
+        Architektonische Exzellenz. Zufriedenheit, die bleibt.
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto overflow-visible">
         <div className="relative z-0 bg-[url('/images/testimonial.jpg')] bg-cover bg-center min-h-[560px]">

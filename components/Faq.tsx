@@ -64,24 +64,54 @@ const Faq = () => {
   const faqData = [
     {
       id: 1,
-      question: "What Experience the art of interior?",
+      question: "Warum sollte ich meine Küche bei CONTE Küche & Raum planen lassen?",
       answer:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "Unser Küchenstudio bietet individuelle Küchenplanung, die perfekt auf Ihre Räume, Ihren Stil und Ihr Budget abgestimmt ist. Mit langjähriger Erfahrung und persönlicher Beratung begleiten wir Sie vom ersten Entwurf bis zur fertigen Traumküche.",
     },
     {
       id: 2,
-      question: "What Let your interior tell your story?",
-      answer: "This is the answer for the second question.",
+      question: "Ist die Erstberatung zur Küchenplanung kostenlos?",
+      answer: "Ja – die Erstberatung in unserem Küchenstudio oder direkt bei Ihnen zu Hause ist unverbindlich und kostenlos. So können Sie sich in Ruhe ein Bild von unseren Leistungen machen.",
     },
     {
       id: 3,
-      question: "What Experience the art of interior?",
-      answer: "This is the answer for the third question.",
+      question: " Kann ich online einen Termin im Küchenstudio buchen?",
+      answer: "Ja – über unser Online-Buchungstool können Sie jederzeit bequem einen Beratungstermin für Ihre Küchenplanung oder Wohnraumgestaltung wählen.",
     },
     {
       id: 4,
-      question: "Who Create a sanctuary in your own?",
-      answer: "This is the answer for the fourth question.",
+      question: "Wie lange dauert es von der Planung bis zur fertigen Einbauküche?",
+      answer: "Die Dauer hängt von der individuellen Planung ab. Nach Auftragserteilung beträgt die Lieferzeit Ihrer neuen Küche in der Regel 6–10 Wochen.",
+    },
+    {
+      id: 4,
+      question: "Planen Sie auch Küchen mit kleinerem Budget?",
+      answer: "Selbstverständlich. Unser Küchenstudio bietet sowohl hochwertige „Standardküchen“ als auch maßgeschneiderte Premiumlösungen. Gemeinsam finden wir die optimale Lösung für Ihr Budget.",
+    },
+    {
+      id: 4,
+      question: "Übernehmen Sie auch den Abbau und die Entsorgung meiner alten Küche?",
+      answer: "Ja – wir kümmern uns auf Wunsch um den kompletten Abbau und die fachgerechte Entsorgung Ihrer alten Küche, damit Sie sich um nichts kümmern müssen.",
+    },
+    {
+      id: 4,
+      question: "Bieten Sie eine komplette Küchenmontage mit allen Anschlüssen an?",
+      answer: "Ja, bei uns erhalten Sie Ihre Küche schlüsselfertig: Lieferung, Montage, Elektro- und Wasseranschlüsse – alles aus einer Hand.",
+    },
+    {
+      id: 4,
+      question: "Mit welchen Marken und Herstellern arbeiten Sie?",
+      answer: "Wir führen Küchenmöbel und Elektrogeräte namhafter Hersteller. Dadurch haben Sie eine große Auswahl an hochwertigen Materialien, modernen Designs und energieeffizienten Geräten.",
+    },
+    {
+      id: 4,
+      question: " Kann ich bei Ihnen auch Möbel für andere Räume planen lassen?",
+      answer: "Ja – neben Küchen bieten wir auch maßgeschneiderte Lösungen für Wohnräume, Garderoben, Hauswirtschaftsräume, Ankleidezimmer und vieles mehr.",
+    },
+    {
+      id: 4,
+      question: "Habe ich während der Küchenplanung einen festen Ansprechpartner?",
+      answer: "Ja – Sie haben immer einen persönlichen Ansprechpartner, der Ihr Küchenprojekt von der Planung bis zur Fertigstellung betreut.",
     },
   ];
 
@@ -95,12 +125,10 @@ const Faq = () => {
             FAQ
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight tracking-tight mb-4">
-            Elevate Your Interior <br /> The Elevate Lifestyle
+            Wertiges Interior.  <br /> Wertiger Lifestyle.
           </h1>
           <p className="text-lg text-gray-500 max-w-xl mb-8">
-            Aliquam eros justo, posuere lobortis laoreet ullamcorper the posuer
-            viverra Aliquam eros, posuere lobortis Aliquam eros justo, posuere
-            laoreet ullamcorper the a posuer viverra Aliquam
+            In unseren FAQs beantworten wir die häufigsten Fragen rund um Planung, Design und Service. Damit Sie schnell und unkompliziert alle Informationen finden, die Ihr Zuhause und Ihr Leben noch wertiger machen.
           </p>
 
           {/* Project completed box */}
@@ -116,13 +144,12 @@ const Faq = () => {
                   />
                 </div>
                 <span className="text-2xl font-bold text-gray-800">
-                  2k+ Project Completed
+                  1k+ Hunderte Projekte. Unzählige Erfolgsgeschichten.
                 </span>
               </div>
 
               <span className="text-sm text-gray-500">
-                Lorem Ipsum is simply dummy text of the a printing and
-                typesetting industry.
+                Jedes Projekt ist einzigartig – und doch verbindet sie alle unser Anspruch an Qualität, Design und Perfektion. Von modernen Küchen bis zu ganzheitlichen Raumkonzepten: Unsere Referenzen zeigen, wie aus Ideen inspirierende Wohnräume werden.
               </span>
             </div>
           </div>

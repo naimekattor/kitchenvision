@@ -14,12 +14,13 @@ const Portfolio = () => {
         <div className="flex justify-between items-center mb-12">
           <div>
             <p className="text-sm text-muted-foreground mb-4 font-medium">
-              Latest Portfolio
+              Aktuelle Projekte
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-              Turning Spaces
+              Verwandle deinen Raum.
+
               <br />
-              Into Dream Kitchens
+              Deine Traumküche
             </h2>
           </div>
           <div className="hidden md:flex space-x-2">

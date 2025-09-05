@@ -69,11 +69,10 @@ const page = () => {
           {/* Header */}
           <div className="flex flex-col space-y-4">
             <h2 className="text-4xl font-extrabold text-gray-900 leading-tight">
-              Contact Info
+              Kontakt
             </h2>
             <p className="text-gray-600 max-w-md">
-              Cloud computing is a model for delivering on-demand computing
-              resources over the internet. It can benefit your
+              Gerne nehmen wir uns Zeit für Ihr Anliegen – vereinbaren Sie jetzt Ihren individuellen Beratungstermin und entdecken Sie, wie Ihr Wohntraum Wirklichkeit wird.
             </p>
           </div>
 
@@ -103,7 +102,7 @@ const page = () => {
                 <span className="text-lg font-semibold text-gray-800">
                   Email
                 </span>
-                <span className="text-gray-500">info@example.com</span>
+                <span className="text-gray-500">info@contekuechen.de</span>
               </div>
             </div>
             {/* Location */}
@@ -114,7 +113,8 @@ const page = () => {
                   Location
                 </span>
                 <span className="text-gray-500">
-                  4517 Washington Ave. Manchester, Kentucky 39495
+                  Hauptstraße 36, 83527 Haag in Oberbayern
+
                 </span>
               </div>
             </div>
@@ -126,12 +126,12 @@ const page = () => {
                   Website
                 </span>
                 <a
-                  href={`http://www.example.com`}
+                  href={`https://www.contekuechen.de/`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:underline"
                 >
-                  www.example.com
+                  https://www.contekuechen.de/
                 </a>
               </div>
             </div>
@@ -143,10 +143,10 @@ const page = () => {
           {/* Header */}
           <div className="flex flex-col mb-8 text-center sm:text-left">
             <p className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
-              Contact Us
+              Kontaktiere uns
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-              Get In Touch
+              Zur Traumküche
             </h1>
           </div>
 
@@ -190,7 +190,7 @@ const page = () => {
               type="submit"
               className="col-span-1 md:col-span-2 flex items-center justify-center space-x-2 px-8 py-4 bg-[#333333] text-white font-semibold rounded shadow-md transition-transform transform hover:scale-105 hover:bg-gray-900 w-[200px]"
             >
-              <span>Submit Now</span>
+              <span>Anfrage senden</span>
               <ArrowRight />
             </button>
           </form>

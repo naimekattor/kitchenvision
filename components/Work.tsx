@@ -10,10 +10,10 @@ const Work = () => {
   return (
     <section className="pt-16">
       <h3 className="font-[600] text-[18px] text-center text-[#333333]">
-        Work Process
+        Unser Prozess
       </h3>
       <h1 className="font-[700] text-4xl md:text-5xl text-center">
-        From Concept to Your Dream Kitchen
+        So entsteht Ihre Traumküche – Schritt für Schritt.
       </h1>
 
       <div className="grid md:grid-cols-3 gap-8 container mx-auto py-20">
@@ -35,11 +35,10 @@ const Work = () => {
             <div className="relative z-10 p-8">
               <div className="text-8xl font-bold text-gray-100 mb-4">01</div>
               <h3 className="text-2xl font-bold mb-4 group-hover:text-white">
-                Consultation & Planning
+                Beratung & Planung
               </h3>
               <p className="text-[#54595F] group-hover:text-white mb-6">
-                We start by understanding your needs, style, and budget to plan
-                the perfect kitchen for your home.
+                Wir nehmen uns Zeit für Sie: In einem persönlichen Gespräch erarbeiten wir Ihre Wünsche und entwickeln eine individuelle Planung, die perfekt zu Ihrem Zuhause passt.
               </p>
               <div className="w-12 h-12 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto">
                 <MdOutlineEventNote className="w-6 h-6 group-hover:text-white" />
@@ -59,11 +58,10 @@ const Work = () => {
           <div className="relative z-10 p-8 text-white">
             <div className="text-8xl font-bold text-white mb-4">02</div>
             <h3 className="text-2xl font-bold mb-4">
-              3D Design & Visualization
+              Auswahl & Gestaltung
             </h3>
             <p className="text-white/90 mb-6">
-              See your kitchen come to life with detailed 3D layouts before we
-              begin installation.
+              Ob Materialien, Geräte oder besondere Details – gemeinsam finden wir die optimale Kombination aus Design, Funktionalität und Preis-Leistung.
             </p>
             <div className="w-12 h-12 border-2 border-white/50 rounded-lg flex items-center justify-center mx-auto">
               <MdOutlineDesignServices className="w-6 h-6 text-white" />
@@ -88,11 +86,10 @@ const Work = () => {
             <div className="relative z-10 p-8">
               <div className="text-8xl font-bold text-gray-100 mb-4">03</div>
               <h3 className="text-2xl font-bold mb-4 group-hover:text-white">
-                Installation & Finishing
+                Montage & Fertigstellung
               </h3>
               <p className="text-muted-foreground mb-6 group-hover:text-white">
-                Our experts install cabinets, countertops, and appliances with
-                precision and care.
+                Unser erfahrenes Schreiner- und Montageteam sorgt für eine präzise Umsetzung. So entsteht eine Küche, die bis ins Detail überzeugt.
               </p>
               <div className="w-12 h-12 border-2 border-gray-300 rounded-lg flex items-center justify-center mx-auto">
                 <MdOutlineKitchen className="w-6 h-6 group-hover:text-white" />
