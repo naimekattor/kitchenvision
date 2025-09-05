@@ -19,69 +19,70 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { FaInstagram } from "react-icons/fa"
 
 const blogPosts = [
   {
     id: 1,
-    slug: "creating-masterpieces-one-room-at-a-time",
-    title: "Creating Masterpieces One Room At A Time",
+    slug: "Three-Conte-kitchens-nominated-we-are-proud",
+    title: "Drei Küchen von Conte nominiert – wir sind stolz",
     excerpt:
-      "There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.",
-    image: "/images/blog-post-kitchen-1.png",
-    author: "Windstripe",
-    category: "Space Craft Studio",
+      "Drei Küchen von Conte nominiert – wir sind stolz, auch in diesem Jahr Teil dieses besonderen Events zu sein",
+    image: "/images/Blog1.png",
+    author: "Team-Conte",
+    category: "CONTE Haag",
     readTime: "0 minutes read",
     date: "31 May",
   },
   {
     id: 2,
-    slug: "crafting-spaces-that-reflect-your-style",
-    title: "Crafting Spaces That Reflect Your Style",
+    slug: "ST-ONE-natural-stone-in-its-most-beautiful-form",
+    title: "ST-ONE – Naturstein in seiner schönsten Form",
     excerpt:
-      "There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.",
-    image: "/images/blog-post-kitchen-2.png",
-    author: "Windstripe",
-    category: "Space Craft Studio",
+      "Ein einzigartiges Meisterstück für unsere Kunden Abb.: ST-ONE High-End Luxury Monolith aus Naturstein – von uns bei einem unserer Kunden montiert.",
+    image: "/images/Blog2.jpg",
+    author: "Team-Conte",
+    category: "CONTE Haag",
     readTime: "0 minutes read",
     date: "31 May",
   },
   {
     id: 3,
-    slug: "creating-timeless-interiors-cherishing-memories",
-    title: "Creating Timeless Interiors Cherishing Memories",
+    slug: "May-we-introduce-Zoodles",
+    title: "Dürfen wie vorstellen: Zoodles. ",
     excerpt:
-      "There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.",
-    image: "/images/blog-post-kitchen-3.png",
-    author: "Windstripe",
-    category: "Space Craft Studio",
+      "Neudeutsch für Nudeln aus Zucchini und ein neuer Genuss für den Gaumen. Kalorienarm, no carb, gesund und lecker. Sie brauchen einen Spiralschneider und natürlich Zucchini. ",
+    image: "/images/Blog3picture1.jpg",
+    author: "Team-Conte",
+    category: "CONTE Haag",
     readTime: "0 minutes read",
     date: "31 May",
   },
 ]
 
 const categories = [
-  { name: "Space Craft Studio", count: 4 },
-  { name: "Architecture Plus", count: 3 },
-  { name: "Dream Home Designs", count: 7 },
-  { name: "Urban Oasis", count: 6 },
-  { name: "Interior Perfection", count: 3 },
-  { name: "Blueprint Builders", count: 3 },
+  { name: "Redaktion - Team-Conte", count: 3 },
+  // { name: "Architecture Plus", count: 3 },
+  // { name: "Dream Home Designs", count: 7 },
+  // { name: "Urban Oasis", count: 6 },
+  // { name: "Interior Perfection", count: 3 },
+  // { name: "Blueprint Builders", count: 3 },
 ]
 
 const popularPosts = [
   {
-    title: "Crafting Spaces That Reflect Your Style",
-    image: "/images/blog-post-kitchen-1.png",
+    title: "Drei Küchen von Conte nominiert – wir sind stolz",
+    image: "/images/Blog1.png",
     date: "31 May",
   },
   {
-    title: "Redefining The Concept Of The Most Living",
-    image: "/images/blog-post-kitchen-2.png",
+    title: "ST-ONE – Naturstein in seiner schönsten Form",
+    image: "/images/Blog2.jpg",
     date: "31 May",
   },
   {
-    title: "Building Dreams, One Room At A The Time",
-    image: "/images/blog-post-kitchen-3.png",
+    title: "Dürfen wie vorstellen: Zoodles.",
+    image: "/images/Blog3picture1.jpg",
     date: "31 May",
   },
 ]
@@ -235,14 +236,14 @@ export default function BlogPage() {
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
                 Never Miss News
               </h3>
-              <div className="flex justify-center space-x-4">
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+              <div className="flex justify-start space-x-4">
+                <Link href={'https://www.facebook.com/contekuechen'} className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
                   <Facebook className="w-5 h-5 text-gray-600" />
-                </div>
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Twitter className="w-5 h-5 text-gray-600" />
-                </div>
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                </Link>
+                <Link href={'https://www.instagram.com/contekuechen'} className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                  <FaInstagram className="w-5 h-5 text-gray-600" />
+                </Link>
+                {/* <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
                   <Instagram className="w-5 h-5 text-gray-600" />
                 </div>
                 <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
@@ -250,7 +251,7 @@ export default function BlogPage() {
                 </div>
                 <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
                   <Youtube className="w-5 h-5 text-gray-600" />
-                </div>
+                </div> */}
               </div>
             </Card>
 

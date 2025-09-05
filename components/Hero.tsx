@@ -10,25 +10,10 @@ const Hero = () => {
       <div className=" absolute bg-secondary top-0 left-0 h-[500px] w-full "></div>
       <div className="flex flex-col lg:flex-row items-center justify-center container mx-auto py-16">
         <ScrollAnimation>
-          <div className=" flex flex-col items-center text-left mb-12 lg:mb-0 z-10 relative ">
+          <div className=" flex flex-col items-center text-left mb-12 lg:mb-0 z-10 relative lg-w-1/2 w-full">
             {/* Decorative star-like icons */}
             <div className="flex space-x-2 mb-4 absolute md:left-0 -left-10 md:bottom-[250px] bottom-[220px] rotate-45">
-              {/* <svg
-                className="w-16 h-16 text-gray-300"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M10 12.585l-4.12 2.167.78-4.56-3.32-3.235 4.58-.665L10 2.298l2.08 4.195 4.58.665-3.32 3.235.78 4.56L10 12.585z" />
-              </svg>
-              <svg
-                className="w-8 h-8 text-gray-300"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M10 12.585l-4.12 2.167.78-4.56-3.32-3.235 4.58-.665L10 2.298l2.08 4.195 4.58.665-3.32 3.235.78 4.56L10 12.585z" />
-              </svg> */}
+              
               <Image
                 alt="star icon"
                 width={64}
@@ -40,12 +25,12 @@ const Hero = () => {
 
             {/* Main heading */}
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight tracking-tight mb-4 text-center md:w-3/4 w-full ">
+            <h1 className="text-4xl md:text-5xl  font-extrabold text-black leading-tight tracking-tight mb-4 text-center md:w-3/4 w-full ">
               Mehr als Standard: Küchen für Menschen mit besonderen Ansprüchen.
             </h1>
 
             {/* Description */}
-            <p className="text-lg text-gray-500 max-w-md mb-8 text-center lg:text-left">
+            <p className="text-[16px] text-gray-500 max-w-md mb-8 text-center lg:text-left">
               Bei uns bekommen Sie keine Küche von der Stange. Wir hören genau zu, gehen auf Ihre Wünsche ein und entwickeln Lösungen, die perfekt zu Ihrem Leben passen – funktional, ästhetisch und einzigartig. Ob raffinierte Details, innovative Technik oder besondere Materialien: Wir machen Ihre Traumküche möglich.
             </p>
 
@@ -62,9 +47,9 @@ const Hero = () => {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation>
+        <ScrollAnimation className="lg-w-1/2 w-full">
           {/* Container for the right side (Images and client testimonials) */}
-          <div className=" relative flex flex-col items-center lg:items-end">
+          <div className=" relative flex flex-col items-center lg:items-end lg-w-1/2 w-full">
             {/* Main image with rounded corners and subtle shadow */}
             <div className="relative">
               {/* Border element - positioned behind */}
@@ -96,21 +81,21 @@ const Hero = () => {
                   width={32}
                   height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
-                  src="/images/tesPerson1.jpg"
+                  src="/images/tesPerson2.jpg"
                   alt="Profile 2"
                 />
                 <Image
                   width={32}
                   height={32}
                   className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
-                  src="/images/tesPerson1.jpg"
+                  src="/images/tesPerson3.jpg"
                   alt="Profile 3"
                 />
               </div>
               <div className="flex-1 text-right">
                 <div className="text-xl font-bold text-gray-900">
                   <CountUp
-                    end={80}
+                    end={110}
                     enableScrollSpy
                     scrollSpyDelay={1000}
                     suffix="+"

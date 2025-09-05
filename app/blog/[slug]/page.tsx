@@ -14,48 +14,64 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 
 const blogPosts = {
-  "creating-masterpieces-one-room-at-a-time": {
-    title: "Creating Masterpieces One Room At A Time",
-    content: `There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.
+  "Three-Conte-kitchens-nominated-we-are-proud": {
+    title: "Drei Küchen von Conte nominiert – wir sind stolz",
+    content: `Drei Küchen von Conte nominiert – wir sind stolz, auch in diesem Jahr Teil dieses besonderen Events zu sein
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu nascetu cubilia tempor lacus natoque quis auctor mattis luctus varius pretium aptent urna iaculis suspendisse eros egestas mollis dis nisl commodo.
+Wir freuen uns sehr, dass auch 2025 wieder drei außergewöhnliche Conte Küchen für die Global Kitchen Design nominiert wurden. Die Teilnahme an diesem internationalen Wettbewerb ist für uns längst eine geschätzte Tradition – und gleichzeitig immer wieder ein Highlight.
 
-There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.`,
-    image: "/images/blog-post-kitchen-1.png",
-    secondImage: "/images/blog-post-kitchen-1.png",
-    author: "Windstripe",
-    category: "Space Craft Studio",
+Unsere eingereichten Küchenprojekte repräsentieren das, wofür Conte Küche & Raum GmbH steht:
+
+individuelles Küchendesign, das perfekt auf die Bedürfnisse unserer Kunden zugeschnitten ist
+
+die Kombination aus modernster Technik und zeitloser Ästhetik
+
+meisterhafte Handwerkskunst, die jedes Detail zu einem Erlebnis macht
+
+Die Global Kitchen Design ist mehr als nur ein Wettbewerb – sie ist eine Plattform, auf der sich die besten Küchenstudios weltweit präsentieren und inspirieren lassen. Für uns bedeutet die Teilnahme Anerkennung unserer Arbeit und gleichzeitig Motivation, unseren hohen Anspruch an Qualität und Design auch in Zukunft konsequent fortzuführen.
+
+Wir sind gespannt auf die diesjährigen Ergebnisse`,
+    image: "/images/Blog1.png",
+    secondImage: "/images/Blog1.png",
+    author: "Team-Conte",
+    category: "CONTE Haag",
     readTime: "0 minutes read",
     date: "31 May",
   },
-  "crafting-spaces-that-reflect-your-style": {
-    title: "Crafting Spaces That Reflect Your Style",
-    content: `There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.
+  "ST-ONE-natural-stone-in-its-most-beautiful-form": {
+    title: "ST-ONE natural stone in its most beautiful form",
+    content: `ST-ONE – Naturstein in seiner schönsten Form
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu nascetu cubilia tempor lacus natoque quis auctor mattis luctus varius pretium aptent urna iaculis suspendisse eros egestas mollis dis nisl commodo.
+Ein einzigartiges Meisterstück für unsere Kunden
 
-There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.`,
-    image: "/images/blog-post-kitchen-2.png",
-    secondImage: "/images/blog-post-kitchen-2.png",
-    author: "Windstripe",
-    category: "Space Craft Studio",
+Abb.: ST-ONE High-End Luxury Monolith aus Naturstein – von uns bei einem unserer Kunden montiert.
+
+Die ST-ONE ist weit mehr als nur eine Küche – sie ist ein architektonisches Statement und ein Naturunikat. Jede ST-ONE wird aus massivem Naturstein gefertigt und ist damit absolut einzigartig. Kein Stück gleicht dem anderen – jeder Monolith erzählt seine eigene Geschichte, geprägt durch Millionen Jahre Erdgeschichte.
+
+Dieses Meisterwerk entsteht in enger Zusammenarbeit von Schreinern und Steinmetzmeistern, die mit höchster Präzision und Leidenschaft ein Unikat erschaffen. Das Ergebnis ist eine luxuriöse Küche, die Ästhetik und Funktionalität in vollendeter Form vereint.
+
+Wir durften dieses besondere Stück jüngst bei einem unserer Kunden setzen und verewigen. Es war uns eine Freude, Teil dieses außergewöhnlichen Projekts zu sein – und wir wünschen unserem Kunden viele unvergessliche Momente mit seiner neuen ST-ONE.
+
+Die ST-ONE steht sinnbildlich für unsere Philosophie: Einzigartige Materialien, meisterhafte Verarbeitung und zeitloses Design – für Menschen, die das Außergewöhnliche suchen.`,
+    image: "/images/Blog2.jpg",
+    secondImage: "/images/Blog2.jpg",
+    author: "Team-Conte",
+    category: "CONTE Haag",
     readTime: "0 minutes read",
     date: "31 May",
   },
-  "creating-timeless-interiors-cherishing-memories": {
-    title: "Creating Timeless Interiors Cherishing Memories",
-    content: `There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu nascetu cubilia tempor lacus natoque quis auctor mattis luctus varius pretium aptent urna iaculis suspendisse eros egestas mollis dis nisl commodo.
-
-There are many variations of passages of Lorem Ipsum available, but majority have suffered teration in some form, by injected humour, or randomised words which don't look even slight believable. If you are going to use a passage of Lorem Ipsum.`,
-    image: "/images/blog-post-kitchen-3.png",
-    secondImage: "/images/blog-post-kitchen-3.png",
-    author: "Windstripe",
-    category: "Space Craft Studio",
+  "May-we-introduce-Zoodles": {
+    title: "Dürfen wie vorstellen: Zoodles. ",
+    content: `Dürfen wie vorstellen: Zoodles. 
+Neudeutsch für Nudeln aus Zucchini und ein neuer Genuss für den Gaumen. Kalorienarm, no carb, gesund und lecker. Sie brauchen einen Spiralschneider und natürlich Zucchini. Das beste und einfachste Rezept ist Zoodles aglio e olio: Einfach Knoblauch in Olivenöl sanft schmoren, die rohen Zoodles dazu, kurz durchschwenken, salzen und pfeffern. Fertig.`,
+    image: "/images/Blog3picture1.jpg",
+    secondImage: "/images/Blog3picture2.jpg",
+    author: "Team-Conte",
+    category: "CONTE Haag",
     readTime: "0 minutes read",
     date: "31 May",
   },
@@ -86,7 +102,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           {/* Main Content */}
           <div className="lg:col-span-2">
             <article className="bg-white">
-              <img
+              <Image
+              width={1024}
+              height={1024}
                 src={post.image || "/placeholder.svg"}
                 alt={post.title}
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
@@ -118,7 +136,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               </div>
 
               {/* Second Image */}
-              <img
+              <Image
+              width={1024}
+              height={1024}
                 src={post.secondImage || "/placeholder.svg"}
                 alt={post.title}
                 className="w-full h-64 md:h-80 object-cover rounded-lg my-8"
@@ -126,7 +146,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </article>
 
             {/* Pagination */}
-            <div className="flex items-center justify-between mt-12 pt-8 border-t">
+            {/* <div className="flex items-center justify-between mt-12 pt-8 border-t">
               <div className="flex items-center space-x-2">
                 <Button variant="outline" size="sm">
                   <ChevronLeft className="w-4 h-4 mr-1" />
@@ -150,7 +170,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </Button>
               </div>
               <span className="text-sm text-muted-foreground">Page 1 of 2</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Sidebar */}
