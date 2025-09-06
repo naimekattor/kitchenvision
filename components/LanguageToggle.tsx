@@ -15,8 +15,14 @@ export default function LanguageToggle() {
         "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
       document.body.appendChild(script);
 
+      // googleTranslateElementInit is provided by the external script
+      // The google global is added by the external translate script and doesn't have
+      // useful typings here — allow a narrow eslint disable for this block.
+      /* eslint-disable @typescript-eslint/no-explicit-any */
       (window as any).googleTranslateElementInit = () => {
-        new (window as any).google.translate.TranslateElement(
+        // use a local-typed alias for the google global to avoid broad any errors
+        const gw = (window as any).google as any;
+        new gw.translate.TranslateElement(
           {
             pageLanguage: "en",
             includedLanguages: "en,de",
@@ -26,6 +32,7 @@ export default function LanguageToggle() {
         );
         setReady(true);
       };
+      /* eslint-enable @typescript-eslint/no-explicit-any */
     }
   }, []);
 
@@ -34,9 +41,8 @@ export default function LanguageToggle() {
     const newLang = currentLang === "en" ? "de" : "en";
     setCurrentLang(newLang);
 
-    const googleSelect = document.querySelector<HTMLSelectElement>(
-      ".goog-te-combo"
-    );
+    const googleSelect =
+      document.querySelector<HTMLSelectElement>(".goog-te-combo");
 
     if (googleSelect) {
       googleSelect.value = newLang;
@@ -56,7 +62,7 @@ export default function LanguageToggle() {
           {/* Toggle Bullet */}
           <div
             className={`absolute top-1 w-12 h-8 bg-white rounded-full shadow-md transition-all duration-300 ${
-              currentLang === "en" ? "left-1" : "left-15"
+              currentLang === "en" ? "left-1" : "left-16"
             }`}
           />
 

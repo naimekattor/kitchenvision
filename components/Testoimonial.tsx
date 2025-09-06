@@ -58,7 +58,7 @@ const Testoimonial = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800">
-                          name
+                          Daniele Conte
                         </h3>
                         <p className="text-sm text-gray-500">role</p>
                       </div>

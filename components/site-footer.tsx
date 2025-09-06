@@ -1,14 +1,21 @@
 "use client";
 import Link from "next/link";
-import { Facebook, Twitter, Mail, Phone, MapPin, Send } from "lucide-react";
+import { Facebook, Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaInstagram } from "react-icons/fa";
 
+import { useState } from "react";
+
 export default function Footer() {
+  const [email, setEmail] = useState("");
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const handleSend = () => {
+    if (!email) return;
+    window.location.href = `mailto:${email}?subject=Hello from My App&body=Hi ${email},%0D%0A%0D%0AThis is a test message.`;
+  };
   return (
     <footer
       className={`bg-black text-white pb-16 ${isHome ? "pt-16" : "pt-64"} px-4`}
@@ -21,10 +28,12 @@ export default function Footer() {
               <div className="inline-block mb-4">
                 <Link href="/" className="flex items-center gap-2">
                   <Image
+                    priority={false}
                     src="/images/logo.png"
                     width={200}
                     height={86}
                     alt="conten Kuche & raum logo"
+                    className="w-[200px] h-[86px]"
                   />
                   <span className="sr-only">Go to homepage</span>
                 </Link>
@@ -39,22 +48,31 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
                 className="bg-[#191919] px-2 focus:outline-none text-white placeholder:text-gray-400 rounded-r-none"
               />
-              <Button className="bg-[#333333] hover:bg-gray-600 rounded-l-none px-4">
+              <Button
+                onClick={handleSend}
+                className="bg-[#333333] hover:bg-gray-600 rounded-l-none px-4"
+              >
                 <Send className="w-4 h-4" />
               </Button>
             </div>
 
             {/* Social Media Icons */}
             <div className="flex space-x-3">
-              <Link href={'https://www.facebook.com/contekuechen'} className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+              <Link
+                href={"https://www.facebook.com/contekuechen"}
+                className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors"
+              >
                 <Facebook className="w-5 h-5" />
               </Link>
-              <Link href={'https://www.instagram.com/contekuechen'} className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+              <Link
+                href={"https://www.instagram.com/contekuechen"}
+                className="w-10 h-10 bg-[#191919] hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors"
+              >
                 <FaInstagram className="w-5 h-5" />
               </Link>
-              
             </div>
           </div>
 
@@ -99,7 +117,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Team 
+                  Team
                 </a>
               </li>
               <li>
@@ -107,7 +125,7 @@ export default function Footer() {
                   href="https://www.contekuechen.de/kontakt/impressum.html"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Impressum und Datenschutz 
+                  Impressum und Datenschutz
                 </a>
               </li>
             </ul>
@@ -218,12 +236,12 @@ export default function Footer() {
               >
                 Privacy Policy
               </a>
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

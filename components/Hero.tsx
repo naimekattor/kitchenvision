@@ -8,12 +8,11 @@ const Hero = () => {
   return (
     <div className=" bg-white min-h-screen font-sans relative">
       <div className=" absolute bg-secondary top-0 left-0 h-[500px] w-full "></div>
-      <div className="flex flex-col lg:flex-row items-center justify-center container mx-auto py-16">
+      <div className="flex flex-col lg:flex-row items-center justify-center container mx-auto py-16 px-2">
         <ScrollAnimation>
           <div className=" flex flex-col items-center text-left mb-12 lg:mb-0 z-10 relative lg-w-1/2 w-full">
             {/* Decorative star-like icons */}
             <div className="flex space-x-2 mb-4 absolute md:left-0 -left-10 md:bottom-[250px] bottom-[220px] rotate-45">
-              
               <Image
                 alt="star icon"
                 width={64}
@@ -31,7 +30,11 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-[16px] text-gray-500 max-w-md mb-8 text-center lg:text-left">
-              Bei uns bekommen Sie keine Küche von der Stange. Wir hören genau zu, gehen auf Ihre Wünsche ein und entwickeln Lösungen, die perfekt zu Ihrem Leben passen – funktional, ästhetisch und einzigartig. Ob raffinierte Details, innovative Technik oder besondere Materialien: Wir machen Ihre Traumküche möglich.
+              Bei uns bekommen Sie keine Küche von der Stange. Wir hören genau
+              zu, gehen auf Ihre Wünsche ein und entwickeln Lösungen, die
+              perfekt zu Ihrem Leben passen – funktional, ästhetisch und
+              einzigartig. Ob raffinierte Details, innovative Technik oder
+              besondere Materialien: Wir machen Ihre Traumküche möglich.
             </p>
 
             <div className="relative md:block hidden">
@@ -58,6 +61,7 @@ const Hero = () => {
               {/* Image container - positioned in front */}
               <div className="relative z-10 ml-4 mt-4 rounded overflow-hidden shadow-2xl">
                 <Image
+                  priority
                   width={750}
                   height={450}
                   src="/images/hero.jpg"

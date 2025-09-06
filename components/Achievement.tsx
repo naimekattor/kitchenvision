@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Button } from "./ui/button";
-import { ArrowRight, BarChart3, Building2, Home, Layers } from "lucide-react";
+import { ArrowRight, BarChart3, Building2, Home } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 import Image from "next/image";
@@ -104,11 +104,21 @@ const Achievement = () => {
                   Our Achievement
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                  Küchen & Wohnräume, die begeistern – mit Erfahrung und Leidenschaft.
+                  Küchen & Wohnräume, die begeistern – mit Erfahrung und
+                  Leidenschaft.
                 </h2>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Als erfahrenes Küchenstudio in Haag in Oberbayern planen und realisieren wir seit vielen Jahren maßgeschneiderte Einbauküchen und Wohnmöbel. Von der persönlichen Beratung über die individuelle Küchenplanung bis hin zur präzisen Montage begleiten wir unsere Kunden im Umkreis von bis zu 100 km und auf Anfrage auch darüber hinaus. Unser Anspruch: Räume zu schaffen, die nicht nur funktional sind, sondern Ihr Zuhause einzigartig machen.
-Eine CONTE-Küche steht für Qualität im gehobenen Segment – langlebig, präzise gefertigt und durchdacht bis ins Detail. Und das zu einem Preis, der oft deutlich günstiger ist, als man erwartet.
+                  Als erfahrenes Küchenstudio in Haag in Oberbayern planen und
+                  realisieren wir seit vielen Jahren maßgeschneiderte
+                  Einbauküchen und Wohnmöbel. Von der persönlichen Beratung über
+                  die individuelle Küchenplanung bis hin zur präzisen Montage
+                  begleiten wir unsere Kunden im Umkreis von bis zu 100 km und
+                  auf Anfrage auch darüber hinaus. Unser Anspruch: Räume zu
+                  schaffen, die nicht nur funktional sind, sondern Ihr Zuhause
+                  einzigartig machen. Eine CONTE-Küche steht für Qualität im
+                  gehobenen Segment – langlebig, präzise gefertigt und
+                  durchdacht bis ins Detail. Und das zu einem Preis, der oft
+                  deutlich günstiger ist, als man erwartet.
                 </p>
                 <Link href={"/about"}>
                   <Button className="h-12 w-[150px]">
@@ -132,7 +142,9 @@ Eine CONTE-Küche steht für Qualität im gehobenen Segment – langlebig, präz
                     suffix="+"
                   />
                 </div>
-                <p className="text-muted-foreground">Traumküchen geplant und umgesetzt</p>
+                <p className="text-muted-foreground">
+                  Traumküchen geplant und umgesetzt
+                </p>
               </div>
 
               <div className="text-center bg-white px-4 py-5 rounded shadow-lg">
@@ -147,7 +159,9 @@ Eine CONTE-Küche steht für Qualität im gehobenen Segment – langlebig, präz
                     suffix=""
                   />
                 </div>
-                <p className="text-muted-foreground">Team mit sieben Mitgliedern</p>
+                <p className="text-muted-foreground">
+                  Team mit sieben Mitgliedern
+                </p>
               </div>
 
               <ScrollAnimation
@@ -167,7 +181,9 @@ Eine CONTE-Küche steht für Qualität im gehobenen Segment – langlebig, präz
                       suffix="+"
                     />
                   </div>
-                  <p className="text-muted-foreground">positive Rückmeldungen & Empfehlungen</p>
+                  <p className="text-muted-foreground">
+                    positive Rückmeldungen & Empfehlungen
+                  </p>
                 </div>
               </ScrollAnimation>
               {/* <ScrollAnimation

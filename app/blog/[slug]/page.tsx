@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import {
   User,
   Building2,
@@ -11,11 +11,9 @@ import {
   Instagram,
   Linkedin,
   Youtube,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react"
-import Image from "next/image"
-import { notFound } from "next/navigation"
+} from "lucide-react";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 
 const blogPosts = {
   "Three-Conte-kitchens-nominated-we-are-proud": {
@@ -75,7 +73,7 @@ Neudeutsch für Nudeln aus Zucchini und ein neuer Genuss für den Gaumen. Kalori
     readTime: "0 minutes read",
     date: "31 May",
   },
-}
+};
 
 const categories = [
   { name: "Space Craft Studio", count: 4 },
@@ -84,15 +82,23 @@ const categories = [
   { name: "Urban Oasis", count: 6 },
   { name: "Interior Perfection", count: 3 },
   { name: "Blueprint Builders", count: 3 },
-]
+];
 
-const popularTags = ["Interiors", "The Design", "Blueprint", "Builders", "Modern", "Living", "Spacers"]
+const popularTags = [
+  "Interiors",
+  "The Design",
+  "Blueprint",
+  "Builders",
+  "Modern",
+  "Living",
+  "Spacers",
+];
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = blogPosts[params.slug as keyof typeof blogPosts]
+  const post = blogPosts[params.slug as keyof typeof blogPosts];
 
   if (!post) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -103,8 +109,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="lg:col-span-2">
             <article className="bg-white">
               <Image
-              width={1024}
-              height={1024}
+                width={1024}
+                height={1024}
                 src={post.image || "/placeholder.svg"}
                 alt={post.title}
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
@@ -125,11 +131,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 leading-tight">{post.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
+                {post.title}
+              </h1>
 
               <div className="prose prose-lg max-w-none">
                 {post.content.split("\n\n").map((paragraph, index) => (
-                  <p key={index} className="text-muted-foreground leading-relaxed mb-6">
+                  <p
+                    key={index}
+                    className="text-muted-foreground leading-relaxed mb-6"
+                  >
                     {paragraph}
                   </p>
                 ))}
@@ -137,8 +148,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
               {/* Second Image */}
               <Image
-              width={1024}
-              height={1024}
+                width={1024}
+                height={1024}
                 src={post.secondImage || "/placeholder.svg"}
                 alt={post.title}
                 className="w-full h-64 md:h-80 object-cover rounded-lg my-8"
@@ -190,7 +201,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     <span className="text-muted-foreground hover:text-primary cursor-pointer transition-colors">
                       {category.name}
                     </span>
-                    <span className="bg-gray-900 text-white text-sm px-3 py-1 rounded">{category.count}</span>
+                    <span className="bg-gray-900 text-white text-sm px-3 py-1 rounded">
+                      {category.count}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -244,5 +257,5 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,10 +1,11 @@
 "use client";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "@/components/site-header";
 import Footer from "./site-footer";
 import dynamic from "next/dynamic";
 import HeroContent from "./HeroContent";
+import NotFound from "./NotFound";
 import { usePathname } from "next/navigation";
 import CtaBanner from "./CtaBanner";
 import TopHeader from "./TopHeader";
@@ -19,8 +20,18 @@ export default function LayoutContent({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "/";
   const isHome = pathname === "/";
+
+  const ALLOWED_ROUTES = ["/", "/about", "/contact", "/blog", "/service"];
+  const isAllowed = ALLOWED_ROUTES.some(
+    (r) => pathname === r || pathname.startsWith(r + "/")
+  );
+
+  // If current path isn't in the allowlist, render only the NotFound page (no header/footer/etc.)
+  if (!isAllowed) {
+    return <NotFound />;
+  }
 
   return (
     <>
@@ -53,10 +64,9 @@ export default function LayoutContent({
 
       {/* Main content */}
       <main className={!isHome ? "pt-[var(--header-height)]" : ""}>
-          <CookieBanner />
+        <CookieBanner />
         {children}
       </main>
-      
 
       {/* Footer with CTA banner on non-home pages */}
       <footer className="relative">

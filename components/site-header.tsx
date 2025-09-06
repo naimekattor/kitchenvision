@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { PopupModal } from "react-calendly";
-import LanguageToggle from "./LanguageToggle";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 export default function Header() {
@@ -20,7 +19,7 @@ export default function Header() {
   }, []);
 
   const headerRef = useRef<HTMLElement | null>(null);
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "/";
   const isHome = pathname === "/";
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -79,10 +78,12 @@ export default function Header() {
       <div className="container mx-auto flex  items-center justify-between ">
         <Link href="/" className="flex items-center gap-2">
           <Image
+            priority
             src="/images/logo.png"
             width={200}
             height={86}
             alt="conten Kuche & raum logo"
+            className="w-[200px] h-[86px]"
           />
           <span className="sr-only">Go to homepage</span>
         </Link>
@@ -137,7 +138,7 @@ export default function Header() {
             Book Now <ArrowRight />
           </Button>
           {/* <LanguageToggle /> */}
-          <Link href={'https://wa.me/88012345678901'} target="_blank">
+          <Link href={"https://wa.me/88012345678901"} target="_blank">
             <FaWhatsappSquare size={50} className="text-green-500" />
           </Link>
 
@@ -152,9 +153,6 @@ export default function Header() {
         </div>
 
         <div className="md:hidden block">
-          <button>
-            <FaWhatsappSquare size={20} className="text-green-500" />
-          </button>
           <button
             aria-label="Toggle menu"
             className={`inline-flex items-center justify-center rounded-md p-2 
@@ -203,6 +201,20 @@ ${open ? "translate-x-0" : "-translate-x-full"}`}
               About
             </Link>
             <Link
+              href="/service"
+              onClick={() => setOpen(false)}
+              className="text-lg"
+            >
+              Service
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setOpen(false)}
+              className="text-lg"
+            >
+              Blog
+            </Link>
+            <Link
               href="/contact"
               onClick={() => setOpen(false)}
               className="text-lg"
@@ -215,6 +227,9 @@ ${open ? "translate-x-0" : "-translate-x-full"}`}
             >
               Book Now <ArrowRight />
             </Button>
+            <Link href={"https://wa.me/88012345678901"} target="_blank">
+              <FaWhatsappSquare size={50} className="text-green-500" />
+            </Link>
           </div>
         </div>
       </div>

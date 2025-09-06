@@ -1,32 +1,35 @@
 "use client";
 import axios from "axios";
 import { ArrowRight, LinkIcon, Mail, MapPin } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { toast } from "react-toastify";
 
-const page = () => {
+const ContactPage = () => {
+  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const form = event.currentTarget;
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
+    setStatus("loading");
 
     try {
       const res = await axios.post(
-        "https://6abca5bada2e.ngrok-free.app/calendy/email-send/",
+        "https://fbecbfebe727.ngrok-free.app/calendy/email-send/",
         data,
         {
           headers: {
             "Content-Type": "application/json",
-            // "ngrok-skip-browser-warning": "false",
           },
         }
       );
+
       console.log(res.data);
 
       if (res.data.success) {
+        setStatus("success");
         toast.success(res.data.message, {
           position: "top-right",
           autoClose: 5000,
@@ -35,9 +38,11 @@ const page = () => {
           pauseOnHover: true,
           draggable: true,
         });
-        form.reset(); // reset form inputs
+        form.reset();
+        setTimeout(() => setStatus("idle"), 2000);
       }
     } catch (err: unknown) {
+      setStatus("idle");
       if (axios.isAxiosError(err)) {
         toast.error(err.response?.data?.message || err.message, {
           position: "top-right",
@@ -72,7 +77,9 @@ const page = () => {
               Kontakt
             </h2>
             <p className="text-gray-600 max-w-md">
-              Gerne nehmen wir uns Zeit für Ihr Anliegen – vereinbaren Sie jetzt Ihren individuellen Beratungstermin und entdecken Sie, wie Ihr Wohntraum Wirklichkeit wird.
+              Gerne nehmen wir uns Zeit für Ihr Anliegen – vereinbaren Sie jetzt
+              Ihren individuellen Beratungstermin und entdecken Sie, wie Ihr
+              Wohntraum Wirklichkeit wird.
             </p>
           </div>
 
@@ -114,7 +121,6 @@ const page = () => {
                 </span>
                 <span className="text-gray-500">
                   Hauptstraße 36, 83527 Haag in Oberbayern
-
                 </span>
               </div>
             </div>
@@ -188,10 +194,37 @@ const page = () => {
             />
             <button
               type="submit"
+              disabled={status === "loading"}
               className="col-span-1 md:col-span-2 flex items-center justify-center space-x-2 px-8 py-4 bg-[#333333] text-white font-semibold rounded shadow-md transition-transform transform hover:scale-105 hover:bg-gray-900 w-[200px]"
             >
-              <span>Anfrage senden</span>
-              <ArrowRight />
+              {/* <span></span>
+              <ArrowRight /> */}
+
+              <span>
+                {status === "idle" && (
+                  <span className="flex items-center gap-2 whitespace-nowrap">
+                    Anfrage senden
+                    <ArrowRight />
+                  </span>
+                )}
+                {status === "loading" && (
+                  <div className="flex items-center gap-2">
+                    <div className="flex space-x-1 items-center justify-center h-8">
+                      <span className="w-2 h-2 bg-orange-600 rounded-full animate-ping"></span>
+                      <span
+                        className="w-2 h-2 bg-orange-600 rounded-full animate-ping"
+                        style={{ animationDelay: "0.15s" }}
+                      ></span>
+                      <span
+                        className="w-2 h-2 bg-orange-600 rounded-full animate-ping"
+                        style={{ animationDelay: "0.3s" }}
+                      ></span>
+                    </div>
+                    Sending…
+                  </div>
+                )}
+                {status === "success" && "Sent Successfully!"}
+              </span>
             </button>
           </form>
         </div>
@@ -200,4 +233,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;

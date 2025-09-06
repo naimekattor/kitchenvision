@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import {
   Search,
   Building2,
@@ -10,16 +10,12 @@ import {
   User,
   Clock,
   Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Youtube,
   ChevronLeft,
   ChevronRight,
-} from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { FaInstagram } from "react-icons/fa"
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
 
 const blogPosts = [
   {
@@ -58,7 +54,7 @@ const blogPosts = [
     readTime: "0 minutes read",
     date: "31 May",
   },
-]
+];
 
 const categories = [
   { name: "Redaktion - Team-Conte", count: 3 },
@@ -67,7 +63,7 @@ const categories = [
   // { name: "Urban Oasis", count: 6 },
   // { name: "Interior Perfection", count: 3 },
   // { name: "Blueprint Builders", count: 3 },
-]
+];
 
 const popularPosts = [
   {
@@ -85,9 +81,17 @@ const popularPosts = [
     image: "/images/Blog3picture1.jpg",
     date: "31 May",
   },
-]
+];
 
-const popularTags = ["Interiors", "The Design", "Blueprint", "Builders", "Modern", "Living", "Spacers"]
+const popularTags = [
+  "Interiors",
+  "The Design",
+  "Blueprint",
+  "Builders",
+  "Modern",
+  "Living",
+  "Spacers",
+];
 
 export default function BlogPage() {
   return (
@@ -101,8 +105,8 @@ export default function BlogPage() {
                 <article key={post.id} className="bg-white">
                   <Link href={`/blog/${post.slug}`}>
                     <Image
-                    width={1000}
-                    height={1024}
+                      width={1000}
+                      height={1024}
                       src={post.image || "/placeholder.svg"}
                       alt={post.title}
                       className="w-full h-64 md:h-80 object-cover rounded-lg mb-6 hover:opacity-95 transition-opacity"
@@ -130,10 +134,15 @@ export default function BlogPage() {
                     </h2>
                   </Link>
 
-                  <p className="text-muted-foreground leading-relaxed mb-6">{post.excerpt}</p>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    {post.excerpt}
+                  </p>
 
                   <Link href={`/blog/${post.slug}`}>
-                    <Button variant="outline" className="hover:bg-primary hover:text-primary-foreground bg-transparent">
+                    <Button
+                      variant="outline"
+                      className="hover:bg-primary hover:text-primary-foreground bg-transparent"
+                    >
                       Read More
                     </Button>
                   </Link>
@@ -148,7 +157,11 @@ export default function BlogPage() {
                   <ChevronLeft className="w-4 h-4 mr-1" />
                   Previous
                 </Button>
-                <Button variant="default" size="sm" className="bg-gray-900 text-white">
+                <Button
+                  variant="default"
+                  size="sm"
+                  className="bg-gray-900 text-white"
+                >
                   1
                 </Button>
                 <Button variant="outline" size="sm">
@@ -172,7 +185,11 @@ export default function BlogPage() {
                 Search
               </h3>
               <div className="flex">
-                <Input type="text" placeholder="Search ..." className="rounded-r-none border-r-0" />
+                <Input
+                  type="text"
+                  placeholder="Search ..."
+                  className="rounded-r-none border-r-0"
+                />
                 <Button className="bg-gray-900 hover:bg-gray-800 rounded-l-none px-4">
                   <Search className="w-4 h-4" />
                 </Button>
@@ -189,8 +206,8 @@ export default function BlogPage() {
                 {popularPosts.map((post, index) => (
                   <div key={index} className="flex space-x-4">
                     <Image
-                    width={1024}
-                    height={1024}
+                      width={1024}
+                      height={1024}
                       src={post.image || "/placeholder.svg"}
                       alt={post.title}
                       className="w-16 h-16 object-cover rounded-lg flex-shrink-0"
@@ -224,7 +241,9 @@ export default function BlogPage() {
                     <span className="text-muted-foreground hover:text-primary cursor-pointer transition-colors">
                       {category.name}
                     </span>
-                    <span className="bg-gray-900 text-white text-sm px-3 py-1 rounded">{category.count}</span>
+                    <span className="bg-gray-900 text-white text-sm px-3 py-1 rounded">
+                      {category.count}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -237,10 +256,16 @@ export default function BlogPage() {
                 Never Miss News
               </h3>
               <div className="flex justify-start space-x-4">
-                <Link href={'https://www.facebook.com/contekuechen'} className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <Link
+                  href={"https://www.facebook.com/contekuechen"}
+                  className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors"
+                >
                   <Facebook className="w-5 h-5 text-gray-600" />
                 </Link>
-                <Link href={'https://www.instagram.com/contekuechen'} className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <Link
+                  href={"https://www.instagram.com/contekuechen"}
+                  className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors"
+                >
                   <FaInstagram className="w-5 h-5 text-gray-600" />
                 </Link>
                 {/* <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
@@ -278,5 +303,5 @@ export default function BlogPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
