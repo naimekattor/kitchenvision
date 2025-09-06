@@ -60,7 +60,7 @@ const ContactPage = () => {
         <div className="relative w-full lg:w-1/2 min-h-[300px]">
           <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-xl shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29186.925161647196!2d90.378288!3d23.87664955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d05e7074dd%3A0xd1c58803049f00c7!2sUttara%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1756287000717!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.321592220574!2d12.179630476424549!3d48.16188287124628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4775f9500061f825%3A0xbab56b4aef57555c!2sHauptstra%C3%9Fe%2036%2C%2083527%20Haag%20in%20Oberbayern%2C%20Germany!5e0!3m2!1sen!2sbd!4v1757133589268!5m2!1sen!2sbd"
               className="absolute top-0 left-0 w-full h-full border-0"
               allowFullScreen
               loading="lazy"

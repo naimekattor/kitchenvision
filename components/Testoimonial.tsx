@@ -50,7 +50,7 @@ const Testoimonial = () => {
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4">
                       <Image
-                        src="/images/team_img1.jpg"
+                        src="/images/tesPerson1.jpg"
                         alt="team member"
                         width={64}
                         height={64}
@@ -58,9 +58,11 @@ const Testoimonial = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800">
-                          Daniele Conte
+                          Müller
                         </h3>
-                        <p className="text-sm text-gray-500">role</p>
+                        <p className="text-sm text-gray-500">
+                          Inhaber und Geschäftsführung
+                        </p>
                       </div>
                       <div className="flex-shrink-0 text-6xl text-gray-200 opacity-50 font-serif">
                         <Quote size={80} />
@@ -79,10 +81,13 @@ const Testoimonial = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 leading-relaxed italic mt-2">
-                      I recently attended their workshop, an transformative
-                      experience. The content was engaging, the presenters were
-                      knowledgeable and passionate I recen attended their
-                      workshop, an transformative
+                      The initial consultation with Conte Kuche & Raum was
+                      incredibly insightful. The design ideas were fantastic,
+                      and while the process took a bit of time, the follow-up
+                      support was excellent. They helped us navigate all the
+                      options and find the perfect materials, making the final
+                      result even better than we had hoped for. A truly
+                      professional and worthwhile service.
                     </p>
                   </div>
                 </div>
@@ -92,7 +97,7 @@ const Testoimonial = () => {
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4">
                       <Image
-                        src="/images/team_img1.jpg"
+                        src="/images/tesPerson2.jpg"
                         alt="team member"
                         width={64}
                         height={64}
@@ -100,9 +105,9 @@ const Testoimonial = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800">
-                          name
+                          Peter
                         </h3>
-                        <p className="text-sm text-gray-500">role</p>
+                        {/* <p className="text-sm text-gray-500">role</p> */}
                       </div>
                       <div className="flex-shrink-0 text-6xl text-gray-200 opacity-50 font-serif">
                         <Quote size={80} />
@@ -121,10 +126,12 @@ const Testoimonial = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 leading-relaxed italic mt-2">
-                      I recently attended their workshop, an transformative
-                      experience. The content was engaging, the presenters were
-                      knowledgeable and passionate I recen attended their
-                      workshop, an transformative
+                      Conte Kuche & Raum made designing our new kitchen an
+                      absolute pleasure. Their quick turnaround on initial
+                      concepts and clear communication made the entire process
+                      stress-free. The designs were practical, stylish, and
+                      exactly what we were looking for. I couldn't be happier
+                      with the results and the friendly service.
                     </p>
                   </div>
                 </div>
@@ -134,7 +141,7 @@ const Testoimonial = () => {
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4">
                       <Image
-                        src="/images/team_img1.jpg"
+                        src="/images/tesPerson3.jpg"
                         alt="team member"
                         width={64}
                         height={64}
@@ -142,9 +149,9 @@ const Testoimonial = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800">
-                          name
+                          Mark
                         </h3>
-                        <p className="text-sm text-gray-500">role</p>
+                        {/* <p className="text-sm text-gray-500">role</p> */}
                       </div>
                       <div className="flex-shrink-0 text-6xl text-gray-200 opacity-50 font-serif">
                         <Quote size={80} />
@@ -163,10 +170,13 @@ const Testoimonial = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 leading-relaxed italic mt-2">
-                      I recently attended their workshop, an transformative
-                      experience. The content was engaging, the presenters were
-                      knowledgeable and passionate I recen attended their
-                      workshop, an transformative
+                      Our experience with Conte Kuche & Raum was outstanding.
+                      The advice was highly personalized and perfectly tailored
+                      to our specific budget and style preferences. We ended up
+                      with a design that was more functional and beautiful than
+                      we could have ever imagined. It's a great concept, and the
+                      team's professional execution exceeded all of our
+                      expectations.
                     </p>
                   </div>
                 </div>
