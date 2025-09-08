@@ -2,18 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  User,
-  Building2,
-  Clock,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Youtube,
-} from "lucide-react";
+import { User, Building2, Clock, Facebook } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FaInstagram } from "react-icons/fa";
 
 const blogPosts = {
   "Three-Conte-kitchens-nominated-we-are-proud": {
@@ -76,12 +69,12 @@ Neudeutsch für Nudeln aus Zucchini und ein neuer Genuss für den Gaumen. Kalori
 };
 
 const categories = [
-  { name: "Space Craft Studio", count: 4 },
-  { name: "Architecture Plus", count: 3 },
-  { name: "Dream Home Designs", count: 7 },
-  { name: "Urban Oasis", count: 6 },
-  { name: "Interior Perfection", count: 3 },
-  { name: "Blueprint Builders", count: 3 },
+  { name: "Redaktion - Team-Conte", count: 3 },
+  // { name: "Architecture Plus", count: 3 },
+  // { name: "Dream Home Designs", count: 7 },
+  // { name: "Urban Oasis", count: 6 },
+  // { name: "Interior Perfection", count: 3 },
+  // { name: "Blueprint Builders", count: 3 },
 ];
 
 const popularTags = [
@@ -190,7 +183,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Categories
+                Categorien
               </h3>
               <div className="space-y-3">
                 {categories.map((category, index) => (
@@ -213,24 +206,21 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Never Miss News
+                Verpassen Sie keine Neuigkeiten
               </h3>
-              <div className="flex justify-center space-x-4">
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+              <div className="flex justify-start space-x-4">
+                <Link
+                  href={"https://www.facebook.com/contekuechen"}
+                  className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors"
+                >
                   <Facebook className="w-5 h-5 text-gray-600" />
-                </div>
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Twitter className="w-5 h-5 text-gray-600" />
-                </div>
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Instagram className="w-5 h-5 text-gray-600" />
-                </div>
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Linkedin className="w-5 h-5 text-gray-600" />
-                </div>
-                <div className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Youtube className="w-5 h-5 text-gray-600" />
-                </div>
+                </Link>
+                <Link
+                  href={"https://www.instagram.com/contekuechen"}
+                  className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer transition-colors"
+                >
+                  <FaInstagram className="w-5 h-5 text-gray-600" />
+                </Link>
               </div>
             </Card>
 
@@ -238,7 +228,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Popular Tags
+                Beleibte Tags
               </h3>
               <div className="flex flex-wrap gap-3">
                 {popularTags.map((tag, index) => (
