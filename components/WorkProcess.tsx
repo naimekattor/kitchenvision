@@ -45,24 +45,24 @@ const WorkProcess: React.FC = () => {
       description:
         "Wir kreieren individuelle Wohnlandschaften, die Persönlichkeit ausstrahlen – vom harmonischen Farbkonzept bis zur perfekten Materialkombination.",
     },
-    {
-      number: "04",
-      title: "Conceptual Spaces",
-      description:
-        "Ob Küche, Wohnzimmer oder Büro – wir entwickeln Raumkonzepte, die Ihre Bedürfnisse in den Mittelpunkt stellen und den Alltag erleichtern.",
-    },
-    {
-      number: "05",
-      title: "Inspire Design Group",
-      description:
-        "Unser Team aus erfahrenen Designern inspiriert und begleitet Sie bei jedem Schritt – mit kreativen Ideen und praxisnahen Lösungen.",
-    },
-    {
-      number: "06",
-      title: "Modern Living Spaces",
-      description:
-        "Moderne Wohnräume, die Komfort, Technologie und Stil vereinen – wir bringen zeitgemäße Trends in Einklang mit Ihrer individuellen Vision.",
-    },
+    // {
+    //   number: "04",
+    //   title: "Conceptual Spaces",
+    //   description:
+    //     "Ob Küche, Wohnzimmer oder Büro – wir entwickeln Raumkonzepte, die Ihre Bedürfnisse in den Mittelpunkt stellen und den Alltag erleichtern.",
+    // },
+    // {
+    //   number: "05",
+    //   title: "Inspire Design Group",
+    //   description:
+    //     "Unser Team aus erfahrenen Designern inspiriert und begleitet Sie bei jedem Schritt – mit kreativen Ideen und praxisnahen Lösungen.",
+    // },
+    // {
+    //   number: "06",
+    //   title: "Modern Living Spaces",
+    //   description:
+    //     "Moderne Wohnräume, die Komfort, Technologie und Stil vereinen – wir bringen zeitgemäße Trends in Einklang mit Ihrer individuellen Vision.",
+    // },
   ];
 
   return (

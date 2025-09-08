@@ -23,7 +23,14 @@ export default function LayoutContent({
   const pathname = usePathname() ?? "/";
   const isHome = pathname === "/";
 
-  const ALLOWED_ROUTES = ["/", "/about", "/contact", "/blog", "/service"];
+  const ALLOWED_ROUTES = [
+    "/",
+    "/about",
+    "/contact",
+    "/blog",
+    "/service",
+    "/privacy-policy",
+  ];
   const isAllowed = ALLOWED_ROUTES.some(
     (r) => pathname === r || pathname.startsWith(r + "/")
   );

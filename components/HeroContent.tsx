@@ -2,6 +2,14 @@
 import { usePathname } from "next/navigation";
 import React from "react";
 
+// Translation map
+const translations: Record<string, string> = {
+  about: "Über uns",
+  contact: "Kontakt",
+  blog: "Blog",
+  service: "Service",
+};
+
 // Define props for PageHeader
 interface PageHeaderProps {
   pageTitle: string;
@@ -49,21 +57,27 @@ const HeroContent: React.FC = () => {
   const segments = pathName.split("/").filter(Boolean);
 
   const breadcrumb = [
-    { label: "Home", link: "/" },
+    { label: translations["home"], link: "/" },
     ...segments.map((segment, index) => {
-      // Build URL progressively (/about, /about/team, etc.)
       const link = "/" + segments.slice(0, index + 1).join("/");
-      return {
-        label: segment.charAt(0).toUpperCase() + segment.slice(1), // Capitalize
-        link,
-      };
+
+      // Use German translation if available, otherwise fallback
+      const germanLabel =
+        translations[segment.toLowerCase()] ||
+        segment.charAt(0).toUpperCase() + segment.slice(1);
+
+      return { label: germanLabel, link };
     }),
   ];
 
   return (
     <div className="bg-gray-100 min-h-[350px]">
       <PageHeader
-        pageTitle={segments[segments.length - 1]?.toUpperCase() || "Home"}
+        pageTitle={
+          translations[
+            segments[segments.length - 1]?.toLowerCase() || "home"
+          ] || ""
+        }
         path={breadcrumb}
       />
     </div>

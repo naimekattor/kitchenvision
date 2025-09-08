@@ -18,7 +18,6 @@ const Portfolio = () => {
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
               Verwandle deinen Raum.
-
               <br />
               Deine Traumküche
             </h2>
@@ -63,7 +62,7 @@ const Portfolio = () => {
               <Image
                 width={800}
                 height={256}
-                src="/images/portfolio_img1.jpg"
+                src="/images/portfolio/portfolio_img1.jpg"
                 alt="Kitchen Portfolio 1"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -76,7 +75,7 @@ const Portfolio = () => {
               <Image
                 width={800}
                 height={256}
-                src="/images/portfolio_img2.jpg"
+                src="/images/portfolio/portfolio_img2.jpg"
                 alt="Kitchen Portfolio 2"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -89,7 +88,7 @@ const Portfolio = () => {
               <Image
                 width={800}
                 height={256}
-                src="/images/portfolio_img3.jpg"
+                src="/images/portfolio/portfolio_img3.jpg"
                 alt="Kitchen Portfolio 3"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -102,7 +101,7 @@ const Portfolio = () => {
               <Image
                 width={800}
                 height={256}
-                src="/images/portfolio_img4.jpg"
+                src="/images/portfolio/portfolio_img4.jpg"
                 alt="Kitchen Portfolio 4"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -115,7 +114,79 @@ const Portfolio = () => {
               <Image
                 width={800}
                 height={256}
-                src="/images/portfolio_img2.jpg"
+                src="/images/portfolio/portfolio_img5.jpg"
+                alt="Kitchen Portfolio 5"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative group cursor-pointer">
+              <Image
+                width={800}
+                height={256}
+                src="/images/portfolio/portfolio_img6.jpg"
+                alt="Kitchen Portfolio 5"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative group cursor-pointer">
+              <Image
+                width={800}
+                height={256}
+                src="/images/portfolio/portfolio_img7.jpg"
+                alt="Kitchen Portfolio 5"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative group cursor-pointer">
+              <Image
+                width={800}
+                height={256}
+                src="/images/portfolio/portfolio_img8.jpg"
+                alt="Kitchen Portfolio 5"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative group cursor-pointer">
+              <Image
+                width={800}
+                height={256}
+                src="/images/portfolio/portfolio_img9.jpg"
+                alt="Kitchen Portfolio 5"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative group cursor-pointer">
+              <Image
+                width={800}
+                height={256}
+                src="/images/portfolio/portfolio_img10.jpg"
+                alt="Kitchen Portfolio 5"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative group cursor-pointer">
+              <Image
+                width={800}
+                height={256}
+                src="/images/portfolio/portfolio_img11.jpg"
                 alt="Kitchen Portfolio 5"
                 className="w-full h-64 object-cover rounded-lg"
               />

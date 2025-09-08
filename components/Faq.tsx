@@ -64,54 +64,69 @@ const Faq = () => {
   const faqData = [
     {
       id: 1,
-      question: "Warum sollte ich meine Küche bei CONTE Küche & Raum planen lassen?",
+      question:
+        "Warum sollte ich meine Küche bei CONTE Küche & Raum planen lassen?",
       answer:
         "Unser Küchenstudio bietet individuelle Küchenplanung, die perfekt auf Ihre Räume, Ihren Stil und Ihr Budget abgestimmt ist. Mit langjähriger Erfahrung und persönlicher Beratung begleiten wir Sie vom ersten Entwurf bis zur fertigen Traumküche.",
     },
     {
       id: 2,
       question: "Ist die Erstberatung zur Küchenplanung kostenlos?",
-      answer: "Ja – die Erstberatung in unserem Küchenstudio oder direkt bei Ihnen zu Hause ist unverbindlich und kostenlos. So können Sie sich in Ruhe ein Bild von unseren Leistungen machen.",
+      answer:
+        "Ja – die Erstberatung in unserem Küchenstudio oder direkt bei Ihnen zu Hause ist unverbindlich und kostenlos. So können Sie sich in Ruhe ein Bild von unseren Leistungen machen.",
     },
     {
       id: 3,
       question: " Kann ich online einen Termin im Küchenstudio buchen?",
-      answer: "Ja – über unser Online-Buchungstool können Sie jederzeit bequem einen Beratungstermin für Ihre Küchenplanung oder Wohnraumgestaltung wählen.",
+      answer:
+        "Ja – über unser Online-Buchungstool können Sie jederzeit bequem einen Beratungstermin für Ihre Küchenplanung oder Wohnraumgestaltung wählen.",
     },
     {
       id: 4,
-      question: "Wie lange dauert es von der Planung bis zur fertigen Einbauküche?",
-      answer: "Die Dauer hängt von der individuellen Planung ab. Nach Auftragserteilung beträgt die Lieferzeit Ihrer neuen Küche in der Regel 6–10 Wochen.",
+      question:
+        "Wie lange dauert es von der Planung bis zur fertigen Einbauküche?",
+      answer:
+        "Die Dauer hängt von der individuellen Planung ab. Nach Auftragserteilung beträgt die Lieferzeit Ihrer neuen Küche in der Regel 6–10 Wochen.",
     },
     {
-      id: 4,
+      id: 5,
       question: "Planen Sie auch Küchen mit kleinerem Budget?",
-      answer: "Selbstverständlich. Unser Küchenstudio bietet sowohl hochwertige „Standardküchen“ als auch maßgeschneiderte Premiumlösungen. Gemeinsam finden wir die optimale Lösung für Ihr Budget.",
+      answer:
+        "Selbstverständlich. Unser Küchenstudio bietet sowohl hochwertige „Standardküchen“ als auch maßgeschneiderte Premiumlösungen. Gemeinsam finden wir die optimale Lösung für Ihr Budget.",
     },
     {
-      id: 4,
-      question: "Übernehmen Sie auch den Abbau und die Entsorgung meiner alten Küche?",
-      answer: "Ja – wir kümmern uns auf Wunsch um den kompletten Abbau und die fachgerechte Entsorgung Ihrer alten Küche, damit Sie sich um nichts kümmern müssen.",
+      id: 6,
+      question:
+        "Übernehmen Sie auch den Abbau und die Entsorgung meiner alten Küche?",
+      answer:
+        "Ja – wir kümmern uns auf Wunsch um den kompletten Abbau und die fachgerechte Entsorgung Ihrer alten Küche, damit Sie sich um nichts kümmern müssen.",
     },
     {
-      id: 4,
-      question: "Bieten Sie eine komplette Küchenmontage mit allen Anschlüssen an?",
-      answer: "Ja, bei uns erhalten Sie Ihre Küche schlüsselfertig: Lieferung, Montage, Elektro- und Wasseranschlüsse – alles aus einer Hand.",
+      id: 7,
+      question:
+        "Bieten Sie eine komplette Küchenmontage mit allen Anschlüssen an?",
+      answer:
+        "Ja, bei uns erhalten Sie Ihre Küche schlüsselfertig: Lieferung, Montage, Elektro- und Wasseranschlüsse – alles aus einer Hand.",
     },
     {
-      id: 4,
+      id: 8,
       question: "Mit welchen Marken und Herstellern arbeiten Sie?",
-      answer: "Wir führen Küchenmöbel und Elektrogeräte namhafter Hersteller. Dadurch haben Sie eine große Auswahl an hochwertigen Materialien, modernen Designs und energieeffizienten Geräten.",
+      answer:
+        "Wir führen Küchenmöbel und Elektrogeräte namhafter Hersteller. Dadurch haben Sie eine große Auswahl an hochwertigen Materialien, modernen Designs und energieeffizienten Geräten.",
     },
     {
-      id: 4,
-      question: " Kann ich bei Ihnen auch Möbel für andere Räume planen lassen?",
-      answer: "Ja – neben Küchen bieten wir auch maßgeschneiderte Lösungen für Wohnräume, Garderoben, Hauswirtschaftsräume, Ankleidezimmer und vieles mehr.",
+      id: 9,
+      question:
+        " Kann ich bei Ihnen auch Möbel für andere Räume planen lassen?",
+      answer:
+        "Ja – neben Küchen bieten wir auch maßgeschneiderte Lösungen für Wohnräume, Garderoben, Hauswirtschaftsräume, Ankleidezimmer und vieles mehr.",
     },
     {
-      id: 4,
-      question: "Habe ich während der Küchenplanung einen festen Ansprechpartner?",
-      answer: "Ja – Sie haben immer einen persönlichen Ansprechpartner, der Ihr Küchenprojekt von der Planung bis zur Fertigstellung betreut.",
+      id: 10,
+      question:
+        "Habe ich während der Küchenplanung einen festen Ansprechpartner?",
+      answer:
+        "Ja – Sie haben immer einen persönlichen Ansprechpartner, der Ihr Küchenprojekt von der Planung bis zur Fertigstellung betreut.",
     },
   ];
 
@@ -125,10 +140,13 @@ const Faq = () => {
             FAQ
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight tracking-tight mb-4">
-            Wertiges Interior.  <br /> Wertiger Lifestyle.
+            Wertiges Interior. <br /> Wertiger Lifestyle.
           </h1>
           <p className="text-lg text-gray-500 max-w-xl mb-8">
-            In unseren FAQs beantworten wir die häufigsten Fragen rund um Planung, Design und Service. Damit Sie schnell und unkompliziert alle Informationen finden, die Ihr Zuhause und Ihr Leben noch wertiger machen.
+            In unseren FAQs beantworten wir die häufigsten Fragen rund um
+            Planung, Design und Service. Damit Sie schnell und unkompliziert
+            alle Informationen finden, die Ihr Zuhause und Ihr Leben noch
+            wertiger machen.
           </p>
 
           {/* Project completed box */}
@@ -149,7 +167,10 @@ const Faq = () => {
               </div>
 
               <span className="text-sm text-gray-500">
-                Jedes Projekt ist einzigartig – und doch verbindet sie alle unser Anspruch an Qualität, Design und Perfektion. Von modernen Küchen bis zu ganzheitlichen Raumkonzepten: Unsere Referenzen zeigen, wie aus Ideen inspirierende Wohnräume werden.
+                Jedes Projekt ist einzigartig – und doch verbindet sie alle
+                unser Anspruch an Qualität, Design und Perfektion. Von modernen
+                Küchen bis zu ganzheitlichen Raumkonzepten: Unsere Referenzen
+                zeigen, wie aus Ideen inspirierende Wohnräume werden.
               </span>
             </div>
           </div>

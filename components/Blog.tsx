@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Folder } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Blog = () => {
   const paginationRef = useRef(null);
@@ -59,13 +60,19 @@ const Blog = () => {
                     <span>
                       <Folder size={16} />
                     </span>
-                    <p>Urban Oasis</p>
+                    <p>CONTE Haag</p>
                   </div>
-                  <h3 className="text-sm text-gray-500 mb-1">
-                    Redefining the concept of living
-                  </h3>
+                  {/* <h3 className="text-sm text-gray-500 mb-1">
+                    Drei Küchen von Conte nominiert – wir sind stolz
+                  </h3> */}
                   <h4 className="font-bold text-lg">
-                    There are many variations of...
+                    <Link
+                      href={
+                        "http://localhost:3001/blog/Three-Conte-kitchens-nominated-we-are-proud"
+                      }
+                    >
+                      Drei Küchen von Conte nominiert – wir sind stolz
+                    </Link>
                   </h4>
                 </div>
               </div>
@@ -84,13 +91,19 @@ const Blog = () => {
                     <span>
                       <Folder size={16} />
                     </span>
-                    <p>Urban Oasis</p>
+                    <p>CONTE Haag</p>
                   </div>
-                  <h3 className="text-sm text-gray-500 mb-1">
+                  {/* <h3 className="text-sm text-gray-500 mb-1">
                     Redefining the concept of living
-                  </h3>
+                  </h3> */}
                   <h4 className="font-bold text-lg">
-                    There are many variations of...
+                    <Link
+                      href={
+                        "http://localhost:3001/blog/ST-ONE-natural-stone-in-its-most-beautiful-form"
+                      }
+                    >
+                      ST-ONE – Naturstein in seiner schönsten Form...
+                    </Link>
                   </h4>
                 </div>
               </div>
@@ -100,7 +113,7 @@ const Blog = () => {
                 <Image
                   width={800}
                   height={320}
-                  src={`/images/blog_img1.jpg`}
+                  src={`/images/Blog3picture1.jpg`}
                   alt="Blog Image"
                   className="w-full h-80 object-cover rounded"
                 />
@@ -109,13 +122,19 @@ const Blog = () => {
                     <span>
                       <Folder size={16} />
                     </span>
-                    <p>Urban Oasis</p>
+                    <p>CONTE Haag</p>
                   </div>
-                  <h3 className="text-sm text-gray-500 mb-1">
+                  {/* <h3 className="text-sm text-gray-500 mb-1">
                     Redefining the concept of living
-                  </h3>
+                  </h3> */}
                   <h4 className="font-bold text-lg">
-                    There are many variations of...
+                    <Link
+                      href={
+                        "http://localhost:3001/blog/May-we-introduce-Zoodles"
+                      }
+                    >
+                      Dürfen wie vorstellen: Zoodles...
+                    </Link>
                   </h4>
                 </div>
               </div>
@@ -123,9 +142,9 @@ const Blog = () => {
             <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
                 <Image
+                  src={`/images/blog_img2.jpg`}
                   width={800}
                   height={320}
-                  src={`/images/blog_img3.jpg`}
                   alt="Blog Image"
                   className="w-full h-80 object-cover rounded"
                 />
@@ -134,13 +153,19 @@ const Blog = () => {
                     <span>
                       <Folder size={16} />
                     </span>
-                    <p>Urban Oasis</p>
+                    <p>CONTE Haag</p>
                   </div>
-                  <h3 className="text-sm text-gray-500 mb-1">
+                  {/* <h3 className="text-sm text-gray-500 mb-1">
                     Redefining the concept of living
-                  </h3>
+                  </h3> */}
                   <h4 className="font-bold text-lg">
-                    There are many variations of...
+                    <Link
+                      href={
+                        "http://localhost:3001/blog/ST-ONE-natural-stone-in-its-most-beautiful-form"
+                      }
+                    >
+                      ST-ONE – Naturstein in seiner schönsten Form...
+                    </Link>
                   </h4>
                 </div>
               </div>

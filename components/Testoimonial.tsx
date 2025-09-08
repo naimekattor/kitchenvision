@@ -58,11 +58,11 @@ const Testoimonial = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800">
-                          Müller
+                          Felix Moser
                         </h3>
-                        <p className="text-sm text-gray-500">
+                        {/* <p className="text-sm text-gray-500">
                           Inhaber und Geschäftsführung
-                        </p>
+                        </p> */}
                       </div>
                       <div className="flex-shrink-0 text-6xl text-gray-200 opacity-50 font-serif">
                         <Quote size={80} />
@@ -81,13 +81,11 @@ const Testoimonial = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 leading-relaxed italic mt-2">
-                      The initial consultation with Conte Kuche & Raum was
-                      incredibly insightful. The design ideas were fantastic,
-                      and while the process took a bit of time, the follow-up
-                      support was excellent. They helped us navigate all the
-                      options and find the perfect materials, making the final
-                      result even better than we had hoped for. A truly
-                      professional and worthwhile service.
+                      Sehr gute Adresse für tolle Küchen. Die Beratung top.
+                      Nicht nur werden hervorragende Vorschläge gemacht, sondern
+                      auch die eigenen Wünsche in die Planung einbezogen und
+                      wenn nötig angepasst. Wir hatten immer das Gefühl „unsere“
+                      Küche zu ... Mehr
                     </p>
                   </div>
                 </div>
@@ -105,7 +103,7 @@ const Testoimonial = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800">
-                          Peter
+                          Rupert Moka
                         </h3>
                         {/* <p className="text-sm text-gray-500">role</p> */}
                       </div>
@@ -126,12 +124,9 @@ const Testoimonial = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 leading-relaxed italic mt-2">
-                      Conte Kuche & Raum made designing our new kitchen an
-                      absolute pleasure. Their quick turnaround on initial
-                      concepts and clear communication made the entire process
-                      stress-free. The designs were practical, stylish, and
-                      exactly what we were looking for. I couldn't be happier
-                      with the results and the friendly service.
+                      Alles Super, von Anfang bis Ende! Wir können dieses
+                      Küchenstudio nur wärmstens empfehlen. Bei der Planung und
+                      Beratung werden genau auf die Wünsche des Kunden ...
                     </p>
                   </div>
                 </div>
@@ -149,7 +144,7 @@ const Testoimonial = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800">
-                          Mark
+                          Karsten
                         </h3>
                         {/* <p className="text-sm text-gray-500">role</p> */}
                       </div>
@@ -170,13 +165,50 @@ const Testoimonial = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 leading-relaxed italic mt-2">
-                      Our experience with Conte Kuche & Raum was outstanding.
-                      The advice was highly personalized and perfectly tailored
-                      to our specific budget and style preferences. We ended up
-                      with a design that was more functional and beautiful than
-                      we could have ever imagined. It's a great concept, and the
-                      team's professional execution exceeded all of our
-                      expectations.
+                      Wir sind nach einigen Beratungen bei den üblichen
+                      Verdächtigen durch einen .. glucklichen Zufall auf Conte
+                      Küchen gestoßen und haben es nicht bereut!
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="flex bg-white rounded-xl shadow-lg p-6 max-w-lg mx-auto md:p-8">
+                  <div className="flex flex-col space-y-4">
+                    <div className="flex items-center space-x-4">
+                      <Image
+                        src="/images/tesPerson4.jpg"
+                        alt="team member"
+                        width={64}
+                        height={64}
+                        className="w-16 h-16 rounded-full object-cover"
+                      />
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-gray-800">
+                          Gabriele Gruber
+                        </h3>
+                        {/* <p className="text-sm text-gray-500">role</p> */}
+                      </div>
+                      <div className="flex-shrink-0 text-6xl text-gray-200 opacity-50 font-serif">
+                        <Quote size={80} />
+                      </div>
+                    </div>
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-5 h-5 ${
+                            i < 5
+                              ? "text-yellow-400 fill-yellow-400"
+                              : "text-gray-300"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                    <p className="text-gray-600 leading-relaxed italic mt-2">
+                      Dank Euch liebes Team, lieber Christian haben wir unseren
+                      Traum einer perfekten Küche realisieren können. Von der
+                      Planung bis zum Einbau war alles erstklassig...Mehr
                     </p>
                   </div>
                 </div>

@@ -16,7 +16,7 @@ const Team = () => {
             Unser Team
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-            Spezialisten in jedem Bereich. 
+            Spezialisten in jedem Bereich.
             <br />
             Gemeinsam für Ihre Traumküche.
           </h2>
@@ -82,8 +82,9 @@ const Team = () => {
                       <p className="text-sm text-muted-foreground mb-1">
                         Buchhaltung und Verwaltung
                       </p>
-                      <h4 className="font-bold text-lg">Buchhaltung und Verwaltung
-Valentina Conte</h4>
+                      <h4 className="font-bold text-lg">
+                        Buchhaltung und Verwaltung Valentina Conte
+                      </h4>
                     </div>
 
                     {/* <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
@@ -126,7 +127,7 @@ Valentina Conte</h4>
                   <Image
                     width={800}
                     height={376}
-                    src="/images/team_img2.jpg"
+                    src="/images/team_img4.jpg"
                     alt="Robert Fox"
                     className="w-full h-94 object-cover"
                   />
@@ -135,7 +136,9 @@ Valentina Conte</h4>
                       <p className="text-sm text-muted-foreground mb-1">
                         Buchhaltung und Verwaltung
                       </p>
-                      <h4 className="font-bold text-lg">Valentina Conte</h4>
+                      <h4 className="font-bold text-lg">
+                        Montageleitung Enrico
+                      </h4>
                     </div>
                   </div>
                 </div>

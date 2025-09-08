@@ -101,7 +101,7 @@ const Achievement = () => {
             >
               <div>
                 <p className="text-sm text-muted-foreground mb-4 font-medium">
-                  Our Achievement
+                  Unsere Leistung
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
                   Küchen & Wohnräume, die begeistern – mit Erfahrung und
@@ -122,7 +122,7 @@ const Achievement = () => {
                 </p>
                 <Link href={"/about"}>
                   <Button className="h-12 w-[150px]">
-                    Read More <ArrowRight />
+                    Mehr erfahren <ArrowRight />
                   </Button>
                 </Link>
               </div>
@@ -136,7 +136,7 @@ const Achievement = () => {
                 </div>
                 <div className="text-4xl font-bold mb-2">
                   <CountUp
-                    end={600}
+                    end={1000}
                     enableScrollSpy
                     scrollSpyDelay={2000}
                     suffix="+"
@@ -181,9 +181,7 @@ const Achievement = () => {
                       suffix="+"
                     />
                   </div>
-                  <p className="text-muted-foreground">
-                    positive Rückmeldungen & Empfehlungen
-                  </p>
+                  <p className="text-muted-foreground">tolle Bewertungen</p>
                 </div>
               </ScrollAnimation>
               {/* <ScrollAnimation

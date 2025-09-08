@@ -129,16 +129,16 @@ export default function Header() {
               pathname === "/contact" ? "text-[#02618e]" : ""
             }`}
           >
-            Contact
+            Kontakt
           </Link>
         </nav>
 
         <div className="md:flex hidden  gap-2 items-center">
           <Button className="h-12 w-[150px]" onClick={() => setShowModal(true)}>
-            Book Now <ArrowRight />
+            Termin buchen <ArrowRight />
           </Button>
           {/* <LanguageToggle /> */}
-          <Link href={"https://wa.me/88012345678901"} target="_blank">
+          <Link href={"https://wa.me/+4917675876349"} target="_blank">
             <FaWhatsappSquare size={50} className="text-green-500" />
           </Link>
 
@@ -219,15 +219,15 @@ ${open ? "translate-x-0" : "-translate-x-full"}`}
               onClick={() => setOpen(false)}
               className="text-lg"
             >
-              Contact
+              Kontakt
             </Link>
             <Button
               className="h-12 w-[150px]"
               onClick={() => setShowModal(true)}
             >
-              Book Now <ArrowRight />
+              Termin buchen <ArrowRight />
             </Button>
-            <Link href={"https://wa.me/88012345678901"} target="_blank">
+            <Link href={"https://wa.me/+4917675876349"} target="_blank">
               <FaWhatsappSquare size={50} className="text-green-500" />
             </Link>
           </div>

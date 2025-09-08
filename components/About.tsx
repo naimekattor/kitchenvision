@@ -33,7 +33,7 @@ export default function AboutSection() {
                     suffix="+"
                   />
                 </h2>
-                <p className="mt-2 text-lg">Years Of Experience</p>
+                <p className="mt-2 text-lg">jahre Erfahrung</p>
               </div>
             </ScrollAnimation>
 
@@ -118,17 +118,27 @@ export default function AboutSection() {
             Mit Herz geplant, mit Präzision umgesetzt.
           </h2>
           <p className="mt-6 text-gray-600 leading-relaxed">
-            Persönlich, individuell und mit Herz! Wir möchten Ihr vertrauensvoller Ansprechpartner für Einbauküchen und Wohnmöbel sein Durch die Zusammenarbeit mit einer handverlesenen Auswahl an Marken maximieren wir unser Know-how und optimieren unsere Einkaufskonditionen. Dies ermöglicht uns, Ihnen und unseren Kunden einen spürbaren Preisvorteil zu bieten. Die Montage unserer Küchen wird von erfahrenen Küchenmonteuren und unserem qualifizierten Schreinerteam durchgeführt, um höchste Montagequalität zu gewährleisten.
+            Persönlich, individuell und mit Herz! Wir möchten Ihr
+            vertrauensvoller Ansprechpartner für Einbauküchen und Wohnmöbel sein
+            Durch die Zusammenarbeit mit einer handverlesenen Auswahl an Marken
+            maximieren wir unser Know-how und optimieren unsere
+            Einkaufskonditionen. Dies ermöglicht uns, Ihnen und unseren Kunden
+            einen spürbaren Preisvorteil zu bieten. Die Montage unserer Küchen
+            wird von erfahrenen Küchenmonteuren und unserem qualifizierten
+            Schreinerteam durchgeführt, um höchste Montagequalität zu
+            gewährleisten.
           </p>
           <p className="mt-4 text-gray-600 leading-relaxed">
-            „Unsere Zielsetzung ist eine kompromisslose Planung und Umsetzung, die wir Dank unserer hauseigenen Werkstatt und unseres erfahrenen Schreinerteams mit höchster Präzision realisieren.“
+            „Unsere Zielsetzung ist eine kompromisslose Planung und Umsetzung,
+            die wir Dank unserer hauseigenen Werkstatt und unseres erfahrenen
+            Schreinerteams mit höchster Präzision realisieren.“
           </p>
 
           <Button
             className="h-12 w-[150px] mt-2"
             onClick={() => setShowModal(true)}
           >
-            Book Now <ArrowRight />
+            Termin buchen <ArrowRight />
           </Button>
 
           {showModal && rootElement && (

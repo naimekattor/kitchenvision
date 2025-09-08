@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import { ArrowRight, LinkIcon, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { toast } from "react-toastify";
@@ -89,16 +90,20 @@ const ContactPage = () => {
             <div className="flex items-start space-x-4">
               <FaSquareWhatsapp className="w-6 h-6 text-gray-500 flex-shrink-0" />
               <div className="flex flex-col">
-                <span className="text-lg font-semibold text-gray-800">
+                <Link
+                  href={"https://wa.me/+4917675876349"}
+                  target="_blank"
+                  className="text-lg font-semibold text-gray-800"
+                >
                   WhatsApp
-                </span>
+                </Link>
                 <a
-                  href="https://wa.me/88012345678901"
+                  href="https://wa.me/4917675876349"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:underline"
                 >
-                  012 345 678 9101
+                  0176/75876349
                 </a>
               </div>
             </div>
@@ -117,7 +122,7 @@ const ContactPage = () => {
               <MapPin className="w-6 h-6 text-gray-500 flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="text-lg font-semibold text-gray-800">
-                  Location
+                  Adresse
                 </span>
                 <span className="text-gray-500">
                   Hauptstraße 36, 83527 Haag in Oberbayern
@@ -176,13 +181,13 @@ const ContactPage = () => {
             />
             <input
               type="tel"
-              placeholder="Phone"
+              placeholder="Telefon"
               name="phone"
               className="col-span-1 md:col-span-1 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"
             />
             <input
               type="text"
-              placeholder="Subject"
+              placeholder="Betreff"
               name="subject"
               className="col-span-1 md:col-span-1 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"
             />

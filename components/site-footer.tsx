@@ -21,7 +21,7 @@ export default function Footer() {
       className={`bg-black text-white pb-16 ${isHome ? "pt-16" : "pt-64"} px-4`}
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Logo and Description Column */}
           <div className="lg:col-span-1">
             <div className="mb-6">
@@ -81,58 +81,51 @@ export default function Footer() {
             <h4 className="text-xl font-bold mb-6"> Links</h4>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Über uns
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/service"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="contact"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Kontakt
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/blog"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Team
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.contekuechen.de/kontakt/impressum.html"
+                <Link
+                  href="/privacy-policy"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Impressum und Datenschutz
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* More Service Column */}
-          <div>
+          {/* <div>
             <h4 className="text-xl font-bold mb-6">More Service</h4>
             <ul className="space-y-4">
               <li>
@@ -176,7 +169,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Column */}
           <div>
@@ -199,7 +192,7 @@ export default function Footer() {
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Phone Number</p>
+                  <p className="text-gray-400 text-sm">Festnetz</p>
                   <p className="text-white font-medium">08072/6869555</p>
                 </div>
               </div>
@@ -209,7 +202,7 @@ export default function Footer() {
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Email Address</p>
+                  <p className="text-gray-400 text-sm">Email </p>
                   <p className="text-white font-medium">info@contekuechen.de</p>
                 </div>
               </div>
@@ -224,23 +217,23 @@ export default function Footer() {
               © Conte Kuche & Raum 2025 | All Rights Reserved
             </p>
             <div className="flex space-x-6">
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
                 Trams & Condition
-              </a>
-              <a
-                href="#"
+              </a> */}
+              <Link
+                href="/privacy-policy"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
                 Privacy Policy
-              </a>
+              </Link>
               <Link
                 href="/contact"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
-                Contact Us
+                Kontakt
               </Link>
             </div>
           </div>

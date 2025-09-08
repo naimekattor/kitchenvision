@@ -27,8 +27,8 @@ const blogPosts = [
     image: "/images/Blog1.png",
     author: "Team-Conte",
     category: "CONTE Haag",
-    readTime: "0 minutes read",
-    date: "31 May",
+    readTime: "0 Leszeit read",
+    date: "31 Mai",
   },
   {
     id: 2,
@@ -39,8 +39,8 @@ const blogPosts = [
     image: "/images/Blog2.jpg",
     author: "Team-Conte",
     category: "CONTE Haag",
-    readTime: "0 minutes read",
-    date: "31 May",
+    readTime: "0 Leszeit read",
+    date: "20 Mai",
   },
   {
     id: 3,
@@ -51,8 +51,8 @@ const blogPosts = [
     image: "/images/Blog3picture1.jpg",
     author: "Team-Conte",
     category: "CONTE Haag",
-    readTime: "0 minutes read",
-    date: "31 May",
+    readTime: "0 Leszeit read",
+    date: "1 Mai",
   },
 ];
 
@@ -69,17 +69,17 @@ const popularPosts = [
   {
     title: "Drei Küchen von Conte nominiert – wir sind stolz",
     image: "/images/Blog1.png",
-    date: "31 May",
+    date: "31. Mai",
   },
   {
     title: "ST-ONE – Naturstein in seiner schönsten Form",
     image: "/images/Blog2.jpg",
-    date: "31 May",
+    date: "20. Mai",
   },
   {
     title: "Dürfen wie vorstellen: Zoodles.",
     image: "/images/Blog3picture1.jpg",
-    date: "31 May",
+    date: "1. Mai",
   },
 ];
 
@@ -230,7 +230,7 @@ export default function BlogPage() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Categories
+                Kategorien
               </h3>
               <div className="space-y-3">
                 {categories.map((category, index) => (
@@ -253,7 +253,7 @@ export default function BlogPage() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Never Miss News
+                Verpassen Sie keine Neuigkeiten
               </h3>
               <div className="flex justify-start space-x-4">
                 <Link
@@ -284,7 +284,7 @@ export default function BlogPage() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Popular Tags
+                Beleibte Tags
               </h3>
               <div className="flex flex-wrap gap-3">
                 {popularTags.map((tag, index) => (

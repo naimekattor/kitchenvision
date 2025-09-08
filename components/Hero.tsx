@@ -105,7 +105,7 @@ const Hero = () => {
                     suffix="+"
                   />
                 </div>
-                <div className="text-sm text-gray-500">Happy Clients</div>
+                <div className="text-sm text-gray-500">tolle Bewertungen</div>
               </div>
             </div>
           </div>
