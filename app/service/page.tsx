@@ -96,7 +96,7 @@ const page = () => {
           />
           <button
             type="submit"
-            className="col-span-1 md:col-span-2 flex items-center justify-center space-x-2 px-8 py-4 bg-[#333333] text-white font-semibold rounded shadow-md transition-transform transform hover:scale-105 hover:bg-gray-900 w-[200px]"
+            className="col-span-1 md:col-span-2 flex items-center justify-center space-x-2 px-8 py-4 bg-[#333333] text-white font-semibold rounded shadow-md transition-transform transform hover:scale-105 hover:bg-gray-900 min-w-[200px]"
           >
             <span className=" whitespace-nowrap">Terminanfrage senden</span>
             <ArrowRight />

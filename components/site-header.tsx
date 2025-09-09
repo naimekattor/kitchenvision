@@ -134,7 +134,10 @@ export default function Header() {
         </nav>
 
         <div className="md:flex hidden  gap-2 items-center">
-          <Button className="h-12 w-[150px]" onClick={() => setShowModal(true)}>
+          <Button
+            className="h-12 min-w-[150px] px-6"
+            onClick={() => setShowModal(true)}
+          >
             Termin buchen <ArrowRight />
           </Button>
           {/* <LanguageToggle /> */}
@@ -198,7 +201,7 @@ ${open ? "translate-x-0" : "-translate-x-full"}`}
               onClick={() => setOpen(false)}
               className="text-lg"
             >
-              About
+              Über uns
             </Link>
             <Link
               href="/service"
@@ -222,7 +225,7 @@ ${open ? "translate-x-0" : "-translate-x-full"}`}
               Kontakt
             </Link>
             <Button
-              className="h-12 w-[150px]"
+              className="h-12  px-6 min-w-[150px]"
               onClick={() => setShowModal(true)}
             >
               Termin buchen <ArrowRight />
