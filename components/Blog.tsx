@@ -49,7 +49,7 @@ const Blog = () => {
             <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
                 <Image
-                  src="/images/blog_img1.jpg"
+                  src="/images/blog1.png"
                   alt="Blog Image"
                   width={800}
                   height={320}
@@ -80,7 +80,7 @@ const Blog = () => {
             <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
                 <Image
-                  src={`/images/blog_img2.jpg`}
+                  src={`/images/blog2.jpg`}
                   width={800}
                   height={320}
                   alt="Blog Image"

@@ -71,25 +71,25 @@ const page = () => {
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder="E-mail"
             required
             name="email"
             className="col-span-1 md:col-span-1 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"
           />
           <input
             type="tel"
-            placeholder="Phone"
+            placeholder="Telefon"
             name="phone"
             className="col-span-1 md:col-span-1 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"
           />
           <input
             type="text"
-            placeholder="Subject"
+            placeholder="Betreff"
             name="subject"
             className="col-span-1 md:col-span-1 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"
           />
           <textarea
-            placeholder="Message"
+            placeholder="Ihre Nachricht"
             rows={6}
             name="message"
             className="col-span-1 md:col-span-2 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"

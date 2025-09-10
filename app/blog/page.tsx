@@ -143,7 +143,7 @@ export default function BlogPage() {
                       variant="outline"
                       className="hover:bg-primary hover:text-primary-foreground bg-transparent"
                     >
-                      Read More
+                      Mehr lesen
                     </Button>
                   </Link>
                 </article>
@@ -182,7 +182,7 @@ export default function BlogPage() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-4 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Search
+                Suche
               </h3>
               <div className="flex">
                 <Input
@@ -200,7 +200,7 @@ export default function BlogPage() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-0.5 bg-black mr-3"></span>
-                Popular Feeds
+                Feeds
               </h3>
               <div className="space-y-4">
                 {popularPosts.map((post, index) => (

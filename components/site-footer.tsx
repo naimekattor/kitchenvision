@@ -39,9 +39,9 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+            {/* <p className="text-gray-400 text-sm mb-6 leading-relaxed">
               It is a long established fact that a reader will be distracted
-            </p>
+            </p> */}
 
             {/* Email Subscription */}
             <div className="flex mb-6">
@@ -192,7 +192,7 @@ export default function Footer() {
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Festnetz</p>
+                  <p className="text-gray-400 text-sm">Telefon</p>
                   <p className="text-white font-medium">08072/6869555</p>
                 </div>
               </div>
@@ -202,7 +202,7 @@ export default function Footer() {
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Email </p>
+                  <p className="text-gray-400 text-sm">E-Mail </p>
                   <p className="text-white font-medium">info@contekuechen.de</p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © Conte Kuche & Raum 2025 | All Rights Reserved
+              © Conte Küche & Raum GmbH 2025 | All Rights Reserved
             </p>
             <div className="flex space-x-6">
               {/* <a

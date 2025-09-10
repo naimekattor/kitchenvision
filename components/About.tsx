@@ -119,9 +119,9 @@ export default function AboutSection() {
           </h2>
           <p className="mt-6 text-gray-600 leading-relaxed">
             Persönlich, individuell und mit Herz! Wir möchten Ihr
-            vertrauensvoller Ansprechpartner für Einbauküchen und Wohnmöbel sein
-            Durch die Zusammenarbeit mit einer handverlesenen Auswahl an Marken
-            maximieren wir unser Know-how und optimieren unsere
+            vertrauensvoller Ansprechpartner für Einbauküchen und Wohnmöbel
+            sein. Durch die Zusammenarbeit mit einer handverlesenen Auswahl an
+            Marken maximieren wir unser Know-how und optimieren unsere
             Einkaufskonditionen. Dies ermöglicht uns, Ihnen und unseren Kunden
             einen spürbaren Preisvorteil zu bieten. Die Montage unserer Küchen
             wird von erfahrenen Küchenmonteuren und unserem qualifizierten

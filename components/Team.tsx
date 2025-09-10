@@ -82,9 +82,7 @@ const Team = () => {
                       <p className="text-sm text-muted-foreground mb-1">
                         Buchhaltung und Verwaltung
                       </p>
-                      <h4 className="font-bold text-lg">
-                        Buchhaltung und Verwaltung Valentina Conte
-                      </h4>
+                      <h4 className="font-bold text-lg">Valentina Conte</h4>
                     </div>
 
                     {/* <div className="absolute top-0 right-0 w-8 h-8 bg-white rounded flex items-center justify-center">
@@ -134,11 +132,30 @@ const Team = () => {
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
                     <div className="relative">
                       <p className="text-sm text-muted-foreground mb-1">
-                        Buchhaltung und Verwaltung
+                        Montageleitung
                       </p>
-                      <h4 className="font-bold text-lg">
-                        Montageleitung Enrico
-                      </h4>
+                      <h4 className="font-bold text-lg">Enrico</h4>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card className="p-0 bg-white border-0 shadow-lg overflow-hidden">
+                <div className="relative">
+                  <Image
+                    width={800}
+                    height={376}
+                    src="/images/team_img5.jpg"
+                    alt="Robert Fox"
+                    className="w-full h-94 object-cover"
+                  />
+                  <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
+                    <div className="relative">
+                      <p className="text-sm text-muted-foreground mb-1">
+                        Montage
+                      </p>
+                      <h4 className="font-bold text-lg">Ismet</h4>
                     </div>
                   </div>
                 </div>

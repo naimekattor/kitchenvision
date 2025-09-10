@@ -29,7 +29,16 @@ const reviews = [
     img: "/images/brand6.png",
   },
   {
-    img: "/images/brand7.png",
+    img: "/images/brand8.png",
+  },
+  {
+    img: "/images/brand9.png",
+  },
+  {
+    img: "/images/brand10.png",
+  },
+  {
+    img: "/images/brand11.png",
   },
 ];
 
