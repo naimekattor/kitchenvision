@@ -135,7 +135,7 @@ export default function AboutSection() {
           </p>
 
           <Button
-            className="h-12 min-w-[150px] mx-6 mt-2"
+            className="h-12 min-w-[150px]  mt-2"
             onClick={() => setShowModal(true)}
           >
             Termin buchen <ArrowRight />
