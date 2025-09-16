@@ -28,10 +28,11 @@ export default function CookieBanner() {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/20 z-50">
       <div className="bg-white p-6 rounded-2xl shadow-lg max-w-md w-full text-center space-y-4">
-        <h2 className="text-lg font-semibold">We use cookies 🍪</h2>
+        <h2 className="text-lg font-semibold">Wir verwenden Cookies 🍪</h2>
         <p className="text-gray-600">
-          This website uses cookies to ensure you get the best experience on our site.  
-          You can accept or reject cookies at any time.
+          Wir verwenden Cookies Diese Website verwendet Cookies, um
+          sicherzustellen, dass Sie die beste Erfahrung auf unserer Seite
+          machen. Sie konnen Cookies jederzeit akzeptieren oder ablehnen.
         </p>
 
         <div className="flex justify-center gap-4">
@@ -39,13 +40,13 @@ export default function CookieBanner() {
             onClick={handleAccept}
             className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
-            Accept
+            Akzeptieren
           </button>
           <button
             onClick={handleReject}
             className="px-6 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 transition"
           >
-            Reject
+            Ablehnen
           </button>
         </div>
       </div>
