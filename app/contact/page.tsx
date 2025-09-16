@@ -18,7 +18,7 @@ const ContactPage = () => {
 
     try {
       const res = await axios.post(
-        "https://fbecbfebe727.ngrok-free.app/calendy/email-send/",
+        "http://206.162.244.159/calendy/email-send/",
         data,
         {
           headers: {
