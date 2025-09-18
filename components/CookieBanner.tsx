@@ -30,9 +30,8 @@ export default function CookieBanner() {
       <div className="bg-white p-6 rounded-2xl shadow-lg max-w-md w-full text-center space-y-4">
         <h2 className="text-lg font-semibold">Wir verwenden Cookies 🍪</h2>
         <p className="text-gray-600">
-          Wir verwenden Cookies Diese Website verwendet Cookies, um
-          sicherzustellen, dass Sie die beste Erfahrung auf unserer Seite
-          machen. Sie konnen Cookies jederzeit akzeptieren oder ablehnen.
+          Leider nicht die leckeren mit Schokolade, sondern die digitalen. Sie
+          helfen uns, die Website für dich frisch und knusprig zu halten.
         </p>
 
         <div className="flex justify-center gap-4">

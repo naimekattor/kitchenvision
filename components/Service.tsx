@@ -1,9 +1,11 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import ScrollAnimation from "./ScrollAnimation";
 import { FaKitchenSet } from "react-icons/fa6";
 import { BiCabinet } from "react-icons/bi";
 import { MdOutlineCountertops } from "react-icons/md";
 import Image from "next/image";
+import { PopupModal } from "react-calendly";
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
@@ -14,19 +16,38 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
   title,
   description,
-}) => (
-  <div className="bg-white p-8">
-    <div className="bg-gray-800 rounded-md w-16 h-16 flex items-center justify-center relative bottom-15">
-      <span className="text-[30px] text-white">{icon}</span>
+}) => {
+  const [showModal, setShowModal] = useState(false);
+  const [rootElement, setRootElement] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    const root = document.getElementById("__next") ?? document.body;
+    setRootElement(root);
+  }, []);
+  return (
+    <div className="bg-white p-8">
+      <div className="bg-gray-800 rounded-md w-16 h-16 flex items-center justify-center relative bottom-15">
+        <span className="text-[30px] text-white">{icon}</span>
+      </div>
+      <h3 className="text-2xl font-semibold text-gray-900 mb-3">{title}</h3>
+      <p className="text-gray-500 mb-6">{description}</p>
+      <button
+        className="font-semibold text-gray-900 flex items-center"
+        onClick={() => setShowModal(true)}
+      >
+        Termin Buchen
+        <span className="ml-2">→</span>
+      </button>
+      {showModal && rootElement && (
+        <PopupModal
+          url="https://calendly.com/contekuechen"
+          onModalClose={() => setShowModal(false)}
+          open={showModal}
+          rootElement={rootElement}
+        />
+      )}
     </div>
-    <h3 className="text-2xl font-semibold text-gray-900 mb-3">{title}</h3>
-    <p className="text-gray-500 mb-6">{description}</p>
-    <a href="#" className="font-semibold text-gray-900 flex items-center">
-      Mehr erfahren
-      <span className="ml-2">→</span>
-    </a>
-  </div>
-);
+  );
+};
 const Service = () => {
   return (
     <div className="bg-[#f8f9fa] font-sans overflow-hidden">
@@ -45,7 +66,7 @@ const Service = () => {
               Unser Service
             </p>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              Lebensräume gestalten,  <br /> die inspirieren.
+              Lebensräume gestalten, <br /> die inspirieren.
             </h1>
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-1 gap-8">
@@ -56,7 +77,7 @@ const Service = () => {
                   transition={{ duration: 1 }}
                 >
                   <ServiceCard
-                    icon={<FaKitchenSet/>}
+                    icon={<FaKitchenSet />}
                     title="Individuelle Küchenplanung"
                     description="Hier entstehen Küchen, die genau auf Ihre Wünsche zugeschnitten sind – von der ersten Idee bis zur perfekten Umsetzung."
                   />

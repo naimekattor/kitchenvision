@@ -79,11 +79,11 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             priority
-            src="/images/logo.png"
+            src="/images/logo1.png"
             width={200}
             height={86}
             alt="conten Kuche & raum logo"
-            className="w-[200px] h-[86px]"
+            className="w-auto h-auto"
           />
           <span className="sr-only">Go to homepage</span>
         </Link>

@@ -192,7 +192,7 @@ const ContactPage = () => {
               className="col-span-1 md:col-span-1 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"
             />
             <textarea
-              placeholder="Message"
+              placeholder="Ihre Nachricht"
               rows={6}
               name="message"
               className="col-span-1 md:col-span-2 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"

@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Conte Kuche & Raum",
+  title: "Conte Kueche & Raum",
   description: "Your Absolute Kitchen Solution",
 };
 
