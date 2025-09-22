@@ -11,8 +11,6 @@ import {
   User,
   Clock,
   Facebook,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,9 +26,11 @@ export default function BlogPage() {
 
   // Fetch data from API
   useEffect(() => {
-    fetch("https://52291af4931b.ngrok-free.app/calendy/blogs/")
+    fetch("http://10.10.13.52:7079/calendy/blog-data/")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
+
         setBlogs(data.blogs);
         setFilteredBlogs(data.blogs);
         setCategories(data.categories);
