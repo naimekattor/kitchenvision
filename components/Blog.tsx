@@ -86,7 +86,7 @@ const Blog = () => {
             ))}
 
             {/* ✅ You can keep these static slides if needed */}
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="relative bg-white rounded overflow-visible py-16">
                 <Image
                   src={`/images/blog2.jpg`}
@@ -107,7 +107,7 @@ const Blog = () => {
                   </h4>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
 
           {/* Pagination Dots */}

@@ -18,7 +18,7 @@ const ContactPage = () => {
 
     try {
       const res = await axios.post(
-        "http://206.162.244.159/calendy/email-send/",
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/email-send/`,
         data,
         {
           headers: {
