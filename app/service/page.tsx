@@ -95,6 +95,7 @@ const page = () => {
             className="col-span-1 md:col-span-2 p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800 transition"
           />
           <button
+            aria-label="submit"
             type="submit"
             className="col-span-1 md:col-span-2 flex items-center justify-center space-x-2 px-8 py-4 bg-[#333333] text-white font-semibold rounded shadow-md transition-transform transform hover:scale-105 hover:bg-gray-900 min-w-[200px]"
           >

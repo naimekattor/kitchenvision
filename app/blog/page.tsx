@@ -145,6 +145,7 @@ export default function BlogPage() {
 
                   <Link href={`/blog/${post.slug}`}>
                     <Button
+                      aria-label="see more"
                       variant="outline"
                       className="hover:bg-primary hover:text-primary-foreground bg-transparent"
                     >
@@ -160,6 +161,7 @@ export default function BlogPage() {
               <div className="flex items-center justify-between mt-12 pt-8 border-t">
                 <div className="flex items-center space-x-2">
                   <Button
+                    aria-label="Previous"
                     variant="outline"
                     size="sm"
                     onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}

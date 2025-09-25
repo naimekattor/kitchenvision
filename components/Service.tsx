@@ -31,6 +31,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <h3 className="text-2xl font-semibold text-gray-900 mb-3">{title}</h3>
       <p className="text-gray-500 mb-6">{description}</p>
       <button
+        aria-label="book"
         className="font-semibold text-gray-900 flex items-center"
         onClick={() => setShowModal(true)}
       >

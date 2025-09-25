@@ -1,10 +1,24 @@
+// next.config.ts
 import type { NextConfig } from "next";
+import bundleAnalyzer from "@next/bundle-analyzer";
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
-    domains: ["i.ibb.co", "10.10.13.52"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+      },
+      {
+        protocol: "http",
+        hostname: "10.10.13.52",
+      },
+    ],
   },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

@@ -23,10 +23,16 @@ const Portfolio = () => {
             </h2>
           </div>
           <div className="hidden md:flex space-x-2">
-            <button className="portfolio-prev w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors">
+            <button
+              aria-label="left"
+              className="portfolio-prev w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors"
+            >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <button className="portfolio-next w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors">
+            <button
+              aria-label="right"
+              className="portfolio-next w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors"
+            >
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>

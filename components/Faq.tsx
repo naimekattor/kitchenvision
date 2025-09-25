@@ -27,6 +27,7 @@ const FaqItem: React.FC<FaqItemProps> = ({
       }`}
     >
       <button
+        aria-label="toggle"
         className={`w-full text-left py-4 px-6 flex justify-between items-center transition-colors duration-300 ${
           isOpen ? "text-white" : "text-gray-800"
         }`}
