@@ -8,17 +8,16 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       hostname: "i.ibb.co",
+  //     },
+  //   ],
+  // },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.ibb.co",
-      },
-      {
-        protocol: "https",
-        hostname: "api.contekuechen.de",
-      },
-    ],
+    domains: ["i.ibb.co", "api.contekuechen.de"],
   },
 };
 
