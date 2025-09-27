@@ -34,7 +34,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <Image
                 width={1024}
                 height={1024}
-                src={post.image || "/placeholder.svg"}
+                src={post.image_url || "/placeholder.svg"}
                 alt={post.title}
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
               />

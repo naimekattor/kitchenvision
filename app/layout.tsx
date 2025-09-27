@@ -10,12 +10,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Conte Kueche & Raum",
+  title:
+    "CONTE Küchen| Hochwertige Küchen Mühldorf · München · Erding · Rosenheim",
   icons: {
     apple: "/apple-touch-icon.png",
   },
   description:
-    "Entdecken Sie moderne Küchenlösungen und individuelle Raumgestaltung bei Conte Küche & Raum – Qualität, Design und Funktionalität für Ihr Zuhause.",
+    "Ihr Küchenfachgeschäft für exklusive Küchen in Mühldorf, München, Erding, Rosenheim & Ebersberg. Eigene Werkstatt – Manufakturqualität inklusive Montage.",
 };
 
 export default function RootLayout({

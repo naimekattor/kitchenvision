@@ -45,9 +45,10 @@ export default function BlogPage() {
         const postsRes = await fetch(
           `${process.env.NEXT_PUBLIC_API_BASE_URL}/posts/`
         );
+
         const postsData: BlogPost[] = await postsRes.json();
         setBlogs(postsData);
-
+        console.log(postsData);
         const categoriesRes = await fetch(
           `${process.env.NEXT_PUBLIC_API_BASE_URL}/categories/`
         );
@@ -112,7 +113,7 @@ export default function BlogPage() {
                     <Image
                       width={1000}
                       height={1024}
-                      src={post.image || "/placeholder.svg"}
+                      src={post.image_url || "/placeholder.svg"}
                       alt={post.title}
                       className="w-full h-64 md:h-80 object-cover rounded-lg mb-6 hover:opacity-95 transition-opacity"
                     />
@@ -244,7 +245,7 @@ export default function BlogPage() {
                       <Image
                         width={1024}
                         height={1024}
-                        src={post.image || "/placeholder.svg"}
+                        src={post.image_url || "/placeholder.svg"}
                         alt={post.title}
                         className="w-16 h-16 object-cover rounded-lg flex-shrink-0"
                       />

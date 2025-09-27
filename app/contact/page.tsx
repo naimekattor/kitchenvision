@@ -31,14 +31,17 @@ const ContactPage = () => {
 
       if (res.data.success) {
         setStatus("success");
-        toast.success(res.data.message, {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-        });
+        toast.success(
+          "Herzlichen Dank für Ihre Nachricht. Wir melden uns innerhalb der nächsten 1–2 Tage bei Ihnen.",
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          }
+        );
         form.reset();
         setTimeout(() => setStatus("idle"), 2000);
       }
