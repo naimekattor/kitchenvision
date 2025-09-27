@@ -68,7 +68,7 @@ const Blog = () => {
               <SwiperSlide key={indx}>
                 <div className="relative bg-white rounded overflow-visible py-16">
                   <Image
-                    src={blog.image || "/placeholder.svg"}
+                    src={blog.image_url || "/placeholder.svg"}
                     alt={blog.title}
                     width={800}
                     height={320}

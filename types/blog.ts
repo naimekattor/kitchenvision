@@ -11,4 +11,5 @@ export interface BlogPost {
   read_time: number;
   created_at: string;
   updated_at?: string;
+  image_url?: string;
 }
