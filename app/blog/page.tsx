@@ -96,7 +96,6 @@ export default function BlogPage() {
                   width={120}
                   height={120}
                   className="opacity-50 mb-6 w-auto h-auto"
-                  loading="lazy"
                 />
                 <h2 className="text-xl font-semibold text-foreground mb-2">
                   Keine Beiträge gefunden
@@ -115,7 +114,6 @@ export default function BlogPage() {
                       height={1024}
                       src={post.image || "/placeholder.svg"}
                       alt={post.title}
-                      loading="lazy"
                       className="w-full h-64 md:h-80 object-cover rounded-lg mb-6 hover:opacity-95 transition-opacity"
                     />
                   </Link>

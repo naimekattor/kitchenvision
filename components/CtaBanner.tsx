@@ -15,7 +15,6 @@ const CtaBanner = () => {
               height={500}
               src="/images/cta_image.png"
               alt="A man with blueprints"
-              loading="lazy"
               className="h-full object-contain object-bottom w-auto"
             />
           </div>

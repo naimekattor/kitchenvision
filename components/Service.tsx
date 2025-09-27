@@ -116,7 +116,6 @@ const Service = () => {
               height={800}
               src="/images/service_img1.jpg"
               alt="Modern kitchen interior"
-              loading="lazy"
               className="w-full h-full object-cover rounded-lg absolute -right-90"
             />
           </div>

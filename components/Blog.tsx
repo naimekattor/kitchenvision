@@ -20,8 +20,10 @@ const Blog = () => {
         const res = await fetch(
           `${process.env.NEXT_PUBLIC_API_BASE_URL}/posts`
         );
-        console.log("API Base URL:", process.env.NEXT_PUBLIC_API_BASE_URL);
+        //console.log("API Base URL:", process.env.NEXT_PUBLIC_API_BASE_URL);
         const data: BlogPost[] = await res.json();
+        console.log(data);
+
         setBlogPosts(data);
       } catch (err) {
         console.error("Error fetching blogs:", err);
@@ -70,7 +72,6 @@ const Blog = () => {
                     alt={blog.title}
                     width={800}
                     height={320}
-                    loading="lazy"
                     className="w-full h-80 object-cover rounded"
                   />
                   <div className="absolute bottom-6 left-4 right-4 bg-[#F8F8F8] px-4 py-3 rounded">

@@ -160,7 +160,6 @@ const Faq = () => {
                     width={60}
                     height={60}
                     alt="icon"
-                    loading="lazy"
                   />
                 </div>
                 <span className="text-2xl font-bold text-gray-800">

@@ -53,7 +53,6 @@ const Team = () => {
                     height={376}
                     src="/images/team_img1.jpg"
                     alt="Daniele Conte"
-                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -76,7 +75,6 @@ const Team = () => {
                     height={376}
                     src="/images/team_img2.jpg"
                     alt="Valentina Conte"
-                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -103,7 +101,6 @@ const Team = () => {
                     height={376}
                     src="/images/team_img3.jpg"
                     alt="Filip"
-                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -130,7 +127,6 @@ const Team = () => {
                     height={376}
                     src="/images/team_img4.jpg"
                     alt="Enrico"
-                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -152,7 +148,6 @@ const Team = () => {
                     height={376}
                     src="/images/team_img5.jpg"
                     alt="Ismet"
-                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
