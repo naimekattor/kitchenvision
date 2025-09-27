@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "api.contekuechen.de",
       },
+      {
+        protocol: "https",
+        hostname: "contekuechen.de",
+      },
     ],
   },
 };
