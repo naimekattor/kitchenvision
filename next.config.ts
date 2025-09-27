@@ -21,6 +21,8 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "contekuechen.de/",
+        port: "",
+        pathname: "/images/**",
       },
     ],
   },
