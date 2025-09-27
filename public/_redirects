@@ -1,9 +1,0 @@
-# Force HTTPS
-http://contekuechen.de/* https://contekuechen.de/:splat 301!
-http://www.contekuechen.de/* https://contekuechen.de/:splat 301!
-
-# Redirect www to non-www (primary domain)
-https://www.contekuechen.de/* https://contekuechen.de/:splat 301!
-
-# Optional fallback for SPA routing
-/* /index.html 200
