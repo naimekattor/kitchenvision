@@ -28,7 +28,6 @@ export default function Footer() {
               <div className="inline-block mb-4">
                 <Link href="/" className="flex items-center gap-2">
                   <Image
-                    priority={false}
                     src="/images/logo.png"
                     width={200}
                     height={86}

@@ -78,7 +78,6 @@ export default function Header() {
       <div className="container mx-auto flex  items-center justify-between ">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            priority
             src="/images/logo1.png"
             width={200}
             height={86}
