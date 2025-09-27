@@ -19,11 +19,6 @@ const nextConfig: NextConfig = {
         hostname: "api.contekuechen.de",
         pathname: "/images/blogs/**", // match your blog images
       },
-      {
-        protocol: "https",
-        hostname: "contekuechen.de",
-        pathname: "/images/**", // match images on main domain
-      },
     ],
   },
 };
