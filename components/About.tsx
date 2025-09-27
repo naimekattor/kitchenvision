@@ -44,6 +44,7 @@ export default function AboutSection() {
                 alt="About main"
                 width={600}
                 height={400}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -59,6 +60,7 @@ export default function AboutSection() {
                   alt="About extra"
                   width={900}
                   height={500}
+                  loading="lazy"
                   className="w-full h-[350px] rounded-xl object-cover shadow-lg"
                 />
               </div>

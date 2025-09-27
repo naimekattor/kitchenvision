@@ -70,6 +70,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img1.jpg"
                 alt="Kitchen Portfolio 1"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -83,6 +84,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img2.jpg"
                 alt="Kitchen Portfolio 2"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -96,6 +98,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img3.jpg"
                 alt="Kitchen Portfolio 3"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -109,6 +112,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img4.jpg"
                 alt="Kitchen Portfolio 4"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -122,6 +126,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img5.jpg"
                 alt="Kitchen Portfolio 5"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -134,6 +139,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img6.jpg"
                 alt="Kitchen Portfolio 5"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -146,6 +152,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img7.jpg"
                 alt="Kitchen Portfolio 5"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -158,6 +165,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img8.jpg"
                 alt="Kitchen Portfolio 5"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -170,6 +178,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img9.jpg"
                 alt="Kitchen Portfolio 5"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -182,6 +191,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img10.jpg"
                 alt="Kitchen Portfolio 5"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>
@@ -194,6 +204,7 @@ const Portfolio = () => {
                 height={256}
                 src="/images/portfolio/portfolio_img11.jpg"
                 alt="Kitchen Portfolio 5"
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors rounded-lg"></div>

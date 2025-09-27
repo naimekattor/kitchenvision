@@ -70,6 +70,7 @@ const Blog = () => {
                     alt={blog.title}
                     width={800}
                     height={320}
+                    loading="lazy"
                     className="w-full h-80 object-cover rounded"
                   />
                   <div className="absolute bottom-6 left-4 right-4 bg-[#F8F8F8] px-4 py-3 rounded">

@@ -33,6 +33,7 @@ export default function Footer() {
                     width={200}
                     height={86}
                     alt="conten Kuche & raum logo"
+                    loading="lazy"
                     className="w-[200px] h-[86px]"
                   />
                   <span className="sr-only">Go to homepage</span>

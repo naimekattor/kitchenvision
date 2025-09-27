@@ -83,6 +83,7 @@ export default function Header() {
             width={200}
             height={86}
             alt="conten Kuche & raum logo"
+            loading="lazy"
             className="w-auto h-auto"
           />
           <span className="sr-only">Go to homepage</span>

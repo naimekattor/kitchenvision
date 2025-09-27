@@ -32,9 +32,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle, path }) => {
       }}
     >
       <div className="container mx-auto px-4 relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-2 font-montserrat">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-2 font-montserrat">
           {pageTitle}
-        </h1>
+        </h2>
         <div className="flex items-center text-sm space-x-2 text-gray-300">
           {path.map((item, index) => (
             <React.Fragment key={index}>

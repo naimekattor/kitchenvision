@@ -36,6 +36,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 height={1024}
                 src={post.image || "/placeholder.svg"}
                 alt={post.title}
+                loading="lazy"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
               />
 

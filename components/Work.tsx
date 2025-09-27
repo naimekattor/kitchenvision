@@ -12,9 +12,9 @@ const Work = () => {
       <h3 className="font-[600] text-[18px] text-center text-[#333333]">
         Unser Prozess
       </h3>
-      <h1 className="font-[700] text-4xl md:text-5xl text-center">
+      <h2 className="font-[700] text-4xl md:text-5xl text-center">
         So entsteht Ihre Traumküche – Schritt für Schritt.
-      </h1>
+      </h2>
 
       <div className="grid md:grid-cols-3 gap-8 container mx-auto py-20">
         {/* Step 01 */}

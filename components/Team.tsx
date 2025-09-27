@@ -52,7 +52,8 @@ const Team = () => {
                     width={800}
                     height={376}
                     src="/images/team_img1.jpg"
-                    alt="Robert Fox"
+                    alt="Daniele Conte"
+                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -74,7 +75,8 @@ const Team = () => {
                     width={800}
                     height={376}
                     src="/images/team_img2.jpg"
-                    alt="Robert Fox"
+                    alt="Valentina Conte"
+                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -100,7 +102,8 @@ const Team = () => {
                     width={800}
                     height={376}
                     src="/images/team_img3.jpg"
-                    alt="Robert Fox"
+                    alt="Filip"
+                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -126,7 +129,8 @@ const Team = () => {
                     width={800}
                     height={376}
                     src="/images/team_img4.jpg"
-                    alt="Robert Fox"
+                    alt="Enrico"
+                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">
@@ -147,7 +151,8 @@ const Team = () => {
                     width={800}
                     height={376}
                     src="/images/team_img5.jpg"
-                    alt="Robert Fox"
+                    alt="Ismet"
+                    loading="lazy"
                     className="w-full h-94 object-cover"
                   />
                   <div className="p-6 absolute bottom-0  z-10 bg-white w-full">

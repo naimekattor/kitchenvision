@@ -7,6 +7,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
   images: {
     remotePatterns: [
       {
@@ -14,8 +15,8 @@ const nextConfig: NextConfig = {
         hostname: "i.ibb.co",
       },
       {
-        protocol: "http",
-        hostname: "10.10.13.52",
+        protocol: "https",
+        hostname: "api.contekuechen.de",
       },
     ],
   },

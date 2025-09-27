@@ -8,7 +8,7 @@ import { Quote, Star } from "lucide-react";
 const Testoimonial = () => {
   return (
     <section>
-      <h1 className="text-center">Kundenstimmen</h1>
+      <h2 className="text-center">Kundenstimmen</h2>
       <h2 className="mb-[30px] text-[48px] font-bold text-center">
         Architektonische Exzellenz. Zufriedenheit, die bleibt.
       </h2>

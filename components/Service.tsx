@@ -66,9 +66,9 @@ const Service = () => {
             <p className="text-sm font-semibold tracking-widest text-gray-700 uppercase mb-4">
               Unser Service
             </p>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <h4 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
               Lebensräume gestalten, <br /> die inspirieren.
-            </h1>
+            </h4>
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-1 gap-8">
               <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
@@ -116,6 +116,7 @@ const Service = () => {
               height={800}
               src="/images/service_img1.jpg"
               alt="Modern kitchen interior"
+              loading="lazy"
               className="w-full h-full object-cover rounded-lg absolute -right-90"
             />
           </div>

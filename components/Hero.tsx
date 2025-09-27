@@ -19,6 +19,7 @@ const Hero = () => {
                 height={64}
                 className="w-full h-full relative rotate-[-38deg]"
                 src="/images/star.png"
+                priority
               />
             </div>
 
@@ -43,6 +44,7 @@ const Hero = () => {
                 alt="hero image"
                 width={300}
                 height={323}
+                priority
                 className="rounded-lg shadow-lg w-[300px] h-[323px] z-10"
               />
               <div className="absolute -top-3 -right-4 w-[300px] h-[350px] border-[#A6A182] border-2  -z-10"></div>

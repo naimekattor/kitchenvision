@@ -72,9 +72,9 @@ const WorkProcess: React.FC = () => {
         <p className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
           Unser Prozess
         </p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
+        <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
           Design neu definiert
-        </h1>
+        </h3>
       </div>
 
       {/* Grid of Steps */}

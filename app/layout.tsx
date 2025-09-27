@@ -11,6 +11,9 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Conte Kueche & Raum",
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
   description:
     "Entdecken Sie moderne Küchenlösungen und individuelle Raumgestaltung bei Conte Küche & Raum – Qualität, Design und Funktionalität für Ihr Zuhause.",
 };

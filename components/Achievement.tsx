@@ -62,6 +62,7 @@ const ReviewCard = ({ img }: { img: string }) => {
           height={136}
           alt="brand logo"
           className=""
+          loading="lazy"
         />
       </div>
     </figure>

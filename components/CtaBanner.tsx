@@ -15,6 +15,7 @@ const CtaBanner = () => {
               height={500}
               src="/images/cta_image.png"
               alt="A man with blueprints"
+              loading="lazy"
               className="h-full object-contain object-bottom w-auto"
             />
           </div>
@@ -24,7 +25,10 @@ const CtaBanner = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight max-w-lg md:max-w-xl lg:max-w-2xl text-center md:text-left">
               Ihre Traumküche
             </h2>
-            <Link href='/contact' className="flex items-center space-x-2 px-8 py-4 bg-white text-[#333333] font-semibold rounded shadow-md transition-transform transform hover:scale-105">
+            <Link
+              href="/contact"
+              className="flex items-center space-x-2 px-8 py-4 bg-white text-[#333333] font-semibold rounded shadow-md transition-transform transform hover:scale-105"
+            >
               <span>Jetzt zum Beratungstermin ! </span>
               <ArrowRight />
             </Link>
