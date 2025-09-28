@@ -77,7 +77,8 @@ export default function Footer() {
 
           {/* Quick Links Column */}
           <div>
-            <h4 className="text-xl font-bold mb-6"> Links</h4>
+            <h4 className="text-xl font-bold mb-6">Links</h4> // English word is
+            also “Links”,
             <ul className="space-y-4">
               <li>
                 <Link
