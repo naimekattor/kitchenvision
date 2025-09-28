@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import LayoutContent from "@/components/layout-content";
 import { dir } from "i18next";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -11,21 +12,17 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title:
-    "CONTE Küchen| Hochwertige Küchen Mühldorf · München · Erding · Rosenheim",
-  icons: {
-    apple: "/apple-touch-icon.png",
-  },
+    "CONTE Küchen | Hochwertige Küchen Mühldorf · München · Erding · Rosenheim",
   description:
     "Ihr Küchenfachgeschäft für exklusive Küchen in Mühldorf, München, Erding, Rosenheim & Ebersberg. Eigene Werkstatt – Manufakturqualität inklusive Montage.",
+  icons: { apple: "/apple-touch-icon.png" },
 };
 
 export default function RootLayout({
   children,
-  params,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-  params: { locale: string };
-}>) {
+}) {
   return (
     <html lang="de" dir={dir("de")}>
       <body className={`${montserrat.variable} antialiased`}>
