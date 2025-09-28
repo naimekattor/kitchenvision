@@ -25,14 +25,17 @@ const page = () => {
       console.log(res.data);
 
       if (res.data.success) {
-        toast.success(res.data.message, {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-        });
+        toast.success(
+          "Herzlichen Dank für Ihre Nachricht. Wir melden uns innerhalb der nächsten 1–2 Tage bei Ihnen.",
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          }
+        );
         form.reset(); // reset form inputs
       }
     } catch (err: unknown) {
