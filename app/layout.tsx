@@ -11,8 +11,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title:
-    "CONTE Küchen | Hochwertige Küchen Mühldorf · München · Erding · Rosenheim",
+  title: "CONTE | Kuchenstudio für Mühldorf & Region Munchen",
   description:
     "Ihr Küchenfachgeschäft für exklusive Küchen in Mühldorf, München, Erding, Rosenheim & Ebersberg. Eigene Werkstatt – Manufakturqualität inklusive Montage.",
   icons: { apple: "/apple-touch-icon.png" },
