@@ -1,7 +1,6 @@
 // next.config.ts
 import type { NextConfig } from "next";
 import bundleAnalyzer from "@next/bundle-analyzer";
-import nextI18NextConfig from "./next-i18next.config";
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
@@ -19,7 +18,10 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["i.ibb.co", "api.contekuechen.de"],
   },
-  ...nextI18NextConfig,
+  // i18n: {
+  //   locales: ["de", "en"], // German (default), English
+  //   defaultLocale: "de", // Homepage renders in German first
+  // },
 };
 
 export default withBundleAnalyzer(nextConfig);

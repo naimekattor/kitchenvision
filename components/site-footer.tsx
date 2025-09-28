@@ -5,9 +5,7 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaInstagram } from "react-icons/fa";
-
 import { useState } from "react";
-import { t } from "i18next";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -78,7 +76,7 @@ export default function Footer() {
 
           {/* Quick Links Column */}
           <div>
-            <h4 className="text-xl font-bold mb-6">{t("links")}</h4>
+            <h4 className="text-xl font-bold mb-6">Navigation</h4>
             <ul className="space-y-4">
               <li>
                 <Link

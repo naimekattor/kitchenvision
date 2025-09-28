@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import LayoutContent from "@/components/layout-content";
-import { dir } from "i18next";
+import { notFound } from "next/navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
   icons: { apple: "/apple-touch-icon.png" },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de" dir={dir("de")}>
+    <html lang="de">
       <body className={`${montserrat.variable} antialiased`}>
         <LayoutContent>{children}</LayoutContent>
       </body>
