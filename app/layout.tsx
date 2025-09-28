@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import LayoutContent from "@/components/layout-content";
-
+import { dir } from "i18next";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -21,11 +21,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
-    <html lang="de">
+    <html lang="de" dir={dir("de")}>
       <body className={`${montserrat.variable} antialiased`}>
         <LayoutContent>{children}</LayoutContent>
       </body>
