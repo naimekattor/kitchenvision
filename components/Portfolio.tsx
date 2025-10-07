@@ -16,7 +16,7 @@ const Portfolio = () => {
             <p className="text-sm text-muted-foreground mb-4 font-medium">
               Aktuelle Projekte
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
               Verwandle deinen Raum.
               <br />
               Deine Traumküche

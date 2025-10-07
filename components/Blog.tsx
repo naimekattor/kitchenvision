@@ -39,7 +39,7 @@ const Blog = () => {
           <p className="text-sm text-muted-foreground mb-4 font-medium">
             Blog & News
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Räume schaffen, die Ihre Persönlichkeit widerspiegeln.
           </h2>
         </div>

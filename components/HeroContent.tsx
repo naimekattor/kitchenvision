@@ -23,7 +23,7 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle, path }) => {
   return (
     <div
-      className="relative w-full py-24 md:py-32 bg-[url('/images/breadcrumb.jpg')] text-white overflow-hidden"
+      className="relative w-full py-42 md:py-32 bg-[url('/images/breadcrumb.jpg')] text-white overflow-hidden"
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -32,7 +32,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle, path }) => {
       }}
     >
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-2 font-montserrat">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-2 font-montserrat">
           {pageTitle}
         </h2>
         <div className="flex items-center text-sm space-x-2 text-gray-300">

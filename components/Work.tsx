@@ -8,11 +8,11 @@ import {
 
 const Work = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-16 px-4">
       <h3 className="font-[600] text-[18px] text-center text-[#333333]">
         Unser Prozess
       </h3>
-      <h2 className="font-[700] text-4xl md:text-5xl text-center">
+      <h2 className="font-[700] text-3xl sm:text-4xl lg:text-5xl text-center">
         So entsteht Ihre Traumküche – Schritt für Schritt.
       </h2>
 

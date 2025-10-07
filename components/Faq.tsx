@@ -140,7 +140,7 @@ const Faq = () => {
           <div className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
             FAQ
           </div>
-          <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight tracking-tight mb-4">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold  leading-tight tracking-tight mb-4">
             Wertiges Interior. <br /> Wertiger Lifestyle.
           </h3>
           <p className="text-lg text-gray-500 max-w-xl mb-8">

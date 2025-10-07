@@ -66,7 +66,7 @@ const Service = () => {
             <p className="text-sm font-semibold tracking-widest text-gray-700 uppercase mb-4">
               Unser Service
             </p>
-            <h4 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <h4 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Lebensräume gestalten, <br /> die inspirieren.
             </h4>
 

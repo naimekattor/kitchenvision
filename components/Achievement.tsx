@@ -112,7 +112,7 @@ const Achievement = () => {
                 <p className="text-sm text-muted-foreground mb-4 font-medium">
                   Unsere Leistung
                 </p>
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
                   Küchen & Wohnräume, die begeistern – mit Erfahrung und
                   Leidenschaft.
                 </h2>

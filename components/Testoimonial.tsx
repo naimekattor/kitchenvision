@@ -7,9 +7,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { Quote, Star } from "lucide-react";
 const Testoimonial = () => {
   return (
-    <section>
+    <section className="container mx-auto px-4">
       <h2 className="text-center">Kundenstimmen</h2>
-      <h2 className="mb-[30px] text-[48px] font-bold text-center">
+      <h2 className="mb-[30px] text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
         Architektonische Exzellenz. Zufriedenheit, die bleibt.
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto overflow-visible">
@@ -22,7 +22,7 @@ const Testoimonial = () => {
           /> */}
         </div>
         <div className="relative flex items-center px-4 ">
-          <div className="relative z-20 md:-ml-28 -ml-6 w-full md:w-[65%] lg:w-[55%] max-w-[820px]">
+          <div className="relative z-20 md:-ml-28  w-full md:w-[65%] lg:w-[55%] max-w-[820px]">
             <Swiper
               modules={[Pagination, Autoplay]}
               spaceBetween={30}

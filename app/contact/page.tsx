@@ -73,7 +73,7 @@ const ContactPage = () => {
         </div>
 
         {/* Contact Details Section */}
-        <div className="flex flex-col w-full lg:w-1/2 p-8 md:p-16 lg:p-24 space-y-12">
+        <div className="flex flex-col w-full lg:w-1/2 p-4 md:p-16 lg:p-24 space-y-12">
           {/* Header */}
           <div className="flex flex-col space-y-4">
             <h2 className="text-4xl font-extrabold text-gray-900 leading-tight">
@@ -158,7 +158,7 @@ const ContactPage = () => {
             <p className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
               Kontaktiere uns
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               Zur Traumküche
             </h1>
           </div>

@@ -56,7 +56,7 @@ const page = () => {
           {/* <p className="text-sm uppercase font-semibold text-gray-500 tracking-wide mb-2">
               Kontaktiere uns
             </p> */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold  leading-tight">
             Buche einen Termin
           </h1>
         </div>
