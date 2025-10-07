@@ -65,10 +65,12 @@ export default function BlogPage() {
         setPopularTags(await popularTagsRes.json());
       } catch (error) {
         console.error("Error fetching data:", error);
+        setPopularPosts([]);
       }
     };
     fetchData();
   }, []);
+  console.log(categories);
 
   // ✅ Filter blogs based on search
   const filteredBlogs = blogs.filter(

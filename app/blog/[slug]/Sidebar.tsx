@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Facebook } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 
-const API_BASE = process.env.base_url;
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 interface Category {
   name: string;
@@ -26,16 +26,21 @@ export default function Sidebar() {
     const fetchData = async () => {
       try {
         const catRes = await fetch(`${API_BASE}/categories/`);
-        setCategories(await catRes.json());
+        if (!catRes.ok) throw new Error("Categories fetch failed");
+        const catData = await catRes.json();
+        setCategories(catData);
 
         const tagRes = await fetch(`${API_BASE}/popular-tags/`);
-        setPopularTags(await tagRes.json());
+        if (!tagRes.ok) throw new Error("Tags fetch failed");
+        const tagData = await tagRes.json();
+        setPopularTags(tagData);
       } catch (error) {
         console.error("Sidebar fetch error:", error);
       }
     };
     fetchData();
   }, []);
+  console.log(categories);
 
   return (
     <div className="space-y-8">

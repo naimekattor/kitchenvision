@@ -17,7 +17,7 @@ const Hero = () => {
                 alt="star icon"
                 width={64}
                 height={64}
-                className="w-full h-full relative rotate-[-38deg]"
+                className=" relative rotate-[-38deg]"
                 src="/images/star.png"
               />
             </div>

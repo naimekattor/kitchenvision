@@ -34,7 +34,7 @@ const FaqItem: React.FC<FaqItemProps> = ({
         onClick={onToggle}
       >
         <span className="text-lg font-semibold flex items-center">
-          <span>{id}.</span>
+          {/* <span>{id}.</span> */}
           {question}
         </span>
 

@@ -55,13 +55,13 @@ const ReviewCard = ({ img }: { img: string }) => {
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div>
+      <div className="relative w-[137px] h-[136px]">
         <Image
           src={img}
-          width={137}
-          height={136}
           alt="brand logo"
-          className=""
+          fill
+          className="object-contain"
+          sizes="(max-width: 768px) 100px, 137px"
         />
       </div>
     </figure>
