@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
   //   ],
   // },
   images: {
-    domains: ["i.ibb.co", "api.contekuechen.de"],
+    domains: ["i.ibb.co", "api.contekuechen.de", "contekuechen.de"],
   },
   // i18n: {
   //   locales: ["de", "en"], // German (default), English
