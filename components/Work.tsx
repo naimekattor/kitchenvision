@@ -50,15 +50,18 @@ const Work = () => {
         </ScrollAnimation>
 
         {/* Step 02 - Always show background */}
-        <div className="relative text-center shadow-lg bg-white rounded p-2 overflow-hidden">
+        <div className="relative text-center shadow-lg bg-white rounded-lg overflow-hidden">
+          {/* Background image with overlay */}
           <div
-            className="absolute inset-0 bg-cover bg-center rounded-lg"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/work_img.jpg') !important`,
-            }}
-          />
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/work_img.jpg')" }}
+          >
+            <div className="absolute inset-0 bg-black/60"></div> {/* overlay */}
+          </div>
+
+          {/* Content */}
           <div className="relative z-10 p-8 text-white">
-            <div className="text-8xl font-bold text-white mb-4">02</div>
+            <div className="text-8xl font-bold mb-4">02</div>
             <h3 className="text-2xl font-bold mb-4">Auswahl & Gestaltung</h3>
             <p className="text-white/90 mb-6">
               Ob Materialien, Geräte oder besondere Details – gemeinsam finden
