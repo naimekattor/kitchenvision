@@ -28,7 +28,7 @@ const Work = () => {
             <div
               className="absolute inset-0 bg-cover bg-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{
-                backgroundImage: `url('/images/work_img.jpg')`,
+                backgroundImage: `url('/images/work_img.jpg') !important`,
               }}
             />
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 rounded-lg transition-opacity duration-300"></div>
@@ -54,7 +54,7 @@ const Work = () => {
           <div
             className="absolute inset-0 bg-cover bg-center rounded-lg"
             style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/work_img.jpg')`,
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/work_img.jpg') !important`,
             }}
           />
           <div className="relative z-10 p-8 text-white">
@@ -81,7 +81,7 @@ const Work = () => {
             <div
               className="absolute inset-0 bg-cover bg-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{
-                backgroundImage: `url('/images/work_img.jpg')`,
+                backgroundImage: `url('/images/work_img.jpg') !important`,
               }}
             />
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 rounded-lg transition-opacity duration-300"></div>

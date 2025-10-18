@@ -13,7 +13,7 @@ const Testoimonial = () => {
         Architektonische Exzellenz. Zufriedenheit, die bleibt.
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto overflow-visible">
-        <div className="relative z-0 bg-[url('/images/testimonial.jpg')] bg-cover bg-center min-h-[560px]"></div>
+        <div className="relative z-0 bg-[url('/images/testimonial.jpg')] bg-cover bg-center bg-no-repeat  w-full !bg-fixed min-h-[560px]"></div>
 
         <div className="relative flex items-center px-4 ">
           <div className="relative z-20 md:-ml-28  w-full md:w-[65%] lg:w-[55%] max-w-[820px]">
