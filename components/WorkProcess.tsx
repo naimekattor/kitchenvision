@@ -29,19 +29,19 @@ const WorkProcess: React.FC = () => {
   const processSteps = [
     {
       number: "01",
-      title: "Blueprint Builders",
+      title: "Raumvisionen schaffen",
       description:
         "Wir gestalten und entwickeln präzise Raumpläne, die eine harmonische Verbindung von Architektur und Interior Design schaffen.",
     },
     {
       number: "02",
-      title: "Artistic Architecture",
+      title: "Architektur trifft Interior",
       description:
         "Ästhetik trifft auf Funktion: Unsere Architekturlösungen verbinden zeitloses Design mit modernen Materialien, um Räume mit Charakter und Wiedererkennungswert zu gestalten.",
     },
     {
       number: "03",
-      title: "Interior Scape Design",
+      title: "Gesamtkonzept",
       description:
         "Wir kreieren individuelle Wohnlandschaften, die Persönlichkeit ausstrahlen – vom harmonischen Farbkonzept bis zur perfekten Materialkombination.",
     },
